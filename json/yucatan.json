@@ -1,0 +1,897 @@
+{
+  "estado": "Yucatán",
+  "capital": "Mérida",
+  "color_tema": "#2E7D32",
+  "color_secundario": "#81C784",
+  "total_especies": 10,
+  "especies_medicinales": 10,
+  "plantas": [
+    {
+      "id": "yuc_001",
+      "nombre_comun": "Nim",
+      "nombre_cientifico": "Azadirachta indica A. Juss.",
+      "familia": "Meliaceae",
+      "genero": "Azadirachta",
+      "especie": "indica",
+      "descripcion": "Árbol perennifolio de gran porte, de hasta 20 metros de altura, con follaje compuesto de hojas imparipinnadas de color verde oscuro. Sus frutos son drupas amarillentas.",
+      "habitat": "Prospera en climas cálidos y semicálidos con suelos bien drenados, siendo altamente resistente a la sequía.",
+      "distribucion": "Naturalizado en la Península de Yucatán, particularmente en zonas urbanas, huertos familiares y áreas de vegetación perturbada del centro y norte del estado. Introducido de Asia y aclimatado exitosamente.",
+      "estado_conservacion": "Naturalizado",
+      "abundancia": "Común en zonas urbanas y huertos familiares",
+      "usos_medicinales": [
+        "Tratamiento de afecciones dermatológicas (acné, eccemas, psoriasis)",
+        "Control de infecciones fúngicas y bacterianas",
+        "Regulación de la glucosa en sangre",
+        "Agente antihelmíntico",
+        "Antiinflamatorio general"
+      ],
+      "preparados": [
+        "Para uso tópico en afecciones de piel: pasta moliendo hojas frescas con agua hasta obtener consistencia homogénea; se aplica sobre la zona afectada y se deja actuar 20 minutos antes de enjuagar.",
+        "Para uso interno: hervir 5 hojas secas en 500 mL de agua durante 10 minutos; se consume un vaso por la mañana en ayunas."
+      ],
+      "componentes_activos": [
+        "Azadiractina",
+        "Nimbolide",
+        "Quercetina"
+      ],
+      "contraindicaciones": "Usar con precaución en personas con hipoglucemia. Consultar a un médico antes de uso prolongado.",
+      "biologia": {
+        "ciclo_vida": "Perennifolio",
+        "reproduccion": "Por semillas",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": "Altamente resistente a la sequía"
+      },
+      "historia": {
+        "origen": "Introducido de Asia",
+        "usos_tradicionales": "Usado tradicionalmente para afecciones de piel, control de infecciones y regulación de glucosa.",
+        "menciones_historicas": "",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Extractos antimicrobianos",
+          "Preparados dermatológicos",
+          "Infusiones hipoglucemiantes"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 20.967,
+            "lng": -89.623
+          },
+          {
+            "lat": 21.282,
+            "lng": -89.661
+          },
+          {
+            "lat": 20.588,
+            "lng": -87.317
+          }
+        ],
+        "zona_distribucion": "Centro y norte de Yucatán",
+        "tipo_suelo": "Bien drenados",
+        "clima": "Cálido y semicálido",
+        "precipitacion_anual": "",
+        "altitud": ""
+      },
+      "humanidades": {
+        "significado_cultural": "",
+        "relevancia_social": "Importante para poblaciones rurales como primera línea de respuesta ante enfermedades.",
+        "practicas_tradicionales": "Uso en patios familiares y recolección en áreas colindantes.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/imagenes_yuc/yuc_001_principal.png",
+        "habitat": "../assets/imagenes/imagenes_yuc/yuc_001_habitat.png",
+        "detalle": "../assets/imagenes/imagenes_yuc/yuc_001_detalle.png"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "yuc_002",
+      "nombre_comun": "Oxramon",
+      "nombre_cientifico": "Brosimum alicastrum Sw.",
+      "familia": "Moraceae",
+      "genero": "Brosimum",
+      "especie": "alicastrum",
+      "descripcion": "Árbol de gran porte, de hasta 40 metros de altura, con copa densa y extendida. Sus hojas son elípticas, coriáceas y de color verde intenso. Produce frutos globosos comestibles y semillas altamente nutritivas.",
+      "habitat": "Especie emblemática de la selva maya, resistente a la sequía y fundamental en los sistemas agroforestales tradicionales.",
+      "distribucion": "Ampliamente distribuido en la Península de Yucatán, desde la selva baja subcaducifolia hasta los huertos familiares mayas en comunidades rurales de los municipios de Hocabá, Halachó, Tzucacab y áreas del centro, sur y oriente del estado.",
+      "estado_conservacion": "Nativo",
+      "abundancia": "Ampliamente distribuido",
+      "usos_medicinales": [
+        "Control de afecciones respiratorias (tos, asma, bronquitis)",
+        "Estimulación de la lactancia materna (propiedades galactóforas)",
+        "Tratamiento de problemas ginecológicos",
+        "Tónico general del organismo"
+      ],
+      "preparados": [
+        "Para afecciones respiratorias: diluir dos gotas del exudado lechoso (látex) en un vaso pequeño con un cuarto de agua; se toma dos veces al día, mañana y noche.",
+        "Para problemas ginecológicos y como galactagogo: decocción hirviendo 15 gramos de corteza triturada en un litro de agua durante 15 minutos; se consume fraccionado en tres dosis diarias."
+      ],
+      "componentes_activos": [
+        "Compuestos bioactivos del látex con actividad expectorante y antiinflamatoria"
+      ],
+      "contraindicaciones": "",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": "Resistente a la sequía"
+      },
+      "historia": {
+        "origen": "Nativo de la Península de Yucatán",
+        "usos_tradicionales": "Uso tradicional del látex y la corteza para afecciones respiratorias y ginecológicas en comunidades mayas de Hocabá y Halachó.",
+        "menciones_historicas": "",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Forraje para ganado",
+          "Frutos comestibles",
+          "Preparados para lactancia"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 20.741,
+            "lng": -89.227
+          },
+          {
+            "lat": 20.528,
+            "lng": -90.073
+          },
+          {
+            "lat": 20.072,
+            "lng": -89.057
+          }
+        ],
+        "zona_distribucion": "Selva baja subcaducifolia, centro, sur y oriente de Yucatán",
+        "tipo_suelo": "",
+        "clima": "",
+        "precipitacion_anual": "",
+        "altitud": ""
+      },
+      "humanidades": {
+        "significado_cultural": "Especie emblemática de la selva maya.",
+        "relevancia_social": "Fundamental en sistemas agroforestales tradicionales y nutrición de comunidades rurales.",
+        "practicas_tradicionales": "Uso del látex y corteza en medicina tradicional maya.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/imagenes_yuc/yuc_002_principal.png",
+        "habitat": "../assets/imagenes/imagenes_yuc/yuc_002_habitat.png",
+        "detalle": "../assets/imagenes/imagenes_yuc/yuc_002_detalle.png"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "yuc_003",
+      "nombre_comun": "Epazote",
+      "nombre_cientifico": "Chenopodium ambrosioides L.",
+      "familia": "Amaranthaceae",
+      "genero": "Chenopodium",
+      "especie": "ambrosioides",
+      "descripcion": "Planta herbácea anual o bienal, de hasta 1.5 metros de altura, con tallos ramificados y hojas alternas de forma lanceolada, de color verde intenso y aroma característico fuerte. Florece en racimos pequeños de color verde.",
+      "habitat": "Extremadamente resistente y se adapta a suelos pobres y climas cálidos.",
+      "distribucion": "Presente en toda la Península de Yucatán, común en huertos familiares, zonas de cultivo, caminos y áreas perturbadas de los estados de Yucatán, Campeche y Quintana Roo. Es una de las plantas medicinales más reconocidas en la medicina tradicional maya.",
+      "estado_conservacion": "Naturalizada",
+      "abundancia": "Muy común",
+      "usos_medicinales": [
+        "Eliminación de parásitos intestinales (antihelmíntico)",
+        "Alivio de dolores abdominales y cólicos",
+        "Tratamiento de asma",
+        "Tratamiento de disentería",
+        "Emenagogo en casos de menstruación irregular o dolorosa"
+      ],
+      "preparados": [
+        "Para eliminar lombrices intestinales: infusión con un manojo de hojas frescas en un litro de agua hirviendo; se deja reposar 10 minutos y se consume en ayunas durante tres días consecutivos.",
+        "Para dolores abdominales: hervir 10 gramos de hojas en 500 mL de agua durante 8 minutos; se toma un vaso después de cada comida."
+      ],
+      "componentes_activos": [
+        "Aceite esencial rico en ascaridol"
+      ],
+      "contraindicaciones": "No exceder la dosis recomendada. El ascaridol puede ser tóxico en altas concentraciones. No usar durante el embarazo.",
+      "biologia": {
+        "ciclo_vida": "Anual o bienal",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": "Extremadamente resistente, se adapta a suelos pobres y climas cálidos"
+      },
+      "historia": {
+        "origen": "Nativo de América",
+        "usos_tradicionales": "Usado como antihelmíntico desde el siglo XVI, citado en el Códice Florentino y por Francisco Hernández.",
+        "menciones_historicas": "Códice Florentino, Francisco Hernández",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Infusiones antihelmínticas",
+          "Preparados antiespasmódicos"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 20.967,
+            "lng": -89.623
+          },
+          {
+            "lat": 19.845,
+            "lng": -90.531
+          },
+          {
+            "lat": 18.503,
+            "lng": -88.306
+          }
+        ],
+        "zona_distribucion": "Toda la Península de Yucatán (Yucatán, Campeche, Quintana Roo)",
+        "tipo_suelo": "Pobres",
+        "clima": "Cálido",
+        "precipitacion_anual": "",
+        "altitud": ""
+      },
+      "humanidades": {
+        "significado_cultural": "Una de las plantas medicinales más reconocidas en la medicina tradicional maya.",
+        "relevancia_social": "Primera línea de respuesta ante parasitosis intestinal en poblaciones rurales.",
+        "practicas_tradicionales": "Uso en huertos familiares y recolección en áreas colindantes.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/imagenes_yuc/yuc_003_principal.png",
+        "habitat": "../assets/imagenes/imagenes_yuc/yuc_003_habitat.png",
+        "detalle": "../assets/imagenes/imagenes_yuc/yuc_003_detalle.png"
+      },
+      "populares": true,
+      "mas_vendida": true,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "yuc_004",
+      "nombre_comun": "Balché",
+      "nombre_cientifico": "Lonchocarpus punctatus Kunth",
+      "familia": "Fabaceae",
+      "genero": "Lonchocarpus",
+      "especie": "punctatus",
+      "descripcion": "Árbol de tamaño mediano a grande, de hasta 15 metros de altura, con corteza grisácea y hojas compuestas alternas de folíolos elípticos. Produce flores en racimos de color lila o rosado y frutos en vainas alargadas.",
+      "habitat": "Especie emblemática de la selva maya, asociada a rituales ceremoniales desde tiempos prehispánicos.",
+      "distribucion": "Nativo de la Península de Yucatán, crece de forma silvestre en la selva baja caducifolia y mediana subcaducifolia de Yucatán, Campeche y Quintana Roo. Es una especie fundamental en la cosmovisión maya y se encuentra frecuentemente en cenotes y áreas sagradas.",
+      "estado_conservacion": "Nativo",
+      "abundancia": "Común en selvas y áreas sagradas",
+      "usos_medicinales": [
+        "Tratamiento tradicional de trastornos digestivos",
+        "Dolores reumáticos",
+        "Infecciones urinarias",
+        "Sedante leve"
+      ],
+      "preparados": [
+        "Para dolores articulares y reumáticos: hervir un trozo de corteza de aproximadamente 10 cm en un litro de agua durante 20 minutos; el líquido concentrado se consume un vaso por la mañana.",
+        "Para trastornos digestivos: decocción más suave hirviendo 5 cm de corteza en medio litro de agua por 15 minutos; se toma después de las comidas."
+      ],
+      "componentes_activos": [
+        "Flavonoides",
+        "Alcaloides"
+      ],
+      "contraindicaciones": "",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": ""
+      },
+      "historia": {
+        "origen": "Nativo de la Península de Yucatán",
+        "usos_tradicionales": "La corteza es el ingrediente principal de la bebida ceremonial balché, de uso sagrado en la cultura maya.",
+        "menciones_historicas": "Uso ancestral documentado por CONABIO y estudios etnobotánicos.",
+        "evidencia_arqueologica": "Asociada a rituales ceremoniales desde tiempos prehispánicos."
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Bebida ceremonial balché",
+          "Preparados antiinflamatorios",
+          "Preparados analgésicos"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 20.684,
+            "lng": -88.568
+          },
+          {
+            "lat": 19.83,
+            "lng": -90.535
+          },
+          {
+            "lat": 18.5,
+            "lng": -88.3
+          }
+        ],
+        "zona_distribucion": "Selva baja caducifolia y mediana subcaducifolia de Yucatán, Campeche y Quintana Roo",
+        "tipo_suelo": "",
+        "clima": "",
+        "precipitacion_anual": "",
+        "altitud": ""
+      },
+      "humanidades": {
+        "significado_cultural": "Especie fundamental en la cosmovisión maya. Asociada a cenotes y áreas sagradas.",
+        "relevancia_social": "Ingrediente principal de la bebida ceremonial balché.",
+        "practicas_tradicionales": "Uso ceremonial y medicinal ancestral en la cultura maya.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/imagenes_yuc/yuc_004_principal.png",
+        "habitat": "../assets/imagenes/imagenes_yuc/yuc_004_habitat.png",
+        "detalle": "../assets/imagenes/imagenes_yuc/yuc_004_detalle.png"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "yuc_005",
+      "nombre_comun": "Orégano de Castilla",
+      "nombre_cientifico": "Plectranthus amboinicus (Lour.) Spreng.",
+      "familia": "Lamiaceae",
+      "genero": "Plectranthus",
+      "especie": "amboinicus",
+      "descripcion": "Planta herbácea suculenta y aromática, de hasta 1 metro de altura, con hojas ovales, carnosas y de bordes crenados, de color verde intenso y textura pubescente. Las flores se agrupan en racimos de color blanquecino, rosa o lila.",
+      "habitat": "Originaria del Paleotrópico pero está ampliamente naturalizada en México.",
+      "distribucion": "Cultivado y naturalizado en huertos familiares de toda la Península de Yucatán, especialmente en Yucatán, Campeche y Quintana Roo. Es una de las plantas aromáticas más comunes en los solares mayas.",
+      "estado_conservacion": "Naturalizado",
+      "abundancia": "Muy común en huertos familiares",
+      "usos_medicinales": [
+        "Tratamiento de afecciones respiratorias crónicas (tos, bronquitis, asma)",
+        "Alivio de dolores de estómago y cólicos",
+        "Control de infecciones bacterianas y fúngicas",
+        "Sedante para trastornos del sueño y nerviosismo"
+      ],
+      "preparados": [
+        "Para afecciones respiratorias: infusión hirviendo 5 hojas frescas en una taza de agua durante 5 minutos; se consume caliente dos veces al día.",
+        "Para dolores de estómago: machacar 3 hojas frescas y hervir en 250 mL de agua por 10 minutos; se toma después de las comidas."
+      ],
+      "componentes_activos": [
+        "Aceites esenciales ricos en timol y carvacrol"
+      ],
+      "contraindicaciones": "",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": "Suculenta, resistente a climas cálidos"
+      },
+      "historia": {
+        "origen": "Originaria del Paleotrópico",
+        "usos_tradicionales": "Uso documentado por encuestas TRAMIL del CICY para afecciones respiratorias y digestivas.",
+        "menciones_historicas": "",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Infusiones respiratorias",
+          "Preparados antiespasmódicos",
+          "Aceites esenciales"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 20.967,
+            "lng": -89.623
+          },
+          {
+            "lat": 19.845,
+            "lng": -90.531
+          },
+          {
+            "lat": 18.503,
+            "lng": -88.306
+          }
+        ],
+        "zona_distribucion": "Toda la Península de Yucatán",
+        "tipo_suelo": "",
+        "clima": "Cálido",
+        "precipitacion_anual": "",
+        "altitud": ""
+      },
+      "humanidades": {
+        "significado_cultural": "Una de las plantas aromáticas más comunes en los solares mayas.",
+        "relevancia_social": "Importante para el tratamiento de bronquitis crónica y asma en zonas rurales.",
+        "practicas_tradicionales": "Cultivo en huertos familiares y uso cotidiano.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/imagenes_yuc/yuc_005_principal.png",
+        "habitat": "../assets/imagenes/imagenes_yuc/yuc_005_habitat.png",
+        "detalle": "../assets/imagenes/imagenes_yuc/yuc_005_detalle.png"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "yuc_006",
+      "nombre_comun": "Maguey Morado",
+      "nombre_cientifico": "Tradescantia spathacea Sw.",
+      "familia": "Commelinaceae",
+      "genero": "Tradescantia",
+      "especie": "spathacea",
+      "descripcion": "Planta herbácea perenne, erecta y bromeliforme, de tallos sin ramificar de hasta 50 cm de altura. Sus hojas son lanceoladas, dispuestas en roseta, de color verde brillante en el haz y un característico tono púrpura o morado en el envés. Produce flores pequeñas de color verde blanquecino.",
+      "habitat": "Se adapta a suelos pedregosos y zonas perturbadas.",
+      "distribucion": "Nativo del sur de México y Centroamérica, ampliamente distribuido en la Península de Yucatán, particularmente en huertos familiares urbanos y rurales de Yucatán, Campeche y Quintana Roo. Es una de las plantas ornamentales y medicinales más comunes en los hogares mayas.",
+      "estado_conservacion": "Nativo",
+      "abundancia": "Muy común en hogares mayas",
+      "usos_medicinales": [
+        "Tratamiento de heridas cutáneas infectadas",
+        "Afecciones respiratorias (asma, tos, bronquitis)",
+        "Control de inflamaciones internas y externas",
+        "Antiséptico general para lavado de úlceras y llagas"
+      ],
+      "preparados": [
+        "Para lavado externo de heridas: hervir tres hojas medianas en medio litro de agua por 10 minutos; se aplica la infusión tibia directamente sobre la piel afectada tres veces al día.",
+        "Para afecciones respiratorias: té hirviendo 2 hojas en una taza de agua; se consume con miel y limón dos veces al día."
+      ],
+      "componentes_activos": [
+        "Epigalocatequina (compuesto fenólico con actividad antitumoral, antiinflamatoria y antioxidante)",
+        "Antocianinas (responsables del color morado)",
+        "Metabolitos secundarios con actividad antibiótica"
+      ],
+      "contraindicaciones": "",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": "Se adapta a suelos pedregosos y zonas perturbadas"
+      },
+      "historia": {
+        "origen": "Nativo del sur de México y Centroamérica",
+        "usos_tradicionales": "Uso medicinal documentado por la UANL y la Biblioteca Digital de la Medicina Tradicional Mexicana.",
+        "menciones_historicas": "",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Preparados cicatrizantes",
+          "Infusiones respiratorias",
+          "Extractos antioxidantes"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 20.967,
+            "lng": -89.623
+          },
+          {
+            "lat": 19.845,
+            "lng": -90.531
+          },
+          {
+            "lat": 18.503,
+            "lng": -88.306
+          }
+        ],
+        "zona_distribucion": "Península de Yucatán (Yucatán, Campeche, Quintana Roo)",
+        "tipo_suelo": "Pedregosos",
+        "clima": "Cálido",
+        "precipitacion_anual": "",
+        "altitud": ""
+      },
+      "humanidades": {
+        "significado_cultural": "Una de las plantas ornamentales y medicinales más comunes en los hogares mayas.",
+        "relevancia_social": "Primera línea de respuesta ante heridas infectadas en comunidades rurales.",
+        "practicas_tradicionales": "Cultivo en patios familiares como planta ornamental y medicinal.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/imagenes_yuc/yuc_006_principal.png",
+        "habitat": "../assets/imagenes/imagenes_yuc/yuc_006_habitat.png",
+        "detalle": "../assets/imagenes/imagenes_yuc/yuc_006_detalle.png"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "yuc_007",
+      "nombre_comun": "Chakaj",
+      "nombre_cientifico": "Bursera simaruba (L.) Sarg.",
+      "familia": "Burseraceae",
+      "genero": "Bursera",
+      "especie": "simaruba",
+      "descripcion": "Árbol de gran porte, de hasta 25 metros de altura, con corteza rojiza característica que se desprende en láminas delgadas, dejando al descubierto una corteza interna de color verde brillante. Sus hojas son compuestas y alternas. Es una especie dioica.",
+      "habitat": "Resistente a la sequía y de rápido crecimiento.",
+      "distribucion": "Nativo de la Península de Yucatán y ampliamente distribuido en la selva baja caducifolia, bosques tropicales y áreas perturbadas de Yucatán, Campeche y Quintana Roo. Es una especie muy apreciada en la medicina tradicional maya.",
+      "estado_conservacion": "Nativo",
+      "abundancia": "Ampliamente distribuido",
+      "usos_medicinales": [
+        "Tratamiento de fiebre alta (diaforético)",
+        "Diarrea y disentería (astringente)",
+        "Dolores reumáticos y musculares",
+        "Infecciones urinarias",
+        "Vulnerario para curación de heridas y llagas"
+      ],
+      "preparados": [
+        "Para fiebre y dolores reumáticos: decocción hirviendo 20 gramos de corteza en un litro de agua durante 15 minutos; se consume un vaso caliente tres veces al día.",
+        "Para heridas: se aplica la resina (bálsamo) directamente sobre la zona afectada como antiséptico y cicatrizante."
+      ],
+      "componentes_activos": [
+        "Compuestos terpenoides",
+        "Ácidos grasos con actividad antiinflamatoria y antimicrobiana"
+      ],
+      "contraindicaciones": "",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "Dioica",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": "Resistente a la sequía y de rápido crecimiento"
+      },
+      "historia": {
+        "origen": "Nativo de la Península de Yucatán",
+        "usos_tradicionales": "Documentado como diaforético, diurético, purgante y vulnerario en la medicina tradicional maya. La resina se utiliza como incienso ceremonial maya.",
+        "menciones_historicas": "Usada por los mayas como incienso desde tiempos ancestrales.",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Resina ceremonial (chibou/elemi americano)",
+          "Preparados astringentes",
+          "Preparados cicatrizantes"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 20.684,
+            "lng": -88.568
+          },
+          {
+            "lat": 19.83,
+            "lng": -90.535
+          },
+          {
+            "lat": 18.5,
+            "lng": -88.3
+          }
+        ],
+        "zona_distribucion": "Selva baja caducifolia, bosques tropicales y áreas perturbadas de Yucatán, Campeche y Quintana Roo",
+        "tipo_suelo": "",
+        "clima": "",
+        "precipitacion_anual": "",
+        "altitud": ""
+      },
+      "humanidades": {
+        "significado_cultural": "La resina, conocida como 'chibou' o 'elemi americano', ha sido utilizada por los mayas como incienso desde tiempos ancestrales.",
+        "relevancia_social": "Muy apreciada en la medicina tradicional maya para tratamiento de fiebre y heridas.",
+        "practicas_tradicionales": "Uso de la resina como incienso ceremonial y uso de la corteza para tratamientos medicinales.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/imagenes_yuc/yuc_007_principal.png",
+        "habitat": "../assets/imagenes/imagenes_yuc/yuc_007_habitat.png",
+        "detalle": "../assets/imagenes/imagenes_yuc/yuc_007_detalle.png"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "yuc_008",
+      "nombre_comun": "Árnica Maya",
+      "nombre_cientifico": "Tithonia diversidifolia (Hemsl.) A. Gray",
+      "familia": "Asteraceae",
+      "genero": "Tithonia",
+      "especie": "diversifolia",
+      "descripcion": "Arbusto semileñoso de hasta 3 metros de altura, con hojas alternas de 20 cm de largo, partidas en 3 a 5 lóbulos dentados, de textura áspera. Produce grandes inflorescencias de flores amarillas muy vistosas, similares a las del girasol.",
+      "habitat": "Especie ruderal que coloniza suelos degradados.",
+      "distribucion": "Nativa de México y Centroamérica, presente en la Península de Yucatán en zonas de vegetación perturbada, bordes de caminos y áreas de cultivo de Yucatán, Campeche y Quintana Roo. Conocida localmente como 'suum', 'chak su'um' o 'ka'anal su'um' en lengua maya.",
+      "estado_conservacion": "Nativa",
+      "abundancia": "Común en zonas perturbadas",
+      "usos_medicinales": [
+        "Tratamiento de contusiones, golpes, hinchazones y dolores musculares (uso externo)",
+        "Curación de granos, llagas y heridas cutáneas",
+        "Alivio de dolores de estómago y diarrea (uso interno)",
+        "Antiséptico general"
+      ],
+      "preparados": [
+        "Para contusiones y golpes: baño con la cocción de un puñado de hojas en 2 litros de agua durante 20 minutos; se aplica tibio sobre la zona afectada.",
+        "Para heridas y llagas: lavar con la infusión o aplicar hojas machacadas directamente sobre la zona.",
+        "Para dolores de estómago: té con 3 hojas en una taza de agua hirviendo."
+      ],
+      "componentes_activos": [
+        "Sesquiterpenos (togimín A, C y F, tirotundín)",
+        "Flavonoide hispidín"
+      ],
+      "contraindicaciones": "Evaluaciones farmacológicas reportan estimulación uterina débil en extractos acuosos. Usar con precaución durante el embarazo.",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": "Ruderal, coloniza suelos degradados"
+      },
+      "historia": {
+        "origen": "Nativa de México y Centroamérica",
+        "usos_tradicionales": "Registrada como 'suum' para curar granos, llagas, heridas, sarna y afecciones respiratorias.",
+        "menciones_historicas": "",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Preparados antiinflamatorios externos",
+          "Infusiones digestivas"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 20.967,
+            "lng": -89.623
+          },
+          {
+            "lat": 19.845,
+            "lng": -90.531
+          },
+          {
+            "lat": 18.503,
+            "lng": -88.306
+          }
+        ],
+        "zona_distribucion": "Zonas de vegetación perturbada, bordes de caminos y áreas de cultivo de Yucatán, Campeche y Quintana Roo",
+        "tipo_suelo": "Degradados",
+        "clima": "",
+        "precipitacion_anual": "",
+        "altitud": ""
+      },
+      "humanidades": {
+        "significado_cultural": "Conocida localmente como 'suum', 'chak su'um' o 'ka'anal su'um' en lengua maya.",
+        "relevancia_social": "Frecuentemente usada para contusiones y traumatismos leves en la vida rural yucateca.",
+        "practicas_tradicionales": "Uso de hojas en cataplasmas e infusiones para heridas y dolores.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/imagenes_yuc/yuc_008_principal.png",
+        "habitat": "../assets/imagenes/imagenes_yuc/yuc_008_habitat.png",
+        "detalle": "../assets/imagenes/imagenes_yuc/yuc_008_detalle.png"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "yuc_009",
+      "nombre_comun": "Ruda",
+      "nombre_cientifico": "Ruta chalepensis L.",
+      "familia": "Rutaceae",
+      "genero": "Ruta",
+      "especie": "chalepensis",
+      "descripcion": "Arbusto siempreverde, ramoso, de 30 a 60 cm de altura, fuertemente oloroso y leñoso con el tiempo. Sus hojas son alternas, compuestas, de lóbulos oblongocuneados de 2 a 15 cm de largo. Las flores son de color amarillo vivo, agrupadas en ramilletes. La planta entera tiene un aroma característico intenso.",
+      "habitat": "",
+      "distribucion": "Naturalizada en la Península de Yucatán, común en huertos familiares, jardines y zonas perturbadas de Yucatán, Campeche y Quintana Roo. Es una de las plantas medicinales más antiguas y reconocidas en la medicina tradicional mexicana.",
+      "estado_conservacion": "Naturalizada",
+      "abundancia": "Común en huertos y jardines",
+      "usos_medicinales": [
+        "Alivio de cólicos abdominales",
+        "Eliminación de parásitos intestinales (vermífugo)",
+        "Regulación de trastornos menstruales (emenagogo)",
+        "Tratamiento de dolores reumáticos (uso externo)",
+        "Antiséptico para sarna, eccemas y conjuntivitis"
+      ],
+      "preparados": [
+        "Para cólicos y parásitos: infusión con una cucharada del vegetal (hojas y tallos) para un litro de agua recién hervida; se bebe una taza tres veces al día.",
+        "Para uso externo en dolores reumáticos: aplicar compresas con la misma infusión caliente sobre la zona afectada."
+      ],
+      "componentes_activos": [
+        "Aceite esencial con metil-nonil-cetona como componente principal"
+      ],
+      "contraindicaciones": "Los extractos estimulan contracciones uterinas. No usar durante el embarazo. Puede causar fotosensibilidad.",
+      "biologia": {
+        "ciclo_vida": "Siempreverde",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": ""
+      },
+      "historia": {
+        "origen": "Naturalizada en México",
+        "usos_tradicionales": "Documentada extensamente por la Biblioteca Digital de la Medicina Tradicional Mexicana y el Ministerio de Salud de Chile.",
+        "menciones_historicas": "",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Infusiones vermífugas",
+          "Preparados emenagogos",
+          "Compresas antiinflamatorias"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 20.967,
+            "lng": -89.623
+          },
+          {
+            "lat": 19.845,
+            "lng": -90.531
+          },
+          {
+            "lat": 18.503,
+            "lng": -88.306
+          }
+        ],
+        "zona_distribucion": "Península de Yucatán (Yucatán, Campeche, Quintana Roo)",
+        "tipo_suelo": "",
+        "clima": "",
+        "precipitacion_anual": "",
+        "altitud": ""
+      },
+      "humanidades": {
+        "significado_cultural": "Una de las plantas medicinales más antiguas y reconocidas en la medicina tradicional mexicana.",
+        "relevancia_social": "Importante para el tratamiento de parasitosis y trastornos menstruales en poblaciones rurales con acceso limitado a medicamentos.",
+        "practicas_tradicionales": "Uso en huertos familiares y jardines como planta medicinal de uso cotidiano.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/imagenes_yuc/yuc_009_principal.png",
+        "habitat": "../assets/imagenes/imagenes_yuc/yuc_009_habitat.png",
+        "detalle": "../assets/imagenes/imagenes_yuc/yuc_009_detalle.png"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "yuc_010",
+      "nombre_comun": "Tuch Xiw / Romero",
+      "nombre_cientifico": "Rosmarinus officinalis L.",
+      "familia": "Lamiaceae",
+      "genero": "Rosmarinus",
+      "especie": "officinalis",
+      "descripcion": "Arbusto perenne y muy aromático, de 1 a 1.5 metros de altura, ramificado, con tallo cuadrado y hojas opuestas, angostas como agujas, de color verde en el anverso y blanquecinas en el reverso. Las flores son pequeñas, de color blanco, rosa o azul.",
+      "habitat": "Originario de la región mediterránea pero está ampliamente naturalizado en México.",
+      "distribucion": "Cultivado extensamente en huertos familiares de toda la Península de Yucatán, especialmente en zonas urbanas y rurales de Yucatán, Campeche y Quintana Roo. Es una de las plantas aromáticas más populares en la medicina tradicional yucateca.",
+      "estado_conservacion": "Naturalizado",
+      "abundancia": "Muy común en huertos familiares",
+      "usos_medicinales": [
+        "Tratamiento de trastornos digestivos (dolor de estómago, indigestión, gastritis, cólicos)",
+        "Desórdenes ginecológicos (retención de placenta, lavados postparto, infecciones vaginales)",
+        "Problemas respiratorios (catarro, bronquitis, tos)",
+        "Cicatrizante",
+        "Estimulante capilar"
+      ],
+      "preparados": [
+        "Para problemas digestivos: infusión con dos ramitas frescas en una taza de agua hirviendo; se deja reposar 5 minutos y se consume después de las comidas.",
+        "Para uso capilar: hervir un manojo de ramas en un litro de agua; se deja enfriar y se utiliza como enjuague final después del lavado del cabello."
+      ],
+      "componentes_activos": [
+        "1,8-cineol",
+        "Bornilo",
+        "Acetato de bornilo",
+        "Ácido rosmarínico",
+        "Carnosólico",
+        "Carnosol"
+      ],
+      "contraindicaciones": "",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": ""
+      },
+      "historia": {
+        "origen": "Región mediterránea, ampliamente naturalizado en México",
+        "usos_tradicionales": "Documentado en México desde el siglo XVII para trastornos digestivos, respiratorios y ginecológicos.",
+        "menciones_historicas": "Uso documentado desde el siglo XVII en México.",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Infusiones digestivas",
+          "Enjuagues capilares",
+          "Aceite esencial",
+          "Extractos hepatoprotectores"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 20.967,
+            "lng": -89.623
+          },
+          {
+            "lat": 19.845,
+            "lng": -90.531
+          },
+          {
+            "lat": 18.503,
+            "lng": -88.306
+          }
+        ],
+        "zona_distribucion": "Toda la Península de Yucatán (Yucatán, Campeche, Quintana Roo)",
+        "tipo_suelo": "",
+        "clima": "",
+        "precipitacion_anual": "",
+        "altitud": ""
+      },
+      "humanidades": {
+        "significado_cultural": "Una de las plantas aromáticas más populares en la medicina tradicional yucateca.",
+        "relevancia_social": "Importante para el tratamiento de trastornos digestivos crónicos altamente prevalentes en comunidades rurales de Yucatán.",
+        "practicas_tradicionales": "Cultivo en huertos familiares y uso cotidiano para problemas digestivos, respiratorios, ginecológicos y capilares.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/imagenes_yuc/yuc_010_principal.png",
+        "habitat": "../assets/imagenes/imagenes_yuc/yuc_010_habitat.png",
+        "detalle": "../assets/imagenes/imagenes_yuc/yuc_010_detalle.png"
+      },
+      "populares": true,
+      "mas_vendida": true,
+      "fecha_registro": "2026-07-01"
+    }
+  ]
+}

@@ -1,0 +1,856 @@
+{
+  "estado": "Chiapas",
+  "capital": "Tuxtla Gutiérrez",
+  "color_tema": "#8B4513",
+  "color_secundario": "#D2B48C",
+  "total_especies": 10,
+  "especies_medicinales": 10,
+  "plantas": [
+    {
+      "id": "chi-001",
+      "nombre_comun": "Hierba Santa (Momo)",
+      "nombre_cientifico": "Piper auritum Kunth",
+      "familia": "Piperaceae",
+      "genero": "Piper",
+      "especie": "auritum",
+      "descripcion": "Arbusto perenne de hasta 4 metros de altura con hojas grandes en forma de corazón y un característico aroma anisado.",
+      "habitat": "Prospera de forma silvestre en zonas de vegetación secundaria perturbada, riberas de ríos y selvas altas perennifolias en climas cálidos y templados.",
+      "distribucion": "Zonas tropicales y húmedas de Chiapas, común en la Selva Lacandona, Norte, Centro y la región del Soconusco. Cultivada frecuentemente en traspatios.",
+      "estado_conservacion": "Nativo",
+      "abundancia": "Común en traspatios y zonas tropicales húmedas",
+      "usos_medicinales": [
+        "Afecciones inflamatorias gástricas",
+        "Dolores de estómago",
+        "Bronquitis crónicas"
+      ],
+      "preparados": [
+        "Infusión vertiendo agua hirviendo sobre una hoja fresca limpia; se deja reposar por 10 minutos y se administra vía oral 2 veces al día como analgésico y antiespasmódico."
+      ],
+      "componentes_activos": [
+        "Safrol",
+        "Aceites esenciales con propiedades antibacterianas"
+      ],
+      "contraindicaciones": "El safrol puede ser hepatotóxico en altas dosis. Usar con moderación.",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": "Prospera en vegetación secundaria perturbada y riberas de ríos"
+      },
+      "historia": {
+        "origen": "Nativo de Chiapas",
+        "usos_tradicionales": "Usado tradicionalmente para afecciones gástricas y respiratorias en comunidades rurales e indígenas de Chiapas.",
+        "menciones_historicas": "",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Infusiones analgésicas",
+          "Preparados antiespasmódicos"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 16.908,
+            "lng": -92.093
+          },
+          {
+            "lat": 17.551,
+            "lng": -93.117
+          },
+          {
+            "lat": 15.016,
+            "lng": -92.15
+          }
+        ],
+        "zona_distribucion": "Selva Lacandona, Norte, Centro y Soconusco de Chiapas",
+        "tipo_suelo": "",
+        "clima": "Cálido y templado",
+        "precipitacion_anual": "",
+        "altitud": ""
+      },
+      "humanidades": {
+        "significado_cultural": "Conocida también como Momo, Tlanepa y Acuyo.",
+        "relevancia_social": "Primera línea de respuesta ante enfermedades gástricas y respiratorias en poblaciones rurales de Chiapas.",
+        "practicas_tradicionales": "Cultivo en traspatios y recolección en áreas colindantes.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/Plantas_Chiapas/Hierba_Santa.jpg",
+        "habitat": "../assets/imagenes/Plantas_Chiapas/Hierba_Santa2.jpg",
+        "detalle": "../assets/imagenes/Plantas_Chiapas/Hierba_Santa3.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "chi-002",
+      "nombre_comun": "Caulote (Cuaulote, Guácimo)",
+      "nombre_cientifico": "Guazuma ulmifolia Lam.",
+      "familia": "Malvaceae",
+      "genero": "Guazuma",
+      "especie": "ulmifolia",
+      "descripcion": "Árbol de tamaño mediano con hojas alternas y ovoides, cuyos frutos son cápsulas globosas cubiertas de protuberancias duras.",
+      "habitat": "Sumamente resistente a la sequía y coloniza fácilmente pastizales y selvas bajas caducifolias.",
+      "distribucion": "Ampliamente distribuido en la Depresión Central de Chiapas, la Costa y la región de la Fraylesca.",
+      "estado_conservacion": "Nativo",
+      "abundancia": "Ampliamente distribuido",
+      "usos_medicinales": [
+        "Control de episodios agudos de diarrea bacteriana",
+        "Desórdenes metabólicos (diabetes tipo 2)"
+      ],
+      "preparados": [
+        "Para problemas intestinales: hervir 15 gramos de la corteza triturada en un litro de agua durante 15 minutos (decocción); se bebe el líquido resultante fraccionado en tres dosis a lo largo del día."
+      ],
+      "componentes_activos": [
+        "Taninos condensados",
+        "Flavonoides"
+      ],
+      "contraindicaciones": "",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": "Sumamente resistente a la sequía"
+      },
+      "historia": {
+        "origen": "Nativo de Chiapas",
+        "usos_tradicionales": "Uso tradicional de la corteza para control de diarrea y desórdenes metabólicos.",
+        "menciones_historicas": "",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Decocciones astringentes",
+          "Preparados para diabetes tipo 2"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 16.75,
+            "lng": -93.117
+          },
+          {
+            "lat": 15.8,
+            "lng": -93.1
+          },
+          {
+            "lat": 16.3,
+            "lng": -92.6
+          }
+        ],
+        "zona_distribucion": "Depresión Central de Chiapas, Costa y región de la Fraylesca",
+        "tipo_suelo": "",
+        "clima": "",
+        "precipitacion_anual": "",
+        "altitud": ""
+      },
+      "humanidades": {
+        "significado_cultural": "Conocido también como Cuaulote y Guácimo.",
+        "relevancia_social": "Importante para el control de diarrea bacteriana en comunidades rurales con limitado acceso a medicamentos.",
+        "practicas_tradicionales": "Uso de la corteza en decocciones para problemas intestinales.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/Plantas_Chiapas/Caulote.jpg",
+        "habitat": "../assets/imagenes/Plantas_Chiapas/Caulote2.jpg",
+        "detalle": "../assets/imagenes/Plantas_Chiapas/Caulote3.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "chi-003",
+      "nombre_comun": "Maguey Morado (Matali, Señoritas en barca)",
+      "nombre_cientifico": "Tradescantia spathacea Sw.",
+      "familia": "Commelinaceae",
+      "genero": "Tradescantia",
+      "especie": "spathacea",
+      "descripcion": "Planta herbácea perenne de tallo corto con hojas arrosetadas, lanceoladas, de color verde brillante en el haz y un tono purpúreo o morado muy vistoso en el envés.",
+      "habitat": "Se adapta a suelos pedregosos, de bosque tropical y zonas perturbadas.",
+      "distribucion": "Zonas Norte, Palenque y valles húmedos del Centro de Chiapas. Muy común en traspatios urbanos y rurales.",
+      "estado_conservacion": "Nativo",
+      "abundancia": "Muy común en traspatios",
+      "usos_medicinales": [
+        "Heridas cutáneas infectadas",
+        "Afecciones de vías respiratorias con tos persistente"
+      ],
+      "preparados": [
+        "Para lavado externo de llagas: hervir tres hojas medianas en medio litro de agua por 10 minutos y se aplica la infusión tibia directamente sobre la piel afectada."
+      ],
+      "componentes_activos": [
+        "Antocianinas (responsables del color morado)",
+        "Metabolitos secundarios con actividad antibiótica"
+      ],
+      "contraindicaciones": "",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": "Se adapta a suelos pedregosos y zonas perturbadas"
+      },
+      "historia": {
+        "origen": "Nativo del sur de México y Centroamérica",
+        "usos_tradicionales": "Uso tradicional para heridas cutáneas infectadas y afecciones respiratorias.",
+        "menciones_historicas": "",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Infusiones antisépticas",
+          "Preparados cicatrizantes"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 17.51,
+            "lng": -91.993
+          },
+          {
+            "lat": 16.908,
+            "lng": -92.093
+          },
+          {
+            "lat": 16.75,
+            "lng": -93.117
+          }
+        ],
+        "zona_distribucion": "Zonas Norte, Palenque y valles húmedos del Centro de Chiapas",
+        "tipo_suelo": "Pedregosos",
+        "clima": "Tropical",
+        "precipitacion_anual": "",
+        "altitud": ""
+      },
+      "humanidades": {
+        "significado_cultural": "Conocida también como Matali y Señoritas en barca.",
+        "relevancia_social": "Muy común en traspatios urbanos y rurales como planta ornamental y medicinal.",
+        "practicas_tradicionales": "Cultivo en patios familiares y uso para lavado de heridas.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/Plantas_Chiapas/Maguey_morado.jpg",
+        "habitat": "../assets/imagenes/Plantas_Chiapas/Maguey_morado2.jpg",
+        "detalle": "../assets/imagenes/Plantas_Chiapas/Maguey_morado3.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "chi-004",
+      "nombre_comun": "Cancerina (Muitle, Muicle, Hierba del tinte)",
+      "nombre_cientifico": "Justicia spicigera Schltdl.",
+      "familia": "Acanthaceae",
+      "genero": "Justicia",
+      "especie": "spicigera",
+      "descripcion": "Arbusto siempreverde de hasta 1.5 metros con hojas alargadas y flores tubulares de color naranja intenso o rojizo.",
+      "habitat": "Crece de forma óptima bajo la sombra de huertos familiares, matorrales y bosques de pino-encino.",
+      "distribucion": "Comunidades montañosas y valles de Ángel Albino Corzo, Comitán, San Cristóbal de Las Casas y Tuxtla Gutiérrez.",
+      "estado_conservacion": "Nativo",
+      "abundancia": "Común en zonas montañosas",
+      "usos_medicinales": [
+        "Purificación de la sangre",
+        "Dolores menstruales severos (dismenorrea)",
+        "Desinfección bucal"
+      ],
+      "preparados": [
+        "Decocción hirviendo un manojo de ramas y flores en un litro de agua hasta que esta adquiera una tonalidad rojiza. Se ingiere un vaso antes de cada comida durante el periodo menstrual."
+      ],
+      "componentes_activos": [
+        "Extractos hidroalcohólicos con efecto modulador inmunológico",
+        "Compuestos espasmolíticos"
+      ],
+      "contraindicaciones": "",
+      "biologia": {
+        "ciclo_vida": "Siempreverde",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": "Crece óptimamente bajo sombra"
+      },
+      "historia": {
+        "origen": "Nativo de Chiapas",
+        "usos_tradicionales": "Uso tradicional para purificación de la sangre, dolores menstruales y desinfección bucal.",
+        "menciones_historicas": "",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Decocciones para dismenorrea",
+          "Enjuagues bucales"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 16.667,
+            "lng": -92.733
+          },
+          {
+            "lat": 16.25,
+            "lng": -92.133
+          },
+          {
+            "lat": 16.75,
+            "lng": -93.117
+          }
+        ],
+        "zona_distribucion": "Comunidades montañosas y valles de Ángel Albino Corzo, Comitán, San Cristóbal de Las Casas y Tuxtla Gutiérrez",
+        "tipo_suelo": "",
+        "clima": "Templado",
+        "precipitacion_anual": "",
+        "altitud": ""
+      },
+      "humanidades": {
+        "significado_cultural": "Conocida también como Muitle, Muicle y Hierba del tinte.",
+        "relevancia_social": "Importante para el alivio de dolores menstruales en mujeres de comunidades rurales e indígenas.",
+        "practicas_tradicionales": "Uso de ramas y flores en decocciones rojizas durante el periodo menstrual.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/Plantas_Chiapas/Justicia_spicigera.jpg",
+        "habitat": "../assets/imagenes/Plantas_Chiapas/Justicia_spicigera2.jpg",
+        "detalle": "../assets/imagenes/Plantas_Chiapas/Justicia_spicigera3.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "chi-005",
+      "nombre_comun": "Sauco (Saulo)",
+      "nombre_cientifico": "Sambucus nigra subsp. canadensis (L.) Bolli",
+      "familia": "Adoxaceae",
+      "genero": "Sambucus",
+      "especie": "nigra subsp. canadensis",
+      "descripcion": "Arbusto o árbol pequeño de hojas opuestas y compuestas con inflorescencias en corimbos densos repletos de pequeñas flores blancas y frutos globosos oscuros.",
+      "habitat": "Prefiere climas templados, húmedos y se desarrolla bien en linderos de parcelas agrícolas.",
+      "distribucion": "Altas elevaciones de Los Altos de Chiapas, Sierra Madre y zonas templadas del estado.",
+      "estado_conservacion": "Nativo",
+      "abundancia": "Común en zonas templadas",
+      "usos_medicinales": [
+        "Tratamiento del resfriado común",
+        "Fiebre alta",
+        "Procesos bronquiales infecciosos"
+      ],
+      "preparados": [
+        "Infusión con una cucharada de flores secas en una taza de agua hirviendo. Se consume caliente antes de dormir para inducir la transpiración y reducir la fiebre."
+      ],
+      "componentes_activos": [
+        "Flavonoides (rutina y quercetina)"
+      ],
+      "contraindicaciones": "",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": "Prefiere climas templados y húmedos"
+      },
+      "historia": {
+        "origen": "Nativo de Chiapas",
+        "usos_tradicionales": "Uso tradicional para resfriados, fiebre y procesos bronquiales en zonas altas de Chiapas.",
+        "menciones_historicas": "",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Infusiones para resfriado",
+          "Jarabes bronquiales"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 16.733,
+            "lng": -92.633
+          },
+          {
+            "lat": 16.25,
+            "lng": -92.133
+          },
+          {
+            "lat": 16.5,
+            "lng": -92.5
+          }
+        ],
+        "zona_distribucion": "Los Altos de Chiapas, Sierra Madre y zonas templadas del estado",
+        "tipo_suelo": "",
+        "clima": "Templado y húmedo",
+        "precipitacion_anual": "",
+        "altitud": "Altas elevaciones"
+      },
+      "humanidades": {
+        "significado_cultural": "Conocida también como Saulo (variante dialectal local).",
+        "relevancia_social": "Importante para el tratamiento de resfriados y fiebre en zonas de alta elevación.",
+        "practicas_tradicionales": "Uso de flores secas en infusiones calientes antes de dormir.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/Plantas_Chiapas/sambucos_nigra.jpg",
+        "habitat": "../assets/imagenes/Plantas_Chiapas/sambucos_nigra2.jpg",
+        "detalle": "../assets/imagenes/Plantas_Chiapas/sambucos_nigra3.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "chi-006",
+      "nombre_comun": "Guayaba (Pichi)",
+      "nombre_cientifico": "Psidium guajava L.",
+      "familia": "Myrtaceae",
+      "genero": "Psidium",
+      "especie": "guajava",
+      "descripcion": "Árbol pequeño con corteza lisa de color pardo que se desprende en láminas delgadas. Sus hojas son coriáceas con venas muy marcadas.",
+      "habitat": "Crece con éxito en una gran variedad de suelos y climas tropicales y subtropicales.",
+      "distribucion": "Se encuentra de forma masiva en todo el territorio chiapaneco, desde las planicies costeras hasta elevaciones medias de la sierra.",
+      "estado_conservacion": "Nativo",
+      "abundancia": "Muy abundante en todo Chiapas",
+      "usos_medicinales": [
+        "Control inmediato de la diarrea no infecciosa",
+        "Inflamación de la garganta"
+      ],
+      "preparados": [
+        "Hervir 5 a 8 hojas tiernas y frescas en un jarro con medio litro de agua por 8 minutos. Se toma como agua de tiempo hasta que remitan las evacuaciones líquidas."
+      ],
+      "componentes_activos": [
+        "Quercetina"
+      ],
+      "contraindicaciones": "",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": "Crece en gran variedad de suelos y climas tropicales y subtropicales"
+      },
+      "historia": {
+        "origen": "Nativo de América tropical",
+        "usos_tradicionales": "Forma parte oficial de la Farmacopea Herbolaria de México. Uso tradicional para diarrea e inflamación de garganta.",
+        "menciones_historicas": "Farmacopea Herbolaria de los Estados Unidos Mexicanos (FHEUM), 2013",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Infusiones antidiarreicas",
+          "Gárgaras para garganta"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 16.75,
+            "lng": -93.117
+          },
+          {
+            "lat": 15.8,
+            "lng": -93.1
+          },
+          {
+            "lat": 16.3,
+            "lng": -92.6
+          }
+        ],
+        "zona_distribucion": "Todo el territorio chiapaneco, desde planicies costeras hasta elevaciones medias de la sierra",
+        "tipo_suelo": "Variados",
+        "clima": "Tropical y subtropical",
+        "precipitacion_anual": "",
+        "altitud": ""
+      },
+      "humanidades": {
+        "significado_cultural": "Conocida también como Pichi.",
+        "relevancia_social": "Primera línea de respuesta ante diarrea en todo el territorio chiapaneco.",
+        "practicas_tradicionales": "Uso de hojas tiernas en infusiones como agua de tiempo.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/Plantas_Chiapas/guayaba.jpg",
+        "habitat": "../assets/imagenes/Plantas_Chiapas/guayaba2.jpg",
+        "detalle": "../assets/imagenes/Plantas_Chiapas/guayaba3.jpg"
+      },
+      "populares": true,
+      "mas_vendida": true,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "chi-007",
+      "nombre_comun": "Nanche (Nanchi, Changunga)",
+      "nombre_cientifico": "Byrsonima crassifolia (L.) Kunth",
+      "familia": "Malpighiaceae",
+      "genero": "Byrsonima",
+      "especie": "crassifolia",
+      "descripcion": "Árbol mediano de hojas elípticas y flores amarillas que cambian a tonos rojizos al madurar.",
+      "habitat": "Especie emblemática de las sabanas tropicales, de los bosques de encino secos y de terrenos con pendientes pronunciadas y suelos degradados.",
+      "distribucion": "Región del Istmo-Costa, la Depresión Central y laderas secas de la Sierra de Chiapas.",
+      "estado_conservacion": "Nativo",
+      "abundancia": "Común en sabanas tropicales",
+      "usos_medicinales": [
+        "Infecciones del tracto uterino ('infección de la matriz')",
+        "Debilidad de encías",
+        "Lavado de úlceras"
+      ],
+      "preparados": [
+        "Un trozo de corteza de aproximadamente 10 cm se hierve en un litro de agua durante 20 minutos; el líquido concentrado se utiliza para realizar baños de asiento diarios o enjuagues bucales."
+      ],
+      "componentes_activos": [
+        "Polifenoles",
+        "Compuestos astringentes"
+      ],
+      "contraindicaciones": "",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": "Resistente a suelos degradados y pendientes pronunciadas"
+      },
+      "historia": {
+        "origen": "Nativo de América tropical",
+        "usos_tradicionales": "Uso tradicional de la corteza para infecciones uterinas, debilidad de encías y lavado de úlceras.",
+        "menciones_historicas": "",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Baños de asiento",
+          "Enjuagues bucales",
+          "Frutos comestibles"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 16.5,
+            "lng": -94.5
+          },
+          {
+            "lat": 16.75,
+            "lng": -93.117
+          },
+          {
+            "lat": 16.3,
+            "lng": -92.6
+          }
+        ],
+        "zona_distribucion": "Istmo-Costa, Depresión Central y laderas secas de la Sierra de Chiapas",
+        "tipo_suelo": "Degradados",
+        "clima": "Seco",
+        "precipitacion_anual": "",
+        "altitud": ""
+      },
+      "humanidades": {
+        "significado_cultural": "Conocido también como Nanchi y Changunga.",
+        "relevancia_social": "Importante para el tratamiento de infecciones uterinas en mujeres de comunidades rurales.",
+        "practicas_tradicionales": "Uso de la corteza en baños de asiento y enjuagues bucales.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/Plantas_Chiapas/Nanche.jpg",
+        "habitat": "../assets/imagenes/Plantas_Chiapas/Nanche2.jpg",
+        "detalle": "../assets/imagenes/Plantas_Chiapas/Nanche3.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "chi-008",
+      "nombre_comun": "Guanábana (Cadzo)",
+      "nombre_cientifico": "Annona muricata L.",
+      "familia": "Annonaceae",
+      "genero": "Annona",
+      "especie": "muricata",
+      "descripcion": "Árbol pequeño de hojas oblongas, coriáceas y de color verde oscuro brillante, con frutos grandes cubiertos de espinas suaves.",
+      "habitat": "Prospera exclusivamente en climas cálidos y húmedos donde no se presenten heladas.",
+      "distribucion": "Zonas bajas y cálidas del Soconusco, Costa y cuencas tropicales de Chiapas.",
+      "estado_conservacion": "Nativo",
+      "abundancia": "Común en zonas bajas y cálidas",
+      "usos_medicinales": [
+        "Coadyuvante en procesos tumorales",
+        "Reducción de la presión arterial sistémica",
+        "Estabilización nerviosa"
+      ],
+      "preparados": [
+        "Infusión suave empleando dos hojas secas por taza de agua hirviendo, consumiéndose dos veces al día con moderación."
+      ],
+      "componentes_activos": [
+        "Acetogeninas anonáceas"
+      ],
+      "contraindicaciones": "Usar con moderación. Las acetogeninas pueden ser neurotóxicas en altas dosis.",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": "Prospera en climas cálidos y húmedos sin heladas"
+      },
+      "historia": {
+        "origen": "Nativo de América tropical",
+        "usos_tradicionales": "Uso tradicional como coadyuvante en procesos tumorales, hipertensión y estabilización nerviosa.",
+        "menciones_historicas": "",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Infusiones hipotensoras",
+          "Extractos de acetogeninas",
+          "Frutos comestibles"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 15.016,
+            "lng": -92.15
+          },
+          {
+            "lat": 15.8,
+            "lng": -93.1
+          },
+          {
+            "lat": 16.3,
+            "lng": -92.6
+          }
+        ],
+        "zona_distribucion": "Soconusco, Costa y cuencas tropicales de Chiapas",
+        "tipo_suelo": "",
+        "clima": "Cálido y húmedo",
+        "precipitacion_anual": "",
+        "altitud": "Zonas bajas"
+      },
+      "humanidades": {
+        "significado_cultural": "Conocida también como Cadzo.",
+        "relevancia_social": "Importante como coadyuvante en procesos tumorales en comunidades rurales.",
+        "practicas_tradicionales": "Uso de hojas secas en infusiones suaves.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/Plantas_Chiapas/Guanabana.jpg",
+        "habitat": "../assets/imagenes/Plantas_Chiapas/Guanabana2.jpg",
+        "detalle": "../assets/imagenes/Plantas_Chiapas/Guanabana3.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "chi-009",
+      "nombre_comun": "Hierba de San Juan del Monte (Hierba del toro, Sanjuanera)",
+      "nombre_cientifico": "Tridax procumbens L.",
+      "familia": "Asteraceae",
+      "genero": "Tridax",
+      "especie": "procumbens",
+      "descripcion": "Planta herbácea rastrera, perenne, con hojas dentadas y pubescentes, cuyas flores poseen lígulas de color blanco o crema con centros amarillos.",
+      "habitat": "Especie ruderal sumamente resistente que coloniza suelos pobres y expuestos.",
+      "distribucion": "Ampliamente distribuida como maleza en caminos, parcelas y zonas perturbadas de todo Chiapas.",
+      "estado_conservacion": "Naturalizada",
+      "abundancia": "Muy abundante como maleza",
+      "usos_medicinales": [
+        "Detención de hemorragias externas (hemostático local)",
+        "Cicatrización rápida de cortes"
+      ],
+      "preparados": [
+        "Se recolecta un puñado de hojas frescas, se lavan meticulosamente y se machacan en un mortero limpio hasta extraer el jugo, aplicando la pasta directamente sobre la herida abierta a modo de cataplasma."
+      ],
+      "componentes_activos": [
+        "Compuestos que promueven agregación plaquetaria",
+        "Estimuladores de proliferación de fibroblastos"
+      ],
+      "contraindicaciones": "",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": "Ruderal sumamente resistente que coloniza suelos pobres y expuestos"
+      },
+      "historia": {
+        "origen": "Nativo de América",
+        "usos_tradicionales": "Uso tradicional como hemostático local y cicatrizante de heridas abiertas.",
+        "menciones_historicas": "",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Cataplasmas hemostáticos",
+          "Preparados cicatrizantes"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 16.75,
+            "lng": -93.117
+          },
+          {
+            "lat": 16.25,
+            "lng": -92.133
+          },
+          {
+            "lat": 16.5,
+            "lng": -92.5
+          }
+        ],
+        "zona_distribucion": "Caminos, parcelas y zonas perturbadas de todo Chiapas",
+        "tipo_suelo": "Pobres y expuestos",
+        "clima": "",
+        "precipitacion_anual": "",
+        "altitud": ""
+      },
+      "humanidades": {
+        "significado_cultural": "Conocida también como Hierba del toro y Sanjuanera.",
+        "relevancia_social": "Primera línea de respuesta ante heridas abiertas y hemorragias en comunidades rurales.",
+        "practicas_tradicionales": "Uso de hojas frescas machacadas como cataplasma directo sobre heridas.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/Plantas_Chiapas/Hierba_de_san_juan_del_monte.jpg",
+        "habitat": "../assets/imagenes/Plantas_Chiapas/Hierba_de_san_juan_del_monte2.jpg",
+        "detalle": "../assets/imagenes/Plantas_Chiapas/Hierba_de_san_juan_del_monte3.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-07-01"
+    },
+    {
+      "id": "chi-010",
+      "nombre_comun": "Yaca (Árbol del pan, Jackfruit)",
+      "nombre_cientifico": "Artocarpus heterophyllus Lam.",
+      "familia": "Moraceae",
+      "genero": "Artocarpus",
+      "especie": "heterophyllus",
+      "descripcion": "Árbol perennifolio de gran envergadura que puede alcanzar los 20 metros de altura, caracterizado por producir frutos de enorme tamaño directamente del tronco.",
+      "habitat": "Prefiere climas tropicales húmedos con suelos profundos enriquecidos con materia orgánica.",
+      "distribucion": "Introducida y naturalizada con éxito en las regiones del Soconusco, Costa y zonas bajas de la Selva chiapaneca.",
+      "estado_conservacion": "Naturalizado",
+      "abundancia": "Común en zonas de introducción",
+      "usos_medicinales": [
+        "Regulación complementaria de la glucemia urinaria y sanguínea (diabetes)",
+        "Procesos asmáticos crónicos"
+      ],
+      "preparados": [
+        "Se emplean tres hojas maduras secas troceadas, las cuales se hierven en un litro de agua durante 12 minutos. Se toma un vaso por la mañana como terapia complementaria cotidiana."
+      ],
+      "componentes_activos": [
+        "Flavonoides",
+        "Antioxidantes",
+        "Inhibidores de alfa-glucosidasa"
+      ],
+      "contraindicaciones": "Usar como terapia complementaria, no sustituir tratamiento médico para diabetes.",
+      "biologia": {
+        "ciclo_vida": "Perennifolio",
+        "reproduccion": "",
+        "polinizadores": "",
+        "epoca_floracion": "",
+        "adaptaciones": "Prefiere suelos profundos enriquecidos con materia orgánica"
+      },
+      "historia": {
+        "origen": "Introducida en Chiapas (originaria de Asia tropical)",
+        "usos_tradicionales": "Uso tradicional como terapia complementaria para diabetes y asma.",
+        "menciones_historicas": "",
+        "evidencia_arqueologica": ""
+      },
+      "economia": {
+        "precio_mercado_kg": "",
+        "produccion_anual_ton": "",
+        "mercados_destino": "",
+        "valor_exportacion": "",
+        "empleos_generados": "",
+        "productos_derivados": [
+          "Infusiones hipoglucemiantes",
+          "Frutos comestibles",
+          "Preparados para asma"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 15.016,
+            "lng": -92.15
+          },
+          {
+            "lat": 15.8,
+            "lng": -93.1
+          },
+          {
+            "lat": 16.3,
+            "lng": -92.6
+          }
+        ],
+        "zona_distribucion": "Soconusco, Costa y zonas bajas de la Selva chiapaneca",
+        "tipo_suelo": "Profundos enriquecidos con materia orgánica",
+        "clima": "Tropical húmedo",
+        "precipitacion_anual": "",
+        "altitud": "Zonas bajas"
+      },
+      "humanidades": {
+        "significado_cultural": "Conocida también como Árbol del pan y Jackfruit.",
+        "relevancia_social": "Importante como terapia complementaria para diabetes en comunidades rurales.",
+        "practicas_tradicionales": "Uso de hojas maduras secas en infusiones diarias.",
+        "saberes_indigenas": ""
+      },
+      "imagenes": {
+        "principal": "../assets/imagenes/Plantas_Chiapas/Yaca.jpg",
+        "habitat": "../assets/imagenes/Plantas_Chiapas/Yaca2.jpg",
+        "detalle": "../assets/imagenes/Plantas_Chiapas/Yaca3.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-07-01"
+    }
+  ]
+}
