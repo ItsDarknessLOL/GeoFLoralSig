@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herramientas — Plantas Medicinales del Sureste</title>
+  <meta name="description" content="Herramientas especializadas para explorar plantas medicinales del sureste.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Playfair Display', serif; }
+
+    /* ── Tools grid ── */
+    .herramientas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      max-width: var(--contenedor-max);
+      margin: 0 auto;
+      padding: 48px clamp(16px,4vw,40px) 80px;
+    }
+
+    /* ── Tool card ── */
+    .herramienta-card {
+      background: var(--blanco);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--gris-200);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      transition: transform var(--t-base), box-shadow var(--t-base), border-color var(--t-base);
+    }
+
+    .herramienta-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: transparent;
+    }
+
+    .herramienta-header {
+      padding: 20px 22px 16px;
+      border-bottom: 1px solid var(--gris-100);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .herramienta-icono {
+      width: 44px; height: 44px;
+      background: var(--color-estado-muy-claro);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      transition: var(--t-base);
+    }
+
+    .herramienta-card:hover .herramienta-icono {
+      background: var(--color-estado);
+    }
+
+    .herramienta-header h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--gris-900);
+      letter-spacing: -.01em;
+    }
+
+    .herramienta-body { padding: 18px 22px 22px; }
+
+    /* ── Inputs ── */
+    .h-input {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1.5px solid var(--gris-200);
+      border-radius: var(--radius);
+      font-size: .875rem;
+      font-family: inherit;
+      color: var(--gris-900);
+      background: var(--blanco);
+      transition: var(--t-base);
+    }
+
+    .h-input:focus {
+      outline: none;
+      border-color: var(--color-estado);
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-estado) 12%, transparent);
+    }
+
+    .h-select {
+      width: 100%;
+      padding: 10px 32px 10px 14px;
+      border: 1.5px solid var(--gris-200);
+      border-radius: var(--radius);
+      font-size: .875rem;
+      font-family: inherit;
+      background: var(--blanco);
+      color: var(--gris-900);
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7' viewBox='0 0 10 7'%3E%3Cpath fill='%2371717A' d='M0 0l5 7 5-7z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      cursor: pointer;
+      transition: var(--t-base);
+    }
+
+    .h-select:focus {
+      outline: none;
+      border-color: var(--color-estado);
+    }
+
+    .h-label {
+      display: block;
+      font-size: .78rem;
+      font-weight: 600;
+      color: var(--gris-500);
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      margin: 12px 0 5px;
+    }
+
+    .h-label:first-child { margin-top: 0; }
+
+    /* ── Result items ── */
+    .resultados-herramienta {
+      max-height: 280px;
+      overflow-y: auto;
+      margin-top: 10px;
+    }
+
+    .resultados-herramienta::-webkit-scrollbar { width: 4px; }
+    .resultados-herramienta::-webkit-scrollbar-thumb { background: var(--gris-200); border-radius: 99px; }
+
+    .resultado-item {
+      padding: 11px 14px;
+      border-radius: var(--radius);
+      background: var(--gris-50);
+      border: 1px solid var(--gris-100);
+      margin-bottom: 7px;
+      cursor: pointer;
+      transition: var(--t-base);
+    }
+
+    .resultado-item:hover {
+      background: var(--color-estado-muy-claro);
+      border-color: var(--color-estado);
+    }
+
+    .resultado-item h4 {
+      font-size: .875rem;
+      font-weight: 700;
+      margin: 0 0 3px;
+      color: var(--gris-900);
+    }
+
+    .resultado-item p { font-size: .78rem; color: var(--gris-500); margin: 0; line-height: 1.5; }
+
+    /* ── Coord result ── */
+    .coord-result {
+      padding: 11px 14px;
+      background: var(--gris-50);
+      border: 1px solid var(--gris-200);
+      border-radius: var(--radius);
+      font-size: .825rem;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      color: var(--gris-700);
+      line-height: 1.6;
+    }
+
+    /* ── Comparator ── */
+    .comp-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    /* ── Coord inputs ── */
+    .coord-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    /* ── Upload zone ── */
+    .upload-zone {
+      border: 2px dashed var(--gris-200);
+      border-radius: var(--radius);
+      padding: 32px 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: var(--t-base);
+      background: var(--gris-50);
+    }
+
+    .upload-zone:hover {
+      border-color: var(--color-estado);
+      background: var(--color-estado-muy-claro);
+    }
+
+    .upload-icon { font-size: 2.5rem; margin-bottom: 8px; opacity: .6; }
+    .upload-hint { font-size: .8rem; color: var(--gris-400); line-height: 1.5; }
+
+    .ficha-preview {
+      padding: 14px;
+      background: var(--gris-50);
+      border: 1px solid var(--gris-200);
+      border-radius: var(--radius);
+      margin-bottom: 10px;
+    }
+
+    /* ── Stats mini grid ── */
+    .stats-mini-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .stat-mini-card {
+      text-align: center;
+      padding: 16px 10px;
+      background: var(--gris-50);
+      border: 1px solid var(--gris-100);
+      border-radius: var(--radius);
+      transition: var(--t-base);
+    }
+
+    .stat-mini-card:hover {
+      background: var(--color-estado-muy-claro);
+      border-color: var(--color-estado);
+    }
+
+    .stat-mini-val {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--color-estado);
+      line-height: 1.1;
+      letter-spacing: -.02em;
+    }
+
+    .stat-mini-label { font-size: .72rem; color: var(--gris-400); margin-top: 4px; font-weight: 500; }
+
+    .mapa-mini {
+      height: 220px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 12px;
+      border: 1px solid var(--gris-200);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .herramientas-grid { grid-template-columns: 1fr; }
+      .comp-grid, .coord-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="contenedor">
+      <a href="../index.html" class="logo" aria-label="Inicio">
+        <div class="logo-icono" aria-hidden="true">🌿</div>
+        <span>Biodiversidad Médica del Sureste</span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="herramientas.html" class="activo" aria-current="page">Herramientas</a>
+        <a href="acerca_de.html">Acerca de</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- ── Hero Compacto ── -->
+  <section class="hero-compact" aria-label="Herramientas especializadas">
+    <div class="aurora-bg" data-parallax="0.15" aria-hidden="true"></div>
+    <div class="aurora-stars" data-parallax="0.06" aria-hidden="true"></div>
+    <div class="aurora-ondas" aria-hidden="true">
+      <div class="aurora-onda"></div>
+      <div class="aurora-onda"></div>
+      <div class="aurora-onda"></div>
+    </div>
+
+    <div class="hero-compact-content">
+      <p class="eyebrow anim-fadeInUp delay-1"><span aria-hidden="true">🛠️</span> Utilidades</p>
+      <h1 class="font-display anim-fadeInUp delay-2">Herramientas</h1>
+      <p class="anim-fadeInUp delay-3">
+        Utilidades especializadas para investigadores, estudiantes y entusiastas de las plantas medicinales.
+      </p>
+    </div>
+  </section>
+
+  <main id="herramientas" style="background:var(--gris-50);">
+    <div class="herramientas-grid section-tinted" style="border:none;">
+
+      <!-- 1. Buscador de Especies -->
+      <div class="herramienta-card reveal" role="region" aria-labelledby="h1-titulo">
+        <div class="herramienta-header">
+          <div class="herramienta-icono" aria-hidden="true">🔍</div>
+          <h3 id="h1-titulo">Buscador de Especies</h3>
+        </div>
+        <div class="herramienta-body">
+          <label for="buscadorEspecies" class="h-label">Nombre o uso medicinal</label>
+          <input type="search" class="h-input" id="buscadorEspecies"
+                 placeholder="Nombre común, científico o uso..." 
+                 oninput="buscarEspecies(this.value)"
+                 aria-label="Buscar especie">
+          <div class="resultados-herramienta" id="resultadosBuscador" role="list" aria-label="Resultados de búsqueda"></div>
+        </div>
+      </div>
+
+      <!-- 2. Localizador -->
+      <div class="herramienta-card reveal delay-1" role="region" aria-labelledby="h2-titulo">
+        <div class="herramienta-header">
+          <div class="herramienta-icono" aria-hidden="true">📍</div>
+          <h3 id="h2-titulo">Localizador de Especies</h3>
+        </div>
+        <div class="herramienta-body">
+          <label for="locEstado" class="h-label">Estado</label>
+          <select id="locEstado" class="h-select" onchange="cargarMunicipios()" aria-label="Seleccionar estado">
+            <option value="">Seleccionar estado</option>
+            <option value="yucatan">Yucatán</option>
+            <option value="qroo">Quintana Roo</option>
+            <option value="campeche">Campeche</option>
+            <option value="chiapas">Chiapas</option>
+            <option value="tabasco">Tabasco</option>
+            <option value="veracruz">Veracruz</option>
+          </select>
+          <label for="locMunicipio" class="h-label">Municipio</label>
+          <select id="locMunicipio" class="h-select" aria-label="Seleccionar municipio">
+            <option value="">Todos los municipios</option>
+          </select>
+          <button class="btn-principal" style="width:100%;margin-top:14px;" onclick="localizarEspecies()">
+            🔍 Buscar Especies
+          </button>
+          <div class="resultados-herramienta" id="resultadosLocalizador" style="margin-top:12px;" role="list"></div>
+        </div>
+      </div>
+
+      <!-- 3. Comparador -->
+      <div class="herramienta-card reveal delay-2" role="region" aria-labelledby="h3-titulo">
+        <div class="herramienta-header">
+          <div class="herramienta-icono" aria-hidden="true">⚖️</div>
+          <h3 id="h3-titulo">Comparador de Especies</h3>
+        </div>
+        <div class="herramienta-body">
+          <label class="h-label">Selecciona dos especies</label>
+          <div class="comp-grid">
+            <select id="compEspecie1" class="h-select" onchange="compararEspecies()" aria-label="Primera especie">
+              <option value="">Especie 1</option>
+            </select>
+            <select id="compEspecie2" class="h-select" onchange="compararEspecies()" aria-label="Segunda especie">
+              <option value="">Especie 2</option>
+            </select>
+          </div>
+          <div id="tablaComparacion" style="margin-top:12px;" role="table" aria-label="Tabla comparativa"></div>
+        </div>
+      </div>
+
+      <!-- 4. Calculadora SIG -->
+      <div class="herramienta-card reveal" role="region" aria-labelledby="h4-titulo">
+        <div class="herramienta-header">
+          <div class="herramienta-icono" aria-hidden="true">📏</div>
+          <h3 id="h4-titulo">Calculadora SIG</h3>
+        </div>
+        <div class="herramienta-body">
+          <div id="mapaCalculadora" class="mapa-mini" role="application" aria-label="Mapa para medir distancias"></div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <button class="btn-principal" style="padding:8px 14px;font-size:.825rem;" onclick="activarMedicion('distancia')">
+              📏 Distancia
+            </button>
+            <button class="btn-principal" style="padding:8px 14px;font-size:.825rem;" onclick="activarMedicion('area')">
+              ⬡ Área
+            </button>
+            <button class="btn-principal" style="padding:8px 14px;font-size:.825rem;" onclick="activarDibujo()">
+              ✏️ Dibujar
+            </button>
+            <button class="btn-secundario" style="padding:7px 14px;font-size:.825rem;" onclick="limpiarMediciones()">
+              🗑️ Limpiar
+            </button>
+          </div>
+          <div id="resultadoMedicion" style="margin-top:12px;font-size:.875rem;color:var(--gris-700);" role="status" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <!-- 5. Conversor de Coordenadas -->
+      <div class="herramienta-card reveal delay-1" role="region" aria-labelledby="h5-titulo">
+        <div class="herramienta-header">
+          <div class="herramienta-icono" aria-hidden="true">🌐</div>
+          <h3 id="h5-titulo">Conversor de Coordenadas</h3>
+        </div>
+        <div class="herramienta-body">
+          <label class="h-label">Lat/Lng → UTM</label>
+          <div class="coord-grid">
+            <input type="number" id="convLat" class="h-input" placeholder="Latitud" step="0.0001" oninput="convertirCoordenadas()" aria-label="Latitud">
+            <input type="number" id="convLng" class="h-input" placeholder="Longitud" step="0.0001" oninput="convertirCoordenadas()" aria-label="Longitud">
+          </div>
+          <div class="coord-result" id="resultadoUTM" style="margin:10px 0;" role="status" aria-live="polite">UTM: —</div>
+
+          <label class="h-label">UTM → Lat/Lng (Zona 15N)</label>
+          <div class="coord-grid">
+            <input type="number" id="utmX" class="h-input" placeholder="X Este" step="0.01" oninput="convertirUTM()" aria-label="UTM X Este">
+            <input type="number" id="utmY" class="h-input" placeholder="Y Norte" step="0.01" oninput="convertirUTM()" aria-label="UTM Y Norte">
+          </div>
+          <div class="coord-result" id="resultadoLatLng" style="margin-top:10px;" role="status" aria-live="polite">Lat/Lng: —</div>
+          <p style="font-size:.72rem;color:var(--gris-400);margin-top:8px;">Zonas: 15N (México central) · 16N (Península)</p>
+        </div>
+      </div>
+
+      <!-- 6. Generador de Fichas -->
+      <div class="herramienta-card reveal delay-2" role="region" aria-labelledby="h6-titulo">
+        <div class="herramienta-header">
+          <div class="herramienta-icono" aria-hidden="true">📄</div>
+          <h3 id="h6-titulo">Generador de Fichas</h3>
+        </div>
+        <div class="herramienta-body">
+          <label for="fichaPlanta" class="h-label">Selecciona una planta</label>
+          <select id="fichaPlanta" class="h-select" onchange="generarVistaPreviaFicha()" aria-label="Seleccionar planta para ficha">
+            <option value="">— Seleccionar planta —</option>
+          </select>
+          <div class="ficha-preview" id="fichaPreview" style="display:none;margin-top:12px;">
+            <div id="fichaContenido"></div>
+          </div>
+          <button class="btn-principal" style="width:100%;margin-top:12px;" onclick="descargarFichaPDF()">
+            ⬇️ Descargar Ficha PDF
+          </button>
+        </div>
+      </div>
+
+      <!-- 7. Identificador (Demo) -->
+      <div class="herramienta-card reveal" role="region" aria-labelledby="h7-titulo">
+        <div class="herramienta-header">
+          <div class="herramienta-icono" aria-hidden="true">📷</div>
+          <h3 id="h7-titulo">Identificador de Plantas <span style="font-size:.7rem;color:var(--gris-400);font-weight:500;">Demo</span></h3>
+        </div>
+        <div class="herramienta-body">
+          <label class="upload-zone" for="uploadFoto" aria-label="Subir imagen de planta">
+            <input type="file" id="uploadFoto" accept="image/*" onchange="procesarImagen(event)" style="display:none;" aria-hidden="true">
+            <div class="upload-icon" aria-hidden="true">📤</div>
+            <p class="upload-hint">
+              Sube una foto de la planta<br>
+              <em>Interfaz demo · sin IA real</em>
+            </p>
+          </label>
+          <div id="identificadorResultado" style="display:none;">
+            <img id="previewImagen" style="max-width:100%;max-height:180px;border-radius:var(--radius);margin-bottom:10px;" alt="Imagen subida para identificación">
+            <div id="identificadorSimulado" style="padding:12px;background:var(--color-estado-muy-claro);border-radius:var(--radius);font-size:.875rem;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. Estadísticas Rápidas -->
+      <div class="herramienta-card reveal delay-1" role="region" aria-labelledby="h8-titulo">
+        <div class="herramienta-header">
+          <div class="herramienta-icono" aria-hidden="true">📊</div>
+          <h3 id="h8-titulo">Estadísticas Rápidas</h3>
+        </div>
+        <div class="herramienta-body">
+          <div class="stats-mini-grid">
+            <div class="stat-mini-card">
+              <div class="stat-mini-val">6</div>
+              <div class="stat-mini-label">Estados</div>
+            </div>
+            <div class="stat-mini-card">
+              <div class="stat-mini-val">791</div>
+              <div class="stat-mini-label">Especies Med.</div>
+            </div>
+            <div class="stat-mini-card">
+              <div class="stat-mini-val">89</div>
+              <div class="stat-mini-label">Familias</div>
+            </div>
+            <div class="stat-mini-card">
+              <div class="stat-mini-val">15K</div>
+              <div class="stat-mini-label">Familias Benef.</div>
+            </div>
+          </div>
+          <div style="margin-top:16px;height:140px;position:relative;">
+            <canvas id="graficaUsos" aria-label="Gráfica de usos medicinales" role="img"></canvas>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-grid" style="grid-template-columns:2fr 1fr;">
+      <div>
+        <div class="footer-logo"><span aria-hidden="true">🌿</span> Biodiversidad Médica del Sureste</div>
+        <p class="footer-desc">Herramientas para la investigación y preservación.</p>
+      </div>
+      <nav aria-label="Pie de página">
+        <h4>Navegación</h4>
+        <div class="footer-links">
+          <a href="../index.html">Inicio</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="mapa.html">Mapa</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Biodiversidad Médica del Sureste Mexicano</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/herramientas.js"></script>
+</body>
+</html>

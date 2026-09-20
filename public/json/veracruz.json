@@ -1,0 +1,101 @@
+{
+  "estado": "Veracruz",
+  "capital": "Xalapa",
+  "color_tema": "#00695C",
+  "color_secundario": "#80CBC4",
+  "total_especies": 523,
+  "especies_medicinales": 198,
+  "plantas": [
+    {
+      "id": "ver_001",
+      "nombre_comun": "Passionflower Veracruzana",
+      "nombre_cientifico": "Passiflora edulis var. veracruzensis",
+      "familia": "Passifloraceae",
+      "genero": "Passiflora",
+      "especie": "edulis",
+      "descripcion": "Trepadora perenne de hasta 5-8 metros con tallos lignificados en la base. Hojas palmeadas de 3 lóbulos con bordes serrados. Flores grandes y vistosas de color blanco-púrpura con corona filamentosa. Fruto ovoide de color púrpura oscuro al madurar.",
+      "altura": "5-8 metros (trepadora)",
+      "habitat": "Bosques tropicales perennifolios, cafetales, orillas de ríos, zonas húmedas",
+      "distribucion": "Montañas de Veracruz, región de Coatepec, Xico, Zongolica y Los Tuxtlas",
+      "estado_conservacion": "Preocupación menor (LC)",
+      "abundancia": "Común",
+      "usos_medicinales": [
+        "Sedante natural y ansiolítico",
+        "Tratamiento de insomnio",
+        "Antiespasmódico",
+        "Reducción de la presión arterial",
+        "Alivio de síntomas de menopausia",
+        "Tratamiento de nerviosismo e hiperactividad"
+      ],
+      "preparados": [
+        "Infusión de hojas y flores secas (1 cucharada por taza)",
+        "Extracto hidroalcohólico",
+        "Jarabe calmante",
+        "Té combinado con valeriana",
+        "Cápsulas estandarizadas"
+      ],
+      "componentes_activos": [
+        "Alcaloides (harmina, harmina)",
+        "Flavonoides (apigenina, luteolina)",
+        "Glicósidos cianogénicos",
+        "Aceites esenciales",
+        "Maltol"
+      ],
+      "contraindicaciones": "No usar con sedantes o ansiolíticos prescritos. No operar maquinaria después de consumir. Consultar médico si se toman antihipertensivos.",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "Sexual (semillas) y vegetativa (esquejes)",
+        "polinizadores": "Abejas carpinteras, mariposas, colibríes",
+        "epoca_floracion": "Marzo-Octubre",
+        "adaptaciones": "Zarcillos sensitivos para trepar, raíces profundas para anclaje"
+      },
+      "historia": {
+        "origen": "Nativa de las montañas de Veracruz, cultivada por totonacos y nahua desde la época prehispánica",
+        "usos_tradicionales": "Los totonacos usaban la flor como símbolo de sacrificio solar. Usada como sedante en rituales nocturnos",
+        "menciones_historicas": "Documentada por Francisco Hernández de Toledo en el siglo XVI",
+        "evidencia_arqueologica": "Representaciones florales en cerámica totonaca de El Tajín"
+      },
+      "economia": {
+        "precio_mercado_kg": "$150-250 MXN (hojas secas)",
+        "produccion_anual_ton": "320",
+        "mercados_destino": "Xalapa, Veracruz, Orizaba, Puebla, CDMX",
+        "valor_exportacion": "$890K USD anuales",
+        "empleos_generados": "~2,800 personas en cultivo y procesamiento",
+        "productos_derivados": [
+          "Té medicinal",
+          "Extracto de pasiflora",
+          "Cápsulas",
+          "Tintura madre",
+          "Jarabe",
+          "Esencia aromática",
+          "Fruta fresca (maracuyá)"
+        ]
+      },
+      "sig": {
+        "coordenadas": {
+          "lat": 19.533,
+          "lng": -96.917
+        },
+        "zona_distribucion": "Montañas centrales y zona de Los Tuxtlas",
+        "tipo_suelo": "Andosol y acrisol",
+        "clima": "Cálido húmedo a semicálido húmedo",
+        "precipitacion_anual": "1500-2500 mm",
+        "altitud": "800-1800 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Flor sagrada totonaca, símbolo del sol y la pasión en la iconografía prehispánica",
+        "relevancia_social": "Pilar de la medicina tradicional veracruzana para tratar 'nervios'",
+        "practicas_tradicionales": "Los curanderos nahua la usan en 'limpias' para personas con susto o espanto",
+        "saberes_indigenas": "Conocimiento totonaco sobre los mejores momentos de cosecha según la luna"
+      },
+      "imagenes": {
+        "principal": "assets/imagenes/passionflower.jpg",
+        "habitat": "assets/imagenes/passionflower_habitat.jpg",
+        "detalle": "assets/imagenes/passionflower_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": true,
+      "fecha_registro": "2024-06-01"
+    }
+  ]
+}

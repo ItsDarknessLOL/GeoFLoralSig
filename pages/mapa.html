@@ -1,0 +1,550 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa — Plantas Medicinales del Sureste</title>
+  <meta name="description" content="Mapa interactivo de distribución de plantas medicinales endémicas.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
+
+  <style>
+    body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; overflow: hidden; }
+
+    /* ── Full-screen map ── */
+    .mapa-fullscreen {
+      position: fixed;
+      top: var(--header-altura);
+      inset-inline: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+    #mapaPrincipal { width: 100%; height: 100%; }
+
+    /* ── Sidebar panel — pushed below zoom controls ── */
+    .mapa-panel {
+      position: fixed;
+      /* top offset: header + gap + zoom controls height (~82px) + gap */
+      top: calc(var(--header-altura) + 98px);
+      left: 12px;
+      z-index: 900;
+      width: 272px;
+      max-height: calc(100dvh - var(--header-altura) - 112px);
+      background: rgba(255,255,255,.97);
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      border: 1px solid var(--gris-200);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-xl);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform .3s var(--ease), opacity .3s var(--ease);
+    }
+    .mapa-panel.collapsed {
+      transform: translateX(calc(-100% - 16px));
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--gris-100);
+      flex-shrink: 0;
+      background: var(--gris-50);
+    }
+    .panel-header h3 {
+      font-size: .875rem;
+      font-weight: 700;
+      color: var(--gris-900);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .panel-close-btn {
+      background: none; border: none;
+      width: 28px; height: 28px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: var(--radius-sm);
+      color: var(--gris-400);
+      font-size: 1rem;
+      cursor: pointer;
+      transition: var(--t-fast);
+    }
+    .panel-close-btn:hover { background: var(--gris-200); color: var(--gris-700); }
+
+    .panel-body {
+      overflow-y: auto;
+      padding: 12px 14px 18px;
+      flex: 1;
+    }
+    .panel-body::-webkit-scrollbar { width: 4px; }
+    .panel-body::-webkit-scrollbar-thumb { background: var(--gris-200); border-radius: 99px; }
+
+    /* ── Filter sections ── */
+    .filter-section { margin-bottom: 16px; }
+    .filter-section-label {
+      display: block;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--gris-400);
+      margin-bottom: 8px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid var(--gris-100);
+    }
+
+    /* ── Chips ── */
+    .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 11px;
+      background: var(--gris-50);
+      border: 1.5px solid var(--gris-200);
+      border-radius: var(--radius-full);
+      font-size: .76rem;
+      font-weight: 600;
+      color: var(--gris-700);
+      cursor: pointer;
+      transition: var(--t-fast);
+      white-space: nowrap;
+      user-select: none;
+    }
+    .chip:hover { border-color: var(--color-estado); color: var(--color-estado); background: var(--color-estado-muy-claro); }
+    .chip.activo { background: var(--color-estado); border-color: var(--color-estado); color: #fff; }
+    .chip .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+    .panel-select {
+      width: 100%;
+      padding: 8px 30px 8px 11px;
+      border: 1.5px solid var(--gris-200);
+      border-radius: var(--radius);
+      font-size: .815rem;
+      background: var(--blanco);
+      color: var(--gris-900);
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7' viewBox='0 0 10 7'%3E%3Cpath fill='%2371717A' d='M0 0l5 7 5-7z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 9px center;
+      cursor: pointer;
+      transition: var(--t-base);
+    }
+    .panel-select:focus { outline: none; border-color: var(--color-estado); }
+
+    /* ── Panel toggle button ── */
+    .panel-toggle-btn {
+      position: fixed;
+      top: calc(var(--header-altura) + 98px);
+      left: 12px;
+      z-index: 901;
+      width: 40px; height: 40px;
+      background: var(--color-estado);
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 1rem;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-md);
+      transition: var(--t-base);
+    }
+    .panel-toggle-btn.visible { display: flex; }
+    .panel-toggle-btn:hover { filter: brightness(1.1); }
+
+    /* ── Search bar (top-right) + results dropdown ── */
+    .mapa-search-wrap {
+      position: fixed;
+      top: calc(var(--header-altura) + 12px);
+      right: 12px;
+      z-index: 900;
+      width: clamp(200px, 28vw, 300px);
+    }
+    .mapa-search-inner { position: relative; }
+    .mapa-search-wrap input {
+      width: 100%;
+      padding: 11px 16px 11px 42px;
+      border: 1.5px solid var(--gris-200);
+      border-radius: var(--radius-full);
+      background: rgba(255,255,255,.97);
+      backdrop-filter: blur(12px);
+      font-size: .875rem;
+      box-shadow: var(--shadow-md);
+      transition: var(--t-base);
+    }
+    .mapa-search-wrap input:focus {
+      outline: none;
+      border-color: var(--color-estado);
+      box-shadow: 0 0 0 3px rgba(46,125,50,.12), var(--shadow-md);
+    }
+    .mapa-search-icon {
+      position: absolute;
+      left: 14px; top: 50%;
+      transform: translateY(-50%);
+      opacity: .45;
+      pointer-events: none;
+      font-size: .95rem;
+    }
+
+    /* Search results dropdown */
+    .mapa-search-results {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0; right: 0;
+      background: rgba(255,255,255,.99);
+      backdrop-filter: blur(16px);
+      border: 1.5px solid var(--gris-200);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-xl);
+      max-height: 320px;
+      overflow-y: auto;
+      display: none;
+      z-index: 1001;
+    }
+    .mapa-search-results.open { display: block; }
+    .search-result-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      cursor: pointer;
+      border-bottom: 1px solid var(--gris-100);
+      transition: background var(--t-fast);
+    }
+    .search-result-item:last-child { border-bottom: none; }
+    .search-result-item:hover { background: var(--color-estado-muy-claro); }
+    .search-result-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .search-result-info { flex: 1; min-width: 0; }
+    .search-result-nombre {
+      font-size: .845rem;
+      font-weight: 700;
+      color: var(--gris-900);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .search-result-sci {
+      font-size: .72rem;
+      color: var(--gris-400);
+      font-style: italic;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .search-result-estado {
+      font-size: .7rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 99px;
+      flex-shrink: 0;
+    }
+    .search-no-results {
+      padding: 20px;
+      text-align: center;
+      color: var(--gris-400);
+      font-size: .85rem;
+    }
+
+    /* ── Legend ── */
+    .mapa-leyenda {
+      position: fixed;
+      bottom: 20px; right: 12px;
+      z-index: 900;
+      background: rgba(255,255,255,.97);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--gris-200);
+      border-radius: var(--radius-lg);
+      padding: 13px 16px;
+      box-shadow: var(--shadow-md);
+      font-size: .78rem;
+    }
+    .leyenda-titulo {
+      font-size: .67rem; font-weight: 700;
+      letter-spacing: .07em; text-transform: uppercase;
+      color: var(--gris-400); margin-bottom: 9px;
+    }
+    .leyenda-item {
+      display: flex; align-items: center;
+      gap: 8px; margin-bottom: 6px;
+      color: var(--gris-700); font-weight: 500;
+    }
+    .leyenda-item:last-child { margin-bottom: 0; }
+    .leyenda-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+
+    /* ── Hint ── */
+    .mapa-hint {
+      position: fixed;
+      bottom: 70px; left: 50%;
+      transform: translateX(-50%);
+      z-index: 900;
+      padding: 10px 22px;
+      background: rgba(0,0,0,.78);
+      color: white;
+      border-radius: var(--radius-full);
+      font-size: .825rem;
+      backdrop-filter: blur(8px);
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+    /* ── Themed popup ── */
+    .leaflet-popup-content-wrapper {
+      border-radius: var(--radius-lg) !important;
+      box-shadow: var(--shadow-xl) !important;
+      padding: 0 !important;
+      overflow: hidden;
+    }
+    .leaflet-popup-content { margin: 0 !important; width: auto !important; }
+    .leaflet-popup-tip-container { margin-top: -1px; }
+
+    .popup-themed {
+      font-family: 'Inter', sans-serif;
+      min-width: 220px;
+      max-width: 260px;
+    }
+    .popup-themed-header {
+      padding: 12px 16px 10px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .popup-themed-emoji {
+      width: 36px; height: 36px;
+      border-radius: var(--radius);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .popup-themed-title h4 {
+      font-size: .9rem; font-weight: 700;
+      color: var(--gris-900); margin: 0 0 2px;
+      line-height: 1.3;
+    }
+    .popup-themed-title .sci {
+      font-size: .73rem; font-style: italic;
+      color: var(--gris-400); margin: 0;
+    }
+    .popup-themed-body {
+      padding: 8px 16px 4px;
+      border-top: 1px solid var(--gris-100);
+    }
+    .popup-themed-uso {
+      font-size: .78rem;
+      color: var(--gris-500);
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+    .popup-themed-footer {
+      padding: 10px 16px;
+      border-top: 1px solid var(--gris-100);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .popup-estado-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 10px;
+      border-radius: 99px;
+      font-size: .7rem; font-weight: 700;
+    }
+    .popup-ver-link {
+      font-size: .78rem; font-weight: 700;
+      display: flex; align-items: center; gap: 4px;
+      transition: gap var(--t-fast);
+    }
+    .popup-ver-link:hover { gap: 7px; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .mapa-panel {
+        width: calc(100vw - 24px);
+        max-height: 55dvh;
+        top: auto; bottom: 80px;
+        left: 12px; right: 12px;
+        border-radius: var(--radius-xl);
+        transform: translateY(calc(100% + 90px));
+        margin-top: 0;
+      }
+      .mapa-panel.open-mobile { transform: translateY(0); }
+      .mapa-panel.collapsed { transform: translateY(calc(100% + 90px)); opacity: 1; pointer-events: auto; }
+      .panel-toggle-btn { top: calc(var(--header-altura) + 12px); left: 12px; }
+      .mapa-search-wrap { width: calc(100% - 64px); left: 60px; right: 12px; }
+      .mapa-leyenda { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header — always light on map page -->
+  <header class="header header-light" role="banner">
+    <div class="contenedor">
+      <a href="../index.html" class="logo" aria-label="Inicio">
+        <div class="logo-icono" aria-hidden="true">🌿</div>
+        <span>Biodiversidad Médica del Sureste</span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="mapa.html" class="activo" aria-current="page">Mapa</a>
+        <a href="herramientas.html">Herramientas</a>
+        <a href="acerca_de.html">Acerca de</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- Map -->
+  <div class="mapa-fullscreen" role="application" aria-label="Mapa interactivo">
+    <div id="mapaPrincipal"></div>
+  </div>
+
+  <!-- Panel toggle (mobile) -->
+  <button class="panel-toggle-btn visible" id="panelToggleBtn"
+          aria-label="Abrir panel de filtros" aria-expanded="true"
+          onclick="togglePanel()">🗂️</button>
+
+  <!-- Sidebar panel -->
+  <aside class="mapa-panel" id="filtrosPanel" aria-label="Panel de filtros y capas">
+    <div class="panel-header">
+      <h3><span aria-hidden="true">🗺️</span> Capas y Filtros</h3>
+      <button onclick="togglePanel()" class="panel-close-btn"
+              aria-label="Cerrar panel">✕</button>
+    </div>
+
+    <div class="panel-body">
+
+      <!-- Base layer -->
+      <div class="filter-section">
+        <span class="filter-section-label">Mapa base</span>
+        <div class="chips">
+          <button class="chip activo" data-capa="osm" onclick="cambiarCapaBase('osm')">🗺️ OSM</button>
+          <button class="chip" data-capa="satelital" onclick="cambiarCapaBase('satelital')">🛰️ Satélite</button>
+          <button class="chip" data-capa="oscuro" onclick="cambiarCapaBase('oscuro')">🌑 Oscuro</button>
+          <button class="chip" data-capa="topo" onclick="cambiarCapaBase('topo')">⛰️ Topo</button>
+        </div>
+      </div>
+
+      <!-- States -->
+      <div class="filter-section">
+        <span class="filter-section-label">Estado</span>
+        <div class="chips">
+          <button class="chip activo" data-poligono="todos" onclick="togglePoligonos('todos')">Todos</button>
+          <button class="chip" data-poligono="yucatan" onclick="togglePoligonos('yucatan')">
+            <span class="dot" style="background:#2E7D32;"></span> Yucatán
+          </button>
+          <button class="chip" data-poligono="qroo" onclick="togglePoligonos('qroo')">
+            <span class="dot" style="background:#C62828;"></span> Q.Roo
+          </button>
+          <button class="chip" data-poligono="campeche" onclick="togglePoligonos('campeche')">
+            <span class="dot" style="background:#1565C0;"></span> Campeche
+          </button>
+          <button class="chip" data-poligono="chiapas" onclick="togglePoligonos('chiapas')">
+            <span class="dot" style="background:#6A1B9A;"></span> Chiapas
+          </button>
+          <button class="chip" data-poligono="tabasco" onclick="togglePoligonos('tabasco')">
+            <span class="dot" style="background:#E65100;"></span> Tabasco
+          </button>
+          <button class="chip" data-poligono="veracruz" onclick="togglePoligonos('veracruz')">
+            <span class="dot" style="background:#00695C;"></span> Veracruz
+          </button>
+        </div>
+      </div>
+
+      <!-- Visualization -->
+      <div class="filter-section">
+        <span class="filter-section-label">Visualización</span>
+        <div class="chips">
+          <button class="chip activo" data-visual="puntos" onclick="toggleVisual('puntos')">📍 Puntos</button>
+          <button class="chip activo" data-visual="poligonos" onclick="toggleVisual('poligonos')">⬡ Polígonos</button>
+          <button class="chip" data-visual="heatmap" onclick="toggleVisual('heatmap')">🔥 Calor</button>
+        </div>
+      </div>
+
+      <!-- Species filter -->
+      <div class="filter-section">
+        <span class="filter-section-label">Especie</span>
+        <select id="filtroEspecieMapa" class="panel-select" onchange="filtrarEspecieMapa()" aria-label="Filtrar por especie">
+          <option value="">Todas las especies</option>
+        </select>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- Search -->
+  <div class="mapa-search-wrap" role="search">
+    <div class="mapa-search-inner">
+      <span class="mapa-search-icon" aria-hidden="true">🔍</span>
+      <input type="search"
+             id="buscadorMapa"
+             placeholder="Buscar planta..."
+             oninput="buscarEnMapaConResultados(this.value)"
+             autocomplete="off"
+             aria-label="Buscar planta en el mapa"
+             aria-autocomplete="list"
+             aria-controls="mapaSearchResults">
+      <div class="mapa-search-results custom-scroll" id="mapaSearchResults" role="listbox" aria-label="Resultados de búsqueda"></div>
+    </div>
+  </div>
+
+  <!-- Legend -->
+  <aside class="mapa-leyenda" aria-label="Leyenda del mapa">
+    <p class="leyenda-titulo">Estados</p>
+    <div class="leyenda-item"><div class="leyenda-dot" style="background:#2E7D32;"></div>Yucatán</div>
+    <div class="leyenda-item"><div class="leyenda-dot" style="background:#C62828;"></div>Quintana Roo</div>
+    <div class="leyenda-item"><div class="leyenda-dot" style="background:#1565C0;"></div>Campeche</div>
+    <div class="leyenda-item"><div class="leyenda-dot" style="background:#6A1B9A;"></div>Chiapas</div>
+    <div class="leyenda-item"><div class="leyenda-dot" style="background:#E65100;"></div>Tabasco</div>
+    <div class="leyenda-item"><div class="leyenda-dot" style="background:#00695C;"></div>Veracruz</div>
+  </aside>
+
+  <!-- Ctrl hint -->
+  <div class="mapa-hint" id="mapaHint" style="display:none;" role="status" aria-live="polite">
+    🖱️ Presiona <strong>Ctrl</strong> + clic para mover el mapa
+  </div>
+
+  <!-- Mobile unlock button -->
+  <button id="btnMapaMovil" class="btn-mapa-movil" onclick="toggleMapaMovil()" aria-label="Desbloquear mapa para mover">
+    🔓 Mover mapa
+  </button>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/mapa.js"></script>
+  <script>
+    // ── Panel toggle ──
+    function togglePanel() {
+      const panel = document.getElementById('filtrosPanel');
+      const btn   = document.getElementById('panelToggleBtn');
+      const isMobile = window.innerWidth <= 768;
+
+      if (isMobile) {
+        panel.classList.toggle('open-mobile');
+        btn.setAttribute('aria-expanded', panel.classList.contains('open-mobile'));
+      } else {
+        panel.classList.toggle('collapsed');
+        btn.setAttribute('aria-expanded', !panel.classList.contains('collapsed'));
+      }
+    }
+  </script>
+</body>
+</html>

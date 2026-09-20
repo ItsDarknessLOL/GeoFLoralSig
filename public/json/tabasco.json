@@ -1,0 +1,879 @@
+{
+  "estado": "Tabasco",
+  "capital": "Villahermosa",
+  "color_tema": "#E65100",
+  "color_secundario": "#FFCC80",
+  "total_especies": 378,
+  "especies_medicinales": 134,
+  "plantas": [
+    {
+      "id": "TAB-001",
+      "nombre_comun": "Hierba santa / Acuyo / Momo",
+      "nombre_cientifico": "Piper auritum Kunth",
+      "familia": "Piperaceae",
+      "genero": "Piper",
+      "especie": "auritum",
+      "descripcion": "Arbusto perenne de 2 a 3 m de altura, con hojas muy grandes (hasta 30 cm), acorazonadas, aterciopeladas, de nervaduras prominentes y aroma característico a anís. En Tabasco alcanza mayor porte que en estados más secos, favorecida por la alta humedad del trópico húmedo tabasqueño.",
+      "habitat": "Selva mediana y baja subperennifolia, vegetación secundaria, orillas de ríos y arroyos; frecuente en sitios sombríos y húmedos. Muy cultivada en huertos familiares y solares.",
+      "distribucion": "Nativa de Mesoamérica; distribuida desde el sureste de México (Tabasco, Chiapas, Oaxaca, Veracruz) hasta Colombia. En Tabasco se encuentra tanto silvestre como cultivada.",
+      "estado_conservacion": "No catalogada en riesgo; especie común y adaptable.",
+      "abundancia": "Muy común en toda la entidad, especialmente en zonas con alta humedad y en huertos familiares.",
+      "usos_medicinales": [
+        "Digestivo y antiespasmódico (dolor de estómago, cólicos)",
+        "Afecciones respiratorias (tos, bronquitis)",
+        "Diurético",
+        "Antiinflamatorio tópico",
+        "Cicatrizante externo",
+        "Uso tradicional para el 'susto' y nervios (sedante leve)"
+      ],
+      "preparados": [
+        "Infusión de hojas frescas o secas",
+        "Hojas usadas como envoltura culinaria-medicinal (tamales, pescados al vapor)",
+        "Hojas soasadas aplicadas en cataplasma sobre zonas inflamadas"
+      ],
+      "componentes_activos": [
+        "Safrol (aceite esencial principal)",
+        "Eugenol",
+        "Dilapiol",
+        "Flavonoides"
+      ],
+      "contraindicaciones": "El safrol en dosis altas se ha asociado con efectos hepatotóxicos en estudios experimentales; se recomienda uso moderado. No se aconseja el consumo en altas dosis durante el embarazo.",
+      "biologia": {
+        "ciclo_vida": "Arbusto perenne de crecimiento rápido; puede vivir varios años en condiciones de alta humedad",
+        "reproduccion": "Por semilla y por propagación vegetativa (esquejes de tallo), método más común en cultivo",
+        "polinizadores": "Insectos pequeños (trips, mosquitas)",
+        "epoca_floracion": "Variable a lo largo del año; en Tabasco florece con mayor intensidad en la temporada de lluvias (junio-octubre)",
+        "adaptaciones": "Hojas muy grandes para maximizar la captación de luz en condiciones de sotobosque húmedo; raíces superficiales que aprovechan la materia orgánica del suelo"
+      },
+      "historia": {
+        "origen": "Mesoamérica; Tabasco es considerado uno de los centros de diversidad y uso de la especie",
+        "usos_tradicionales": "En Tabasco es ingrediente esencial de la gastronomía regional, especialmente en el pejelagarto en vara y el tamal de rajas; igualmente es remedio de primera línea para malestares digestivos y respiratorios en las comunidades indígenas chontales y zoques",
+        "menciones_historicas": "Referida en fuentes etnobotánicas coloniales y contemporáneas del sureste de México como planta de uso dual culinario-medicinal de alta importancia cultural",
+        "evidencia_arqueologica": "No se documenta evidencia arqueológica directa específica en las fuentes consultadas para Tabasco"
+      },
+      "economia": {
+        "precio_mercado_kg": "Venta habitual por manojo en mercados locales; sin cifra oficial por kilogramo consolidada",
+        "produccion_anual_ton": "Cultivo de traspatio y pequeños huertos; no existe producción comercial a gran escala documentada para Tabasco",
+        "mercados_destino": "Mercados municipales (Villahermosa, Cárdenas, Tenosique) y gastronomía regional",
+        "valor_exportacion": "No documentado",
+        "empleos_generados": "No documentado",
+        "productos_derivados": [
+          "Hoja fresca para envoltura culinaria",
+          "Infusiones medicinales",
+          "Condimento regional"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 17.9892,
+            "lng": -92.9475
+          },
+          {
+            "lat": 17.4667,
+            "lng": -91.4333
+          }
+        ],
+        "zona_distribucion": "Huertos familiares, selva secundaria y orillas de ríos en todo el estado de Tabasco",
+        "tipo_suelo": "Aluvial, arcilloso o franco, húmedo y rico en materia orgánica",
+        "clima": "Cálido húmedo (Am/Af), con alta precipitación anual",
+        "precipitacion_anual": "1,800 - 3,500 mm",
+        "altitud": "0 - 200 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Ingrediente emblemático de la cocina tabasqueña, símbolo de identidad gastronómica regional e ingrediente insustituible en platillos tradicionales como el pejelagarto en vara",
+        "relevancia_social": "Presente en prácticamente todos los huertos familiares del estado; remedio doméstico de primera línea transmitido entre generaciones",
+        "practicas_tradicionales": "Envolver pescados y tamales con hojas frescas para cocción al vapor o en horno de tierra; preparación de infusiones para malestares digestivos cotidianos",
+        "saberes_indigenas": "Conocimiento sobre sus propiedades documentado entre las comunidades chontales y zoques de Tabasco"
+      },
+      "imagenes": {
+        "principal": "TAB-001_principal.jpg",
+        "habitat": "TAB-001_habitat.jpg",
+        "detalle": "TAB-001_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": true,
+      "fecha_registro": "2026-06-23"
+    },
+    {
+      "id": "TAB-002",
+      "nombre_comun": "Macuilí / Roble rosado / Maculí",
+      "nombre_cientifico": "Tabebuia rosea (Bertol.) Bertero ex A. DC.",
+      "familia": "Bignoniaceae",
+      "genero": "Tabebuia",
+      "especie": "rosea",
+      "descripcion": "Árbol caducifolio de gran tamaño, de 15 a 30 m de altura, con espectacular floración rosado-lila en racimos terminales que aparece cuando el árbol ha perdido sus hojas. Hojas palmadas con 5 folíolos; fruto en cápsula alargada, seco, leñoso.",
+      "habitat": "Selva mediana y alta subperennifolia; ampliamente plantado como árbol ornamental y de sombra en avenidas, parques y potreros.",
+      "distribucion": "Nativa de América tropical, desde México (Tabasco, Chiapas, Veracruz, Oaxaca) hasta Venezuela y Ecuador. Ámpliamente cultivada como ornamental y maderable en todo el trópico.",
+      "estado_conservacion": "No catalogada en riesgo; su valor maderable y ornamental la hace especie de interés para plantaciones.",
+      "abundancia": "Común en selva conservada y ampliamente plantada en zonas urbanas y rurales del estado.",
+      "usos_medicinales": [
+        "Uso tradicional para anemia (decocción de corteza)",
+        "Antiinflamatorio e inmunomodulador (estudios científicos recientes)",
+        "Antimicrobiano tradicional",
+        "Uso popular para problemas de piel"
+      ],
+      "preparados": [
+        "Decocción de corteza para anemia y uso antiinflamatorio",
+        "Extracto de madera o corteza en investigación fitofarmacológica"
+      ],
+      "componentes_activos": [
+        "Lapachol (naftoquinona con actividad antiinflamatoria, antimicrobiana y antitumoral documentada)",
+        "Beta-lapachona",
+        "Compuestos fenólicos y flavonoides"
+      ],
+      "contraindicaciones": "El lapachol en dosis altas puede tener efectos anticoagulantes; se recomienda precaución en personas bajo tratamiento con anticoagulantes. No se aconseja el uso interno sin supervisión médica.",
+      "biologia": {
+        "ciclo_vida": "Árbol caducifolio longevo, de crecimiento medio",
+        "reproduccion": "Por semilla; regeneración natural abundante bajo árboles madre",
+        "polinizadores": "Principalmente abejas (Xylocopa) y mariposas",
+        "epoca_floracion": "Febrero a abril, coincidiendo con la pérdida de hojas en la temporada seca",
+        "adaptaciones": "Floración masiva en temporada seca sin follaje para maximizar la visibilidad hacia los polinizadores; madera resistente a la humedad y pudrición"
+      },
+      "historia": {
+        "origen": "América tropical húmeda",
+        "usos_tradicionales": "Madera apreciada para construcción, muebles y ebanistería; en la medicina tradicional tabasqueña y centroamericana se ha usado la corteza como tónico para la anemia y las afecciones de la piel",
+        "menciones_historicas": "Referida en estudios forestales y etnobotánicos del sureste de México como especie maderable y ornamental de alta relevancia regional",
+        "evidencia_arqueologica": "No se documenta evidencia arqueológica directa específica para Tabasco en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "Madera con precio comercial en el mercado regional; sin cifra oficial consolidada por m³ para Tabasco",
+        "produccion_anual_ton": "No existe cifra oficial de producción maderable específica para Tabasco; se aprovecha de forma selectiva en plantaciones y selvas secundarias",
+        "mercados_destino": "Mercado maderable regional y nacional; mercado de plantas ornamentales",
+        "valor_exportacion": "No documentado específicamente para Tabasco",
+        "empleos_generados": "Carpinteros, ebanistas y viveros locales (sin cifra oficial)",
+        "productos_derivados": [
+          "Madera para construcción y muebles",
+          "Planta ornamental",
+          "Extractos fitofarmacológicos en investigación"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 17.9892,
+            "lng": -92.9475
+          },
+          {
+            "lat": 17.65,
+            "lng": -93.2
+          }
+        ],
+        "zona_distribucion": "Selva mediana y alta subperennifolia; ampliamente plantado en zonas urbanas y rurales de Tabasco",
+        "tipo_suelo": "Aluvial profundo, bien drenado",
+        "clima": "Cálido húmedo (Am)",
+        "precipitacion_anual": "2,000 - 3,000 mm",
+        "altitud": "0 - 300 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Árbol símbolo de la primavera tabasqueña; su floración masiva rosada es uno de los espectáculos naturales más reconocidos del estado",
+        "relevancia_social": "Árbol de alineación y sombra urbana por excelencia en Villahermosa y otros municipios; referente estético de la identidad natural del estado",
+        "practicas_tradicionales": "Uso de la corteza en remedios caseros para la anemia; plantación en potreros y linderos como árbol de sombra y madera",
+        "saberes_indigenas": "Conocimiento sobre sus propiedades maderables y medicinales documentado entre comunidades indígenas de Tabasco"
+      },
+      "imagenes": {
+        "principal": "TAB-002_principal.jpg",
+        "habitat": "TAB-002_habitat.jpg",
+        "detalle": "TAB-002_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-23"
+    },
+    {
+      "id": "TAB-003",
+      "nombre_comun": "Pimienta de Tabasco / Pimienta gorda / Allspice",
+      "nombre_cientifico": "Pimenta dioica (L.) Merr.",
+      "familia": "Myrtaceae",
+      "genero": "Pimenta",
+      "especie": "dioica",
+      "descripcion": "Árbol perennifolio de 8 a 15 m de altura, corteza lisa y de color gris plateado que se desprende en láminas. Hojas coriáceas, elípticas, aromáticas al estrujarse. Flores pequeñas, blancas, en panículas; fruto en baya globosa, verde al inicio (momento de cosecha) y negro-violáceo al madurar.",
+      "habitat": "Selva mediana subperennifolia y alta perennifolia, sobre suelos calcáreos bien drenados; también cultivada en plantaciones.",
+      "distribucion": "Nativa de la Península de Yucatán, Tabasco y Chiapas (México), así como de Cuba, Jamaica y Centroamérica. México es uno de los principales productores mundiales.",
+      "estado_conservacion": "No catalogada en riesgo; sin embargo, la deforestación en su área nativa representa una amenaza indirecta.",
+      "abundancia": "Común en selvas conservadas del norte y oriente de Tabasco; cultivada en plantaciones en municipios como Tenosique y Balancán.",
+      "usos_medicinales": [
+        "Digestivo y carminativo (alivia flatulencia y cólicos)",
+        "Analgésico tópico (aceite esencial contra dolores musculares y articulares)",
+        "Antimicrobiano",
+        "Antifúngico",
+        "Antioxidante",
+        "Uso tradicional para la fatiga y el reumatismo"
+      ],
+      "preparados": [
+        "Infusión de frutos secos o hojas",
+        "Aceite esencial para aplicación tópica",
+        "Frutos molidos como condimento (especia)"
+      ],
+      "componentes_activos": [
+        "Eugenol (componente principal del aceite esencial, ~60-80%)",
+        "Cariofileno",
+        "Taninos",
+        "Flavonoides"
+      ],
+      "contraindicaciones": "El aceite esencial puro puede ser irritante para piel y mucosas en aplicación directa; debe diluirse. El consumo excesivo puede causar irritación gastrointestinal.",
+      "biologia": {
+        "ciclo_vida": "Árbol perennifolio longevo, de crecimiento lento a medio",
+        "reproduccion": "Especie dioica (árboles masculinos y femeninos separados); por semilla (tarda varios años en producir frutos)",
+        "polinizadores": "Abejas e insectos pequeños",
+        "epoca_floracion": "Abril a junio",
+        "adaptaciones": "Hojas coriáceas con aceites esenciales como mecanismo de defensa; tolerante a suelos calcáreos someros"
+      },
+      "historia": {
+        "origen": "Mesoamérica y el Caribe; Tabasco y la Península de Yucatán son parte de su área de distribución nativa",
+        "usos_tradicionales": "Uso prehispánico documentado como condimento, conservante de alimentos y remedio medicinal; los mayas la llamaban 'xocoxochitl'; llevada a Europa por los españoles en el siglo XVI como especia de alto valor",
+        "menciones_historicas": "Diego Álvarez Chanca (1494) fue el primer europeo en describir la pimienta de Jamaica en sus crónicas del viaje de Colón; exportada masivamente a Europa desde el siglo XVI como la única especia importante de origen exclusivamente americano",
+        "evidencia_arqueologica": "Restos de frutos de pimienta gorda identificados en contextos arqueológicos mesoamericanos como condimento y ofrenda"
+      },
+      "economia": {
+        "precio_mercado_kg": "El precio varía entre 60 y 120 pesos/kg para el fruto seco en mercados regionales de Tabasco; la pimienta gorda mexicana de calidad exportación alcanza precios superiores en mercados internacionales",
+        "produccion_anual_ton": "México produce entre 3,000 y 4,500 toneladas anuales de pimienta gorda, siendo Tabasco, Chiapas y la Península de Yucatán las principales zonas productoras",
+        "mercados_destino": "Exportación principalmente a Estados Unidos, Alemania, Reino Unido y Japón; mercado nacional de especias y gastronomía",
+        "valor_exportacion": "México es el segundo productor mundial de pimienta gorda después de Jamaica; el valor total de exportación mexicana ronda los 10-15 millones de dólares anuales",
+        "empleos_generados": "Miles de jornaleros agrícolas en Tabasco, Chiapas y la Península de Yucatán durante la temporada de cosecha (julio-agosto)",
+        "productos_derivados": [
+          "Fruto seco en grano",
+          "Pimienta molida",
+          "Aceite esencial",
+          "Extractos para la industria alimentaria y cosmética"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 17.4667,
+            "lng": -91.4333
+          },
+          {
+            "lat": 17.65,
+            "lng": -91.85
+          }
+        ],
+        "zona_distribucion": "Selvas del oriente de Tabasco (municipios de Tenosique y Balancán); también cultivada en plantaciones",
+        "tipo_suelo": "Calcáreo bien drenado, franco a franco-arcilloso",
+        "clima": "Cálido húmedo (Am)",
+        "precipitacion_anual": "1,800 - 2,500 mm",
+        "altitud": "0 - 400 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "La única especia importante de origen exclusivamente americano; símbolo del comercio colonial y de la riqueza natural de Mesoamérica",
+        "relevancia_social": "Fuente de ingreso para cientos de familias productoras en el oriente de Tabasco; parte de la identidad gastronómica regional",
+        "practicas_tradicionales": "Cosecha manual de frutos verdes antes de su maduración completa; secado al sol tradicional durante varios días",
+        "saberes_indigenas": "Conocimiento ancestral maya sobre el momento óptimo de cosecha (fruto verde pero de tamaño completo) para maximizar el contenido de eugenol"
+      },
+      "imagenes": {
+        "principal": "TAB-003_principal.jpg",
+        "habitat": "TAB-003_habitat.jpg",
+        "detalle": "TAB-003_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": true,
+      "fecha_registro": "2026-06-23"
+    },
+    {
+      "id": "TAB-004",
+      "nombre_comun": "Tinto / Palo de Campeche / Palo de tinte",
+      "nombre_cientifico": "Haematoxylum campechianum L.",
+      "familia": "Fabaceae",
+      "genero": "Haematoxylum",
+      "especie": "campechianum",
+      "descripcion": "Árbol pequeño a mediano de 4 a 15 m, de tronco frecuentemente tortuoso e irregular con contrafuertes basales, corteza gris-rojiza con fisuras longitudinales. Hojas pinnadas compuestas; flores pequeñas, amarillas, fragantes; fruto en vaina aplanada. La madera del duramen es de color rojo intenso a negro, fuente del pigmento hematoxilina.",
+      "habitat": "Selva baja caducifolia e inundable; especialmente en márgenes de ríos y pantanos estacionalmente inundables (acahuales y selvas bajas sobre suelos pesados).",
+      "distribucion": "Nativa de México (Tabasco, Campeche, Yucatán, Chiapas), Belice, Guatemala y Honduras; naturalizado en las Antillas y diversas regiones del mundo desde el siglo XVI por su valor tintóreo.",
+      "estado_conservacion": "No catalogada en riesgo a nivel de especie; históricamente diezmada por sobreextracción durante los siglos XVII-XIX para la industria del tinte. En la actualidad se está trabajando en su recuperación.",
+      "abundancia": "Disperso en selvas bajas e inundables del estado; localmente más frecuente cerca de cuerpos de agua.",
+      "usos_medicinales": [
+        "Antidiarreico (decocción de madera o corteza)",
+        "Hemostático (aplicación tópica)",
+        "Antiinflamatorio de mucosas (enjuague bucal, uso ginecológico)",
+        "Uso tradicional en afecciones respiratorias"
+      ],
+      "preparados": [
+        "Decocción de madera o corteza para uso interno",
+        "Enjuague bucal con decocción para afecciones gingivales",
+        "Lavado externo de heridas"
+      ],
+      "componentes_activos": [
+        "Hematoxilina (pigmento flavonoide de uso diagnóstico en histología y patología)",
+        "Brasilina",
+        "Taninos (actividad astringente que explica el uso antidiarreico)"
+      ],
+      "contraindicaciones": "El uso interno debe ser moderado; en dosis altas los taninos pueden causar irritación gastrointestinal. La hematoxilina pura tiene uso exclusivamente científico-diagnóstico, no terapéutico.",
+      "biologia": {
+        "ciclo_vida": "Árbol caducifolio de crecimiento lento, longevo",
+        "reproduccion": "Por semilla; regeneración natural lenta",
+        "polinizadores": "Abejas y mariposas, atraídas por el néctar de las flores amarillas",
+        "epoca_floracion": "Noviembre a enero (temporada seca)",
+        "adaptaciones": "Tolerante a inundación prolongada (suelos pesados con hidromorfia estacional); tronco tortuoso y contrafuertes basales como adaptación a suelos inestables"
+      },
+      "historia": {
+        "origen": "Mesoamérica, con el área tipo en la región de Campeche/Tabasco (el epíteto 'campechianum' lo indica)",
+        "usos_tradicionales": "Fue uno de los recursos naturales más codiciados del mundo durante los siglos XVII-XIX; su madera dura un pigmento azul-negro (hematoxilina) que revolucionó la industria textil europea; en Tabasco los mayas lo usaron como tinte para telas y en medicina tradicional",
+        "menciones_historicas": "Su extracción descontrolada motivó conflictos coloniales entre España, Inglaterra y los Países Bajos; los 'Baymen' (cortadores de palo de tinte) asentados en Belice dieron origen indirectamente a ese país; en 1862 el descubrimiento de la anilina sintética colapsó el comercio mundial del palo de tinte",
+        "evidencia_arqueologica": "Restos de tejidos teñidos con hematoxilina identificados en contextos arqueológicos mesoamericanos y andinos"
+      },
+      "economia": {
+        "precio_mercado_kg": "No existe mercado comercial activo significativo para la madera o extracto en México actualmente; la hematoxilina como reactivo de laboratorio tiene precio comercial en el mercado científico internacional",
+        "produccion_anual_ton": "No documentada para Tabasco en la actualidad; el comercio masivo histórico cesó en el siglo XIX",
+        "mercados_destino": "Mercado de reactivos histológicos (hematoxilina purificada) a nivel internacional",
+        "valor_exportacion": "No documentado para México en la actualidad",
+        "empleos_generados": "No documentado",
+        "productos_derivados": [
+          "Hematoxilina como colorante histológico (reactivo Hematoxilina-Eosina, H&E)",
+          "Tinte artesanal natural",
+          "Madera para artesanías y ebanistería de pequeña escala"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 18.2167,
+            "lng": -92.65
+          },
+          {
+            "lat": 17.9892,
+            "lng": -92.9475
+          }
+        ],
+        "zona_distribucion": "Selvas bajas inundables y márgenes de ríos en los municipios del norte y centro de Tabasco",
+        "tipo_suelo": "Arcilloso pesado, con hidromorfia estacional (inundación temporal)",
+        "clima": "Cálido húmedo (Am)",
+        "precipitacion_anual": "1,800 - 3,000 mm",
+        "altitud": "0 - 100 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Árbol con una de las historias coloniales más dramáticas de América; su explotación transformó la economía y la geopolítica del Golfo de México durante más de dos siglos",
+        "relevancia_social": "La memoria histórica de los 'palos de tinte' permanece en la toponimia y la identidad cultural de la región del Usumacinta y el Golfo",
+        "practicas_tradicionales": "Uso de la decocción como remedio antidiarreico y hemostático en comunidades rurales",
+        "saberes_indigenas": "Conocimiento chontal y maya sobre el uso tintóreo y medicinal de la madera"
+      },
+      "imagenes": {
+        "principal": "TAB-004_principal.jpg",
+        "habitat": "TAB-004_habitat.jpg",
+        "detalle": "TAB-004_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-23"
+    },
+    {
+      "id": "TAB-005",
+      "nombre_comun": "Ceiba / Pochote / Ya'axché",
+      "nombre_cientifico": "Ceiba pentandra (L.) Gaertn.",
+      "familia": "Malvaceae",
+      "genero": "Ceiba",
+      "especie": "pentandra",
+      "descripcion": "Árbol gigante caducifolio de hasta 60 m de altura (uno de los árboles más grandes de América), con tronco recto de gran diámetro y enormes contrafuertes basales (tablas). Corteza verde-grisácea con aguijones cónicos en árboles jóvenes; copa extendida y aplanada en forma de sombrilla. Flores blancas o rosadas; fruto en cápsula leñosa que libera fibra sedosa blanca (kapok).",
+      "habitat": "Selva alta perennifolia y mediana subperennifolia; frecuente en márgenes de ríos, acahuales y como árbol aislado en potreros.",
+      "distribucion": "Nativa del trópico americano; distribuida desde México hasta Bolivia y también nativa de África occidental. En Tabasco es uno de los árboles más emblemáticos del paisaje.",
+      "estado_conservacion": "No catalogada en riesgo; sin embargo, los individuos maduros son escasos por la deforestación histórica.",
+      "abundancia": "Árboles maduros dispersos en selva conservada y potreros del estado; más frecuente en municipios con mayor cobertura forestal.",
+      "usos_medicinales": [
+        "Antifebril (decocción de corteza)",
+        "Antidiabético tradicional (infusión de hojas y corteza)",
+        "Antidiarreico (corteza astringente)",
+        "Antiinflamatorio tópico (resina)",
+        "Diurético",
+        "Uso tradicional para asma y afecciones renales"
+      ],
+      "preparados": [
+        "Decocción de corteza para fiebre y diarrea",
+        "Infusión de hojas para diabetes",
+        "Resina aplicada tópicamente sobre inflamaciones"
+      ],
+      "componentes_activos": [
+        "Taninos (propiedad astringente de la corteza)",
+        "Flavonoides",
+        "Ácidos grasos en las semillas (aceite de kapok)",
+        "Mucílagos en la fibra de kapok"
+      ],
+      "contraindicaciones": "No ampliamente documentadas para el uso tradicional moderado; se recomienda precaución en el uso interno de la corteza en dosis altas por el contenido de taninos.",
+      "biologia": {
+        "ciclo_vida": "Árbol caducifolio gigante, extremadamente longevo (puede superar los 300 años)",
+        "reproduccion": "Por semilla; la fibra de kapok facilita la dispersión eólica a larga distancia",
+        "polinizadores": "Murciélagos (polinización nocturna principalmente)",
+        "epoca_floracion": "Diciembre a febrero (durante la temporada seca, cuando el árbol ha perdido sus hojas)",
+        "adaptaciones": "Contrafuertes basales (tablas) para estabilidad en suelos superficiales; caducidad foliar para reducir estrés hídrico; flores nocturnas polinizadas por murciélagos"
+      },
+      "historia": {
+        "origen": "Trópico americano y África occidental",
+        "usos_tradicionales": "El árbol más sagrado de la cosmología maya (Ya'axché, árbol del mundo o axis mundi); su fibra de kapok fue usada para rellenar colchones, chalecos salvavidas y textiles; la madera, ligera, se empleó para canoas y artesanías",
+        "menciones_historicas": "El Popol Vuh y el Chilam Balam describen a la ceiba como el árbol sagrado que sostiene el mundo maya; referida en crónicas coloniales como árbol de enorme relevancia espiritual y práctica",
+        "evidencia_arqueologica": "La ceiba aparece representada en numerosos relieves y estelas mayas como símbolo cosmológico central; existen individuos en sitios arqueológicos que pueden ser centenarios"
+      },
+      "economia": {
+        "precio_mercado_kg": "La fibra de kapok tiene mercado internacional como material de relleno ecológico; la madera se usa localmente pero tiene bajo valor comercial por su ligereza; sin cifra oficial consolidada para Tabasco",
+        "produccion_anual_ton": "No existe producción comercial de kapok documentada a gran escala en Tabasco en la actualidad",
+        "mercados_destino": "Mercado de fibras naturales ecológicas (kapok); artesanías locales con madera liviana",
+        "valor_exportacion": "No documentado para Tabasco",
+        "empleos_generados": "No documentado",
+        "productos_derivados": [
+          "Fibra de kapok para rellenos y artesanías",
+          "Aceite de semilla",
+          "Madera liviana para artesanías y canoas"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 17.9892,
+            "lng": -92.9475
+          },
+          {
+            "lat": 17.65,
+            "lng": -93.2
+          }
+        ],
+        "zona_distribucion": "Selva alta perennifolia y potreros del sur y centro de Tabasco; municipios de Teapa, Macuspana y Nacajuca",
+        "tipo_suelo": "Aluvial profundo, bien drenado a moderadamente húmedo",
+        "clima": "Cálido húmedo (Am/Af)",
+        "precipitacion_anual": "2,000 - 3,500 mm",
+        "altitud": "0 - 200 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Árbol sagrado por excelencia de la cosmología maya (Ya'axché, eje del mundo); presente como símbolo en la bandera y el escudo del estado de Tabasco",
+        "relevancia_social": "Símbolo identitario de Tabasco; su presencia en potreros indica la memoria cultural de su valor sagrado (muchos campesinos evitan talarla)",
+        "practicas_tradicionales": "Respeto y veneración del árbol adulto en comunidades rurales; uso de la corteza en remedios caseros para la fiebre",
+        "saberes_indigenas": "Conocimiento chontal sobre el valor sagrado y medicinal de la ceiba; rituales de ofrenda asociados a árboles venerables"
+      },
+      "imagenes": {
+        "principal": "TAB-005_principal.jpg",
+        "habitat": "TAB-005_habitat.jpg",
+        "detalle": "TAB-005_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-23"
+    },
+    {
+      "id": "TAB-006",
+      "nombre_comun": "Cocohite / Mata ratón / Cacahuananche",
+      "nombre_cientifico": "Gliricidia sepium (Jacq.) Kunth ex Walp.",
+      "familia": "Fabaceae",
+      "genero": "Gliricidia",
+      "especie": "sepium",
+      "descripcion": "Árbol pequeño a mediano, caducifolio, de 5 a 12 m de altura. Hojas pinnadas compuestas de 7 a 17 folíolos. Flores vistosas de color rosado-lila en racimos densos, producidas cuando el árbol está sin hojas. Fruto en vaina aplastada.",
+      "habitat": "Selva baja caducifolia y vegetación secundaria; muy frecuente plantado como cerca viva, sombra y abono verde.",
+      "distribucion": "Nativa de México (Tabasco, Chiapas, Oaxaca, Guerrero) y Centroamérica; ampliamente introducida en el trópico mundial por su valor agrosilvopastoril.",
+      "estado_conservacion": "No catalogada en riesgo; ampliamente cultivada.",
+      "abundancia": "Muy común en potreros, orillas de caminos y cercas vivas de toda la entidad.",
+      "usos_medicinales": [
+        "Antiparasitario externo (hojas contra pulgas, piojos y garrapatas)",
+        "Cicatrizante (hojas en cataplasma)",
+        "Afecciones de la piel (sarpullido, hongos)",
+        "Uso veterinario tradicional para parásitos del ganado"
+      ],
+      "preparados": [
+        "Cataplasma de hojas frescas sobre la zona afectada",
+        "Decocción de hojas para baños antiparasitarios"
+      ],
+      "componentes_activos": [
+        "Cumarina",
+        "Glucósidos (nitrato de potasio)",
+        "Rotenona (en pequeñas cantidades; insecticida natural)",
+        "Taninos"
+      ],
+      "contraindicaciones": "La planta entera, especialmente hojas, flores y semillas, puede ser tóxica para perros, gatos, hámsters y ratas si se ingiere (el nombre 'mata ratón' refleja esta toxicidad). Debe evitarse el uso interno en humanos sin supervisión experta.",
+      "biologia": {
+        "ciclo_vida": "Árbol caducifolio de crecimiento rápido",
+        "reproduccion": "Por semilla y fácilmente por estaca (principal método para establecer cercas vivas)",
+        "polinizadores": "Principalmente abejas (Xylocopa y Apis mellifera)",
+        "epoca_floracion": "Enero a marzo, cuando el árbol no tiene hojas",
+        "adaptaciones": "Raíces con nódulos fijadores de nitrógeno atmosférico (simbiosis con Rhizobium); rebrote vigoroso tras la poda; alta tolerancia a corte y a condiciones de sequía estacional"
+      },
+      "historia": {
+        "origen": "México y Centroamérica",
+        "usos_tradicionales": "Uso tradicional como cerca viva, sombra para cultivos de cacao y café, abono verde, forraje para ganado y leña; remedio popular para parásitos externos de animales domésticos",
+        "menciones_historicas": "Ampliamente documentada en la literatura agrosilvopastoril latinoamericana del siglo XX como especie multipropósito de gran valor para sistemas de producción sostenible",
+        "evidencia_arqueologica": "No se documenta evidencia arqueológica directa en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "No tiene mercado comercial de biomasa; su valor es agrosilvopastoril (servicio ecosistémico de fijación de nitrógeno, sombra y cercado)",
+        "produccion_anual_ton": "No aplica; uso principalmente como servicio ambiental en sistemas agropecuarios",
+        "mercados_destino": "Sin mercado formal de productos derivados; la leña se usa localmente",
+        "valor_exportacion": "No documentado",
+        "empleos_generados": "No documentado",
+        "productos_derivados": [
+          "Cerca viva",
+          "Leña",
+          "Forraje para ganado vacuno",
+          "Abono verde (hojas)"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 18.2167,
+            "lng": -92.65
+          },
+          {
+            "lat": 17.9892,
+            "lng": -92.9475
+          }
+        ],
+        "zona_distribucion": "Potreros, cercas vivas y orillas de caminos en todo el estado de Tabasco",
+        "tipo_suelo": "Variado; tolerante a suelos pobres, ácidos o arcillosos",
+        "clima": "Cálido húmedo (Am)",
+        "precipitacion_anual": "1,800 - 3,000 mm",
+        "altitud": "0 - 300 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Parte del paisaje rural tabasqueño; símbolo del sistema agroforestal tradicional con cacao y plátano",
+        "relevancia_social": "Árbol fundamental en el sistema de producción de cacao tabasqueño, donde provee sombra y fertilidad al suelo",
+        "practicas_tradicionales": "Propagación por estaca para establecer cercas vivas; uso de hojas para el control de parásitos externos en animales de traspatio",
+        "saberes_indigenas": "Conocimiento chontal y nahua sobre el uso agrosilvopastoril y medicinal de la especie"
+      },
+      "imagenes": {
+        "principal": "TAB-006_principal.jpg",
+        "habitat": "TAB-006_habitat.jpg",
+        "detalle": "TAB-006_detalle.jpg"
+      },
+      "populares": false,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-23"
+    },
+    {
+      "id": "TAB-007",
+      "nombre_comun": "Matalí / Zebrina / Hierba del pollo morado",
+      "nombre_cientifico": "Tradescantia zebrina Heynh. ex Bosse",
+      "familia": "Commelinaceae",
+      "genero": "Tradescantia",
+      "especie": "zebrina",
+      "descripcion": "Hierba perenne rastrera o colgante, con hojas bicolores: verde brillante con franjas plateadas en el haz y de color púrpura-magenta intenso en el envés. Tallos suculentos y nudosos. Flores pequeñas de color rosa a lila, de tres pétalos.",
+      "habitat": "Cultivada en jardines, solares y macetas; naturalizada en sitios húmedos, umbrosos y perturbados.",
+      "distribucion": "Nativa de México (incluyendo Tabasco) y Guatemala; ampliamente naturalizada y cultivada en el trópico mundial como planta ornamental.",
+      "estado_conservacion": "Cultivada/naturalizada; no se encuentra en riesgo.",
+      "abundancia": "Muy común en solares, jardines y vegetación secundaria húmeda de toda la entidad.",
+      "usos_medicinales": [
+        "Antiinflamatorio y cicatrizante (hojas en cataplasma)",
+        "Afecciones de la piel (quemaduras leves, irritaciones)",
+        "Antihemorrágico (uso tópico)",
+        "Afecciones gastrointestinales (infusión)",
+        "Uso tradicional para infecciones de la piel y hongos"
+      ],
+      "preparados": [
+        "Cataplasma de hojas frescas machacadas",
+        "Infusión de hojas para uso interno",
+        "Jugo de tallos y hojas para aplicación tópica"
+      ],
+      "componentes_activos": [
+        "Flavonoides",
+        "Taninos",
+        "Antocianinas (responsables del color morado)",
+        "Compuestos fenólicos con actividad antioxidante"
+      ],
+      "contraindicaciones": "La savia puede causar irritación cutánea o dermatitis de contacto en personas sensibles; se recomienda probar en una pequeña área antes del uso externo extenso.",
+      "biologia": {
+        "ciclo_vida": "Hierba perenne de crecimiento rápido",
+        "reproduccion": "Principalmente vegetativa por esquejes de tallo (enraízan con facilidad); también por semilla",
+        "polinizadores": "Insectos pequeños",
+        "epoca_floracion": "Todo el año en condiciones de trópico húmedo",
+        "adaptaciones": "Tallos suculentos que almacenan agua y enraízan en los nudos; pigmento antociánico en el envés como protección frente a la radiación UV reflejada"
+      },
+      "historia": {
+        "origen": "México y Guatemala",
+        "usos_tradicionales": "Ampliamente integrada en la medicina tradicional del sureste de México para afecciones de la piel y heridas; también usada como planta ornamental de fácil propagación",
+        "menciones_historicas": "Documentada en estudios etnobotánicos del sureste de México bajo el sinónimo Zebrina pendula; referida en la herbolaria popular tabasqueña",
+        "evidencia_arqueologica": "No documentada específicamente en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "Se comercializa como planta ornamental por unidad o por maceta en viveros locales",
+        "produccion_anual_ton": "No aplica; cultivo de traspatio y vivero, no agroindustrial",
+        "mercados_destino": "Mercado local de plantas ornamentales",
+        "valor_exportacion": "No documentado",
+        "empleos_generados": "No documentado",
+        "productos_derivados": [
+          "Planta ornamental en maceta",
+          "Extractos en investigación fitoquímica"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 17.9892,
+            "lng": -92.9475
+          },
+          {
+            "lat": 17.65,
+            "lng": -91.85
+          }
+        ],
+        "zona_distribucion": "Huertos, jardines y sitios húmedos en todo el estado de Tabasco",
+        "tipo_suelo": "Variado; prefiere suelos húmedos y ricos en materia orgánica",
+        "clima": "Cálido húmedo (Am/Af)",
+        "precipitacion_anual": "1,800 - 3,500 mm",
+        "altitud": "0 - 300 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Planta ornamental arraigada en los hogares tabasqueños; valorada tanto por su vistosidad como por sus propiedades medicinales",
+        "relevancia_social": "Remedio de primer uso para quemaduras e irritaciones de la piel en el ámbito doméstico",
+        "practicas_tradicionales": "Aplicación directa de las hojas machacadas sobre quemaduras leves y heridas",
+        "saberes_indigenas": "Conocimiento sobre sus propiedades cicatrizantes transmitido entre comunidades rurales del sureste de México"
+      },
+      "imagenes": {
+        "principal": "TAB-007_principal.jpg",
+        "habitat": "TAB-007_habitat.jpg",
+        "detalle": "TAB-007_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-23"
+    },
+    {
+      "id": "TAB-008",
+      "nombre_comun": "Orejita de ratón / Falso elefante",
+      "nombre_cientifico": "Pseudelephantopus spicatus (B. Juss. ex Aubl.) Rohr",
+      "familia": "Asteraceae",
+      "genero": "Pseudelephantopus",
+      "especie": "spicatus",
+      "descripcion": "Hierba perenne de 20 a 60 cm de altura, con hojas basales grandes, obovadas u oblanceoladas, ligeramente dentadas y de superficie suave. Tallos florales erectos con pequeñas cabezuelas de flores tubulares blancas a lilas, dispuestas en espigas foliosas.",
+      "habitat": "Praderas, claros de selva, orillas de caminos y sitios perturbados; frecuente en lugares húmedos y semisombreados.",
+      "distribucion": "Nativa del trópico americano; distribuida desde México y las Antillas hasta Sudamérica. Ampliamente presente en Tabasco.",
+      "estado_conservacion": "No catalogada en riesgo.",
+      "abundancia": "Común en sitios perturbados y praderas húmedas de la entidad.",
+      "usos_medicinales": [
+        "Antiinflamatorio (uso tópico y oral)",
+        "Antidiarreico",
+        "Afecciones respiratorias (tos)",
+        "Dolor de cabeza",
+        "Uso tradicional para infecciones urinarias",
+        "Cicatrizante externo"
+      ],
+      "preparados": [
+        "Infusión de hojas o de la planta completa",
+        "Cataplasma de hojas para uso tópico"
+      ],
+      "componentes_activos": [
+        "Lactonas sesquiterpénicas (actividad antiinflamatoria documentada en estudios preliminares)",
+        "Flavonoides",
+        "Taninos"
+      ],
+      "contraindicaciones": "No ampliamente documentadas para el uso tradicional moderado; se recomienda precaución en el uso interno prolongado.",
+      "biologia": {
+        "ciclo_vida": "Hierba perenne de crecimiento relativamente rápido",
+        "reproduccion": "Por semilla; los frutos tienen vilano rígido que favorece la dispersión por contacto con animales (epizoocoria)",
+        "polinizadores": "Insectos pequeños",
+        "epoca_floracion": "Todo el año, con mayor intensidad en la temporada de lluvias",
+        "adaptaciones": "Roseta basal que protege los meristemos de la herbivoría y el pisoteo; alta capacidad de rebrote"
+      },
+      "historia": {
+        "origen": "Trópico americano",
+        "usos_tradicionales": "Parte del herbolario popular tabasqueño, usada para afecciones digestivas y respiratorias cotidianas; documentada en estudios etnobotánicos de Tabasco y otros estados del sureste mexicano",
+        "menciones_historicas": "Referida en el Atlas de las Plantas de la Medicina Tradicional Mexicana (UNAM) y en estudios etnobotánicos del trópico húmedo mexicano",
+        "evidencia_arqueologica": "No documentada en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "No comercializada formalmente; recolección silvestre libre",
+        "produccion_anual_ton": "No aplica",
+        "mercados_destino": "Sin mercado formal",
+        "valor_exportacion": "No aplica",
+        "empleos_generados": "No aplica",
+        "productos_derivados": []
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 18.2167,
+            "lng": -92.65
+          },
+          {
+            "lat": 17.9892,
+            "lng": -92.9475
+          }
+        ],
+        "zona_distribucion": "Praderas húmedas y sitios perturbados en todo el estado de Tabasco",
+        "tipo_suelo": "Variado; prefiere suelos húmedos a moderadamente drenados",
+        "clima": "Cálido húmedo (Am)",
+        "precipitacion_anual": "1,800 - 3,000 mm",
+        "altitud": "0 - 200 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Hierba silvestre de recolección libre, parte del herbolario popular accesible de la región",
+        "relevancia_social": "Remedio doméstico de bajo costo y fácil acceso en comunidades rurales",
+        "practicas_tradicionales": "Recolección y preparación de infusiones caseras ante malestares cotidianos",
+        "saberes_indigenas": "Conocimiento popular sobre su identificación y usos transmitido oralmente en comunidades de Tabasco"
+      },
+      "imagenes": {
+        "principal": "TAB-008_principal.jpg",
+        "habitat": "TAB-008_habitat.jpg",
+        "detalle": "TAB-008_detalle.jpg"
+      },
+      "populares": false,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-23"
+    },
+    {
+      "id": "TAB-009",
+      "nombre_comun": "Rabutai / Rambután de monte",
+      "nombre_cientifico": "Salacia elliptica (Trin. ex Spreng.) G. Don",
+      "familia": "Celastraceae",
+      "genero": "Salacia",
+      "especie": "elliptica",
+      "descripcion": "Arbusto o árbol pequeño de 3 a 8 m, hojas elípticas coriáceas de borde liso, flores pequeñas de color amarillo-verdoso; frutos en drupa globosa, roja o anaranjada al madurar, de sabor agridulce. El nombre popular 'rambután de monte' o 'rabutai' se debe a la similitud visual de su fruto con el rambután comercial.",
+      "habitat": "Selva mediana y alta subperennifolia; también en vegetación secundaria húmeda.",
+      "distribucion": "Nativa de Asia tropical (Malasia, Indonesia, Tailandia) e introducida en diversas regiones tropicales de América, incluyendo Tabasco, por el valor de su fruto.",
+      "estado_conservacion": "Especie introducida en México; no se encuentra en riesgo.",
+      "abundancia": "Localizada en huertos familiares y selva secundaria de municipios del oriente y sur de Tabasco.",
+      "usos_medicinales": [
+        "Uso antidiabético (corteza y hojas en investigación científica; alto contenido de kotalanol y salacinol)",
+        "Control de la glucemia postprandial (inhibición de alfa-glucosidasas intestinales)",
+        "Antioxidante (fruto)",
+        "Uso tradicional emergente para diabetes tipo 2"
+      ],
+      "preparados": [
+        "Infusión o decocción de corteza o hojas (uso tradicional en Asia, adoptado en México)",
+        "Consumo del fruto fresco como alimento funcional"
+      ],
+      "componentes_activos": [
+        "Kotalanol y salacinol (inhibidores de alfa-glucosidasas, mecanismo similar a la acarbosa farmacéutica)",
+        "Maangiferin",
+        "Antocianinas en el fruto"
+      ],
+      "contraindicaciones": "Los inhibidores de alfa-glucosidasas pueden potenciar el efecto de medicamentos hipoglucemiantes; se recomienda precaución y consulta médica en personas bajo tratamiento para diabetes. No se debe usar como sustituto del tratamiento médico convencional.",
+      "biologia": {
+        "ciclo_vida": "Árbol o arbusto perenne",
+        "reproduccion": "Por semilla y por injerto en variedades seleccionadas",
+        "polinizadores": "Insectos pequeños",
+        "epoca_floracion": "Variable según condiciones del cultivo",
+        "adaptaciones": "Tolerante a alta humedad y temperatura; raíces que soportan suelos tropicales profundos"
+      },
+      "historia": {
+        "origen": "Asia tropical (Malasia, Indonesia, Tailandia, India)",
+        "usos_tradicionales": "En Asia, la corteza y las hojas de Salacia se usan desde hace siglos en la medicina ayurvédica y tradicional del sureste asiático para el tratamiento de la diabetes y la obesidad; en Tabasco su uso medicinal es reciente y emergente, vinculado a la adopción de prácticas de medicina complementaria",
+        "menciones_historicas": "Documentada en la literatura científica internacional por su potente actividad inhibidora de alfa-glucosidasas; el nombre común 'rabutai' en Tabasco es de origen local y podría referirse también a otras especies del género Salacia presentes en la región",
+        "evidencia_arqueologica": "No aplica; especie introducida"
+      },
+      "economia": {
+        "precio_mercado_kg": "Fruto comercializado localmente en huertos familiares; sin cifra oficial consolidada para Tabasco",
+        "produccion_anual_ton": "No existe cifra oficial; cultivo incipiente de traspatio",
+        "mercados_destino": "Venta local directa en huertos y mercados municipales",
+        "valor_exportacion": "No documentado",
+        "empleos_generados": "No documentado",
+        "productos_derivados": [
+          "Fruto fresco",
+          "Extractos en investigación fitofarmacológica antidiabética"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 17.4667,
+            "lng": -91.4333
+          },
+          {
+            "lat": 17.65,
+            "lng": -91.85
+          }
+        ],
+        "zona_distribucion": "Huertos familiares y selva secundaria del oriente y sur de Tabasco (municipios de Tenosique, Balancán, Emiliano Zapata)",
+        "tipo_suelo": "Franco-arcilloso, profundo y húmedo",
+        "clima": "Cálido húmedo (Am)",
+        "precipitacion_anual": "1,800 - 2,500 mm",
+        "altitud": "0 - 200 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Especie introducida en adopción creciente por comunidades del oriente de Tabasco, valorada por su fruto y su potencial antidiabético",
+        "relevancia_social": "Ejemplo de intercambio botánico contemporáneo entre Asia y América; su adopción refleja la apertura de las comunidades rurales a nuevas plantas medicinales",
+        "practicas_tradicionales": "Consumo del fruto fresco y preparación de infusiones de corteza para el control del azúcar en sangre",
+        "saberes_indigenas": "Conocimiento emergente sobre sus propiedades antidiabéticas, en proceso de integración al herbolario local"
+      },
+      "imagenes": {
+        "principal": "TAB-009_principal.jpg",
+        "habitat": "TAB-009_habitat.jpg",
+        "detalle": "TAB-009_detalle.jpg"
+      },
+      "populares": false,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-23"
+    },
+    {
+      "id": "TAB-010",
+      "nombre_comun": "Chile amashito / Chiltepin tabasqueño",
+      "nombre_cientifico": "Capsicum annuum L. var. glabriusculum (Dunal) Heiser & Pickersgill",
+      "familia": "Solanaceae",
+      "genero": "Capsicum",
+      "especie": "annuum",
+      "descripcion": "Planta herbácea o arbustiva de 0.5 a 1.5 m de altura, hojas lanceoladas. Frutos pequeños, esféricos u ovalados (0.5-1 cm de diámetro), de color verde al inicio y rojo brillante al madurar, de picor muy intenso. Es la variedad más pungente y característica de la gastronomía tabasqueña.",
+      "habitat": "Cultivada en huertos y solares familiares; también silvestre en acahuales y bordes de selva.",
+      "distribucion": "Variedad nativa de México y Mesoamérica; el 'amashito' es una variedad endémica o semidomesticada particularmente asociada con Tabasco.",
+      "estado_conservacion": "Cultivada/semidomesticada; no se encuentra en riesgo. El amashito tabasqueño está en proceso de solicitud de Denominación de Origen.",
+      "abundancia": "Muy común en solares y huertos de toda la entidad; ingrediente cotidiano de la cocina tabasqueña.",
+      "usos_medicinales": [
+        "Analgésico tópico (capsaicina contra dolores musculares y articulares)",
+        "Estimulante digestivo y carminativo",
+        "Antioxidante (alto contenido de vitamina C y capsaicinoides)",
+        "Uso tradicional para problemas circulatorios",
+        "Antimicrobiano leve"
+      ],
+      "preparados": [
+        "Consumo fresco como condimento",
+        "Salsas y aderezos tradicionales",
+        "Aplicación tópica de extractos de capsaicina"
+      ],
+      "componentes_activos": [
+        "Capsaicina y dihidrocapsaicina (capsaicinoides responsables del picor)",
+        "Vitamina C (alta concentración)",
+        "Carotenoides",
+        "Vitamina A"
+      ],
+      "contraindicaciones": "El contacto directo con los ojos o mucosas puede causar irritación intensa; el consumo excesivo puede irritar la mucosa gástrica. Se recomienda precaución en personas con gastritis o úlcera péptica activa.",
+      "biologia": {
+        "ciclo_vida": "Planta herbácea anual o perenne de vida corta según condiciones climáticas",
+        "reproduccion": "Por semilla; fácilmente cultivada por semilla guardada de cosechas anteriores",
+        "polinizadores": "Principalmente abejas (Apis mellifera y abejas nativas)",
+        "epoca_floracion": "Todo el año en el trópico húmedo de Tabasco",
+        "adaptaciones": "Capsaicinoides como mecanismo de defensa contra mamíferos herbívoros (las aves, que dispersan las semillas, no son sensibles a la capsaicina)"
+      },
+      "historia": {
+        "origen": "Mesoamérica; la variedad 'amashito' es endémica o semidomesticada de Tabasco",
+        "usos_tradicionales": "El amashito es el chile por excelencia de la cocina tabasqueña, con un picor muy intenso y un aroma frutal característico; se usa fresco, en salsas y como condimento en prácticamente todos los platillos regionales; parte integral de la identidad gastronómica de Tabasco",
+        "menciones_historicas": "La diversidad de chiles mesoamericanos fue documentada por cronistas coloniales desde el siglo XVI; el amashito como variedad tabasqueña fue estudiado por fitogenetistas del INIFAP en el siglo XX",
+        "evidencia_arqueologica": "Restos de semillas de Capsicum identificados en contextos arqueológicos mesoamericanos, con evidencia de domesticación que data de hace más de 6,000 años"
+      },
+      "economia": {
+        "precio_mercado_kg": "El amashito fresco se vende a precios variables en mercados locales de Tabasco; la alta demanda y el ciclo de producción continuo lo hacen un cultivo rentable a pequeña escala",
+        "produccion_anual_ton": "No existe cifra oficial consolidada de producción de amashito para Tabasco; el cultivo es principalmente de traspatio y pequeños huertos comerciales",
+        "mercados_destino": "Mercados municipales de Tabasco; creciente demanda en restaurantes de gastronomía regional fuera del estado",
+        "valor_exportacion": "No documentado; en proceso de consolidación de una marca e Indicación Geográfica",
+        "empleos_generados": "No documentado; su cultivo es una fuente de ingreso complementario para numerosas familias rurales del estado",
+        "productos_derivados": [
+          "Chile fresco",
+          "Salsa de amashito (producto estrella de la gastronomía tabasqueña)",
+          "Chile seco",
+          "Encurtidos"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 17.9892,
+            "lng": -92.9475
+          },
+          {
+            "lat": 18.2167,
+            "lng": -92.65
+          }
+        ],
+        "zona_distribucion": "Huertos familiares y solares en todo el estado de Tabasco; especialmente en los municipios del centro (Villahermosa, Centro, Nacajuca)",
+        "tipo_suelo": "Franco a franco-arcilloso, bien drenado",
+        "clima": "Cálido húmedo (Am)",
+        "precipitacion_anual": "1,800 - 3,000 mm",
+        "altitud": "0 - 200 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "El chile identitario de Tabasco por excelencia; su sabor y picor son reconocidos como marca de la cocina regional en todo México",
+        "relevancia_social": "Ingrediente indispensable de la mesa tabasqueña; su cultivo y comercio generan ingresos para familias rurales del estado",
+        "practicas_tradicionales": "Elaboración artesanal de la salsa de amashito con tomate, ajo y cebolla; cosecha manual de frutos maduros en huertos familiares",
+        "saberes_indigenas": "Conocimiento chontal sobre la selección de plantas con mayor picor y aroma; transmisión de semillas criollas entre generaciones"
+      },
+      "imagenes": {
+        "principal": "TAB-010_principal.jpg",
+        "habitat": "TAB-010_habitat.jpg",
+        "detalle": "TAB-010_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": true,
+      "fecha_registro": "2026-06-23"
+    }
+  ]
+}

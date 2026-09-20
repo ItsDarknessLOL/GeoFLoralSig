@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Información - Plantas Medicinales del Sureste</title>
+  <meta name="description" content="Información detallada de plantas medicinales endémicas.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Playfair Display', serif; }
+
+    /* Hero de planta */
+    .hero-planta {
+      position: relative;
+      min-height: 70vh;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      background: var(--negro);
+    }
+
+    .hero-planta-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.4);
+      animation: heroZoom 20s ease-in-out infinite alternate;
+    }
+
+    @keyframes heroZoom {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.1); }
+    }
+
+    .hero-planta-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.1) 100%);
+    }
+
+    .hero-planta-contenido {
+      position: relative;
+      z-index: 10;
+      max-width: var(--contenedor-max);
+      margin: 0 auto;
+      padding: 120px 24px 60px;
+      width: 100%;
+    }
+
+    .hero-planta-nombre {
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      font-weight: 700;
+      color: var(--blanco);
+      line-height: 1.1;
+      margin-bottom: 12px;
+      text-shadow: 0 4px 30px rgba(0,0,0,0.5);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .hero-planta-cientifico {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.2rem, 3vw, 2rem);
+      font-style: italic;
+      color: var(--verde-lima);
+      margin-bottom: 20px;
+      animation: fadeInUp 1s ease 0.3s forwards;
+      opacity: 0;
+    }
+
+    .hero-planta-meta {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      animation: fadeInUp 1s ease 0.6s forwards;
+      opacity: 0;
+    }
+
+    .hero-planta-badge {
+      padding: 6px 16px;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      color: white;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    /* Tabs */
+    .tabs-container {
+      max-width: var(--contenedor-max);
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+      background: var(--gris-50);
+    }
+
+    .tabs-nav {
+      display: flex;
+      gap: 4px;
+      border-bottom: 2px solid var(--gris-200);
+      margin-bottom: 32px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      background: var(--blanco);
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+      padding: 6px 8px 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .tabs-nav::-webkit-scrollbar { display: none; }
+
+    .tab-btn {
+      padding: 12px 20px;
+      background: none;
+      border: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--gris-500);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: var(--t-base);
+      position: relative;
+      border-radius: var(--radius) var(--radius) 0 0;
+    }
+
+    .tab-btn:hover { color: var(--color-estado); background: var(--gris-50); }
+
+    .tab-btn.activo { color: var(--color-estado); }
+
+    .tab-btn.activo::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0; right: 0;
+      height: 3px;
+      background: var(--color-estado);
+      border-radius: 3px 3px 0 0;
+    }
+
+    .tab-panel {
+      display: none;
+      animation: fadeIn 0.35s ease;
+    }
+
+    .tab-panel.activo { display: block; }
+
+    /* Info cards */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .info-card {
+      background: var(--blanco);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--gris-200);
+      transition: var(--t-base);
+    }
+
+    .info-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-2px);
+    }
+
+    .info-card h4 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--color-estado);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .info-card p, .info-card li {
+      font-size: 0.95rem;
+      color: var(--gris-700);
+      line-height: 1.7;
+    }
+
+    .info-card ul { padding-left: 20px; }
+    .info-card li { margin-bottom: 6px; list-style: disc; }
+
+    /* Tabla datos */
+    .datos-tabla {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .datos-tabla td {
+      padding: 11px 14px;
+      border-bottom: 1px solid var(--gris-100);
+      font-size: .9rem;
+    }
+    .datos-tabla td:first-child {
+      font-weight: 600;
+      color: var(--gris-500);
+      width: 42%;
+      font-size: .82rem;
+      text-transform: uppercase;
+      letter-spacing: .03em;
+    }
+    .datos-tabla td:last-child { color: var(--gris-900); }
+    .datos-tabla tr:last-child td { border-bottom: none; }
+
+    /* Mapa planta */
+    .mapa-planta {
+      height: 340px;
+      border-radius: var(--radius-lg);
+      margin-top: 16px;
+      border: 1px solid var(--gris-200);
+      overflow: hidden;
+    }
+
+    /* Botón 3D */
+    .btn-3d {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 32px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: var(--radius-full);
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--t-base);
+      box-shadow: 0 4px 18px rgba(102,126,234,.4);
+    }
+    .btn-3d:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(102,126,234,.5);
+      filter: brightness(1.07);
+    }
+
+    /* Eco stats */
+    .eco-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(145px,1fr));
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    .eco-stat {
+      text-align: center;
+      padding: 20px 12px;
+      background: var(--color-estado-muy-claro);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-estado-claro);
+      transition: var(--t-base);
+    }
+    .eco-stat:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+    .eco-stat-valor {
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--color-estado);
+      letter-spacing: -.02em;
+    }
+    .eco-stat-label {
+      font-size: .77rem;
+      color: var(--gris-500);
+      margin-top: 5px;
+      font-weight: 500;
+    }
+
+    /* Componente tags */
+    .componentes-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .componente-tag {
+      padding: 5px 13px;
+      background: var(--color-estado-muy-claro);
+      color: var(--color-estado);
+      border-radius: var(--radius-full);
+      font-size: .82rem;
+      font-weight: 600;
+      border: 1px solid var(--color-estado-claro);
+    }
+
+    /* ════════════════════════════════════════════
+       GALERÍA DE IMÁGENES — 3 IMÁGENES DEL JSON
+       ════════════════════════════════════════════ */
+    .galeria-imagenes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .galeria-imagenes {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .galeria-item {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--gris-100);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .galeria-item:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .galeria-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .galeria-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .galeria-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px 14px;
+      background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      pointer-events: none;
+    }
+
+    .galeria-item.sin-imagen {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gris-500);
+      font-size: 0.85rem;
+      cursor: default;
+    }
+    .galeria-item.sin-imagen:hover {
+      transform: none;
+      box-shadow: var(--shadow-md);
+    }
+
+    /* ════════════════════════════════════════════
+       LIGHTBOX
+       ════════════════════════════════════════════ */
+    #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: rgba(0,0,0,0.92);
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      animation: fadeIn 0.25s ease;
+    }
+
+    #lightbox.activo {
+      display: flex;
+    }
+
+    #lightbox-img {
+      max-width: 90vw;
+      max-height: 85vh;
+      object-fit: contain;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      animation: zoomIn 0.3s ease;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.85); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .lightbox-cerrar {
+      position: absolute;
+      top: 20px;
+      right: 28px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: white;
+      font-size: 1.6rem;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(10px);
+      transition: all 0.2s ease;
+    }
+
+    .lightbox-cerrar:hover {
+      background: rgba(255,255,255,0.3);
+      transform: scale(1.1);
+    }
+
+    .lightbox-titulo {
+      position: absolute;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+      background: rgba(0,0,0,0.5);
+      padding: 8px 20px;
+      border-radius: var(--radius-full);
+      backdrop-filter: blur(10px);
+    }
+
+    @media (max-width: 768px) {
+      .hero-planta { min-height: 50vh; }
+      .tabs-nav { gap: 0; }
+      .tab-btn { padding: 10px 12px; font-size: .78rem; }
+      .galeria-imagenes { grid-template-columns: 1fr; }
+      .lightbox-cerrar { top: 12px; right: 12px; width: 40px; height: 40px; font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header — dark, always over dark hero -->
+  <header class="header" role="banner" style="background:rgba(0,0,0,.65);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);">
+    <div class="contenedor">
+      <a href="../index.html" class="logo" aria-label="Inicio">
+        <div class="logo-icono" aria-hidden="true">🌿</div>
+        <span>Biodiversidad Médica del Sureste</span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="herramientas.html">Herramientas</a>
+        <a href="acerca_de.html">Acerca de</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Planta -->
+  <section class="hero-planta" id="heroPlanta" aria-labelledby="plantaNombre">
+    <div class="hero-planta-bg" id="heroBg" data-parallax="0.2"></div>
+    <div class="hero-planta-overlay"></div>
+    <div class="hero-planta-contenido">
+      <h1 class="hero-planta-nombre font-display" id="plantaNombre">Cargando...</h1>
+      <p class="hero-planta-cientifico" id="plantaCientifico"></p>
+      <div class="hero-planta-meta" id="plantaMeta"></div>
+    </div>
+  </section>
+
+  <!-- Tabs de información -->
+  <section class="tabs-container section-tinted" style="padding-bottom:80px;">
+    <div class="tabs-nav" id="tabsNav">
+      <button class="tab-btn activo" onclick="cambiarTab('general')">📋 General</button>
+      <button class="tab-btn" onclick="cambiarTab('biologia')">🔬 Biología</button>
+      <button class="tab-btn" onclick="cambiarTab('medicina')">💊 Medicinal</button>
+      <button class="tab-btn" onclick="cambiarTab('historia')">📜 Historia</button>
+      <button class="tab-btn" onclick="cambiarTab('economia')">💰 Economía</button>
+      <button class="tab-btn" onclick="cambiarTab('sig')">🗺️ SIG</button>
+      <button class="tab-btn" onclick="cambiarTab('humanidades')">🎭 Humanidades</button>
+    </div>
+
+    <!-- General -->
+    <div class="tab-panel activo" id="tab-general">
+      <div class="info-grid" id="contenidoGeneral"></div>
+    </div>
+
+    <!-- Biología -->
+    <div class="tab-panel" id="tab-biologia">
+      <div class="info-grid" id="contenidoBiologia"></div>
+    </div>
+
+    <!-- Medicinal -->
+    <div class="tab-panel" id="tab-medicina">
+      <div class="info-grid" id="contenidoMedicina"></div>
+    </div>
+
+    <!-- Historia -->
+    <div class="tab-panel" id="tab-historia">
+      <div class="info-grid" id="contenidoHistoria"></div>
+    </div>
+
+    <!-- Economía -->
+    <div class="tab-panel" id="tab-economia">
+      <div id="contenidoEconomia"></div>
+    </div>
+
+    <!-- SIG -->
+    <div class="tab-panel" id="tab-sig">
+      <div id="contenidoSIG"></div>
+    </div>
+
+    <!-- Humanidades -->
+    <div class="tab-panel" id="tab-humanidades">
+      <div class="info-grid" id="contenidoHumanidades"></div>
+    </div>
+  </section>
+
+  <!-- CTA 3D -->
+  <section class="cta-3d-section" style="background:var(--gris-100);border-top:1px solid var(--gris-200);padding:60px 24px;text-align:center;">
+    <div class="contenedor">
+      <h2 class="font-display" style="font-size:2rem;margin-bottom:16px;letter-spacing:-.02em;">Explora en 3D</h2>
+      <p style="color:var(--gris-500);max-width:480px;margin:0 auto 28px;line-height:1.65;">
+        Visualiza el modelo tridimensional de esta planta medicinal con controles interactivos.
+      </p>
+      <button class="btn-3d" onclick="verEn3D()" aria-label="Abrir visor 3D">
+        🧬 Ver Visor 3D
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid" style="grid-template-columns: 1fr 1fr; gap: 20px; padding: 0 24px;">
+      <div>
+        <div class="footer-logo"><span>🌿</span> Plantas Medicinales del Sureste</div>
+        <p class="footer-desc">Conocimiento ancestral, ciencia moderna.</p>
+      </div>
+      <div style="text-align: right;">
+        <div class="footer-links">
+          <a href="../index.html">Inicio</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="mapa.html">Mapa</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p> 2024 Plantas Medicinales del Sureste</p>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════════════
+       LIGHTBOX
+       ════════════════════════════════════════════ -->
+  <div id="lightbox">
+    <button class="lightbox-cerrar" onclick="cerrarLightbox()" aria-label="Cerrar imagen">✕</button>
+    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-titulo" id="lightbox-titulo"></div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/informacion.js"></script>
+</body>
+</html>

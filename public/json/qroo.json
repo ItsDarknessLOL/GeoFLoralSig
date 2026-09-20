@@ -1,0 +1,843 @@
+{
+  "estado": "Quintana Roo",
+  "capital": "Chetumal",
+  "color_tema": "#C62828",
+  "color_secundario": "#FFCDD2",
+  "total_especies": 312,
+  "especies_medicinales": 105,
+  "plantas": [
+    {
+      "id": "qro-001",
+      "nombre_comun": "Palma camedor / Xa'an / Palma bambú",
+      "nombre_cientifico": "Chamaedorea seifrizii Burret",
+      "familia": "Arecaceae",
+      "genero": "Chamaedorea",
+      "especie": "seifrizii",
+      "descripcion": "Palmera de sotobosque cespitosa, con tallos delgados tipo bambú agrupados en manojos, de hasta 3-6 m de altura. Hojas pinnadas, evergreen, de color verde intenso. Flores amarillas dispuestas en panícula; frutos pequeños, redondos y negros.",
+      "habitat": "Sotobosque de selva mediana y baja subperennifolia, a menudo sobre suelos calcáreos sujetos a inundación estacional, a baja altitud (hasta 500 msnm).",
+      "distribucion": "Belice, Guatemala, Honduras y México (Campeche, Quintana Roo, Tabasco y Yucatán).",
+      "estado_conservacion": "No catalogada en riesgo a nivel de la especie, pero bajo presión local por sobreextracción de hoja para la industria del follaje ornamental (xate).",
+      "abundancia": "Común en sotobosque no perturbado; reducida localmente donde hay extracción intensiva de hoja.",
+      "usos_medicinales": [
+        "Uso medicinal tradicional escasamente documentado",
+        "Valorada principalmente como planta ornamental y ritual más que medicinal"
+      ],
+      "preparados": [
+        "No se documentan preparados medicinales tradicionales; el aprovechamiento principal es el follaje de corte"
+      ],
+      "componentes_activos": [
+        "No determinados; sin estudios fitoquímicos específicos documentados para la especie"
+      ],
+      "contraindicaciones": "No se documentan toxicidad ni contraindicaciones medicinales conocidas.",
+      "biologia": {
+        "ciclo_vida": "Perenne, de crecimiento lento, hábito cespitoso (forma manojos de tallos delgados)",
+        "reproduccion": "Especie dioica (individuos masculinos y femeninos separados); dispersión de semillas por aves y pequeños mamíferos",
+        "polinizadores": "Insectos pequeños, principalmente dípteros y coleópteros",
+        "epoca_floracion": "Todo el año, con mayor intensidad en la época de lluvias (junio-septiembre)",
+        "adaptaciones": "Tallos delgados y flexibles tipo bambú adaptados a la sombra densa del dosel; tolerante a suelos calcáreos someros con inundación estacional"
+      },
+      "historia": {
+        "origen": "Centroamérica y sureste de México; descrita científicamente en 1938 a partir de un ejemplar recolectado cerca de Chichén Itzá",
+        "usos_tradicionales": "Cultivada y aprovechada desde la época maya como planta ornamental; en la actualidad es la base de la industria regional del 'xate', hoja de palma de corte para arreglos florales de exportación",
+        "menciones_historicas": "El epíteto 'seifrizii' honra al biólogo William Seifriz, recolector del ejemplar tipo de la especie",
+        "evidencia_arqueologica": "No se documenta evidencia arqueológica directa específica de la especie en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "Variable según el mercado de follaje ornamental (xate); no se encontró cifra oficial específica para Quintana Roo",
+        "produccion_anual_ton": "No documentada oficialmente para Quintana Roo; la industria del xate es comercialmente más relevante en Petén (Guatemala) y Belice",
+        "mercados_destino": "Mercado de follaje ornamental para arreglos florales, principalmente Estados Unidos y Europa",
+        "valor_exportacion": "No documentado específicamente para México",
+        "empleos_generados": "No documentado para Quintana Roo; en la región del Petén y Belice la extracción de xate emplea a miles de familias",
+        "productos_derivados": [
+          "Follaje de corte para arreglos florales",
+          "Planta de ornato en maceta"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 19.5755,
+            "lng": -88.0501
+          },
+          {
+            "lat": 19.1167,
+            "lng": -88.0833
+          }
+        ],
+        "zona_distribucion": "Selva mediana y baja subperennifolia del centro y sur de Quintana Roo",
+        "tipo_suelo": "Calcáreo (litosol/rendzina), somero, con drenaje estacionalmente deficiente",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,100 - 1,500 mm",
+        "altitud": "0 - 500 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Asociada al uso ornamental y a techumbres tradicionales mayas",
+        "relevancia_social": "Fuente de ingreso comunitario en Mesoamérica a través del comercio del xate",
+        "practicas_tradicionales": "Recolección selectiva de hojas maduras para venta y uso doméstico, respetando ciclos de corte",
+        "saberes_indigenas": "Conocimiento maya sobre el corte sostenible de hoja para no dañar la planta madre"
+      },
+      "imagenes": {
+        "principal": "qro-001_principal.jpg",
+        "habitat": "qro-001_habitat.jpg",
+        "detalle": "qro-001_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-19"
+    },
+    {
+      "id": "qro-002",
+      "nombre_comun": "Sábila",
+      "nombre_cientifico": "Aloe vera (L.) Burm. f.",
+      "familia": "Asphodelaceae",
+      "genero": "Aloe",
+      "especie": "vera",
+      "descripcion": "Planta suculenta perenne en roseta basal, hojas carnosas, lanceoladas, de borde dentado, verde grisáceo, con un gel mucilaginoso transparente en su interior. Inflorescencia en racimo con flores tubulares amarillas o anaranjadas.",
+      "habitat": "Cultivada en huertos familiares y solares; naturalizada en sitios perturbados, soleados y de buen drenaje.",
+      "distribucion": "Originaria del norte de África y la Península Arábiga; ampliamente naturalizada y cultivada en toda la Península de Yucatán.",
+      "estado_conservacion": "Introducida y naturalizada; no se encuentra en riesgo.",
+      "abundancia": "Muy común, cultivada en prácticamente todos los solares de la región.",
+      "usos_medicinales": [
+        "Quemaduras y heridas leves",
+        "Afecciones de la piel (irritaciones, resequedad)",
+        "Problemas digestivos y estreñimiento",
+        "Antiinflamatorio tópico"
+      ],
+      "preparados": [
+        "Gel fresco aplicado directamente sobre la piel",
+        "Jugo del gel para uso interno",
+        "Ungüentos y cremas caseras"
+      ],
+      "componentes_activos": [
+        "Aloína",
+        "Acemanano",
+        "Polisacáridos mucilaginosos",
+        "Vitaminas A, C y E"
+      ],
+      "contraindicaciones": "El uso interno prolongado o en dosis altas puede causar diarrea por efecto purgante; se recomienda evitar el uso interno durante el embarazo; la savia amarilla (aloína) de la corteza es irritante y debe separarse del gel.",
+      "biologia": {
+        "ciclo_vida": "Perenne suculenta de crecimiento lento",
+        "reproduccion": "Vegetativa, por hijuelos basales (rizomas); también por semilla, aunque con menor frecuencia en cultivo",
+        "polinizadores": "Colibríes e insectos (abejas)",
+        "epoca_floracion": "Invierno - primavera (diciembre a marzo)",
+        "adaptaciones": "Hojas suculentas que almacenan agua, metabolismo fotosintético CAM (ácido crasuláceo), alta resistencia a la sequía"
+      },
+      "historia": {
+        "origen": "África y Península Arábiga; introducida en América durante la época colonial",
+        "usos_tradicionales": "Profundamente integrada en la medicina tradicional yucateca pese a su origen foráneo; es una de las especies con mayor valor de uso reportado en los jardines medicinales de la región",
+        "menciones_historicas": "Usada desde el antiguo Egipto; documentada como remedio de uso doméstico esencial desde la época colonial en Yucatán",
+        "evidencia_arqueologica": "No aplica por tratarse de una especie introducida posterior a la conquista"
+      },
+      "economia": {
+        "precio_mercado_kg": "Variable; alta demanda en la industria cosmética y de bebidas saludables, sin cifra oficial específica para Quintana Roo",
+        "produccion_anual_ton": "No existen registros oficiales de producción comercial a gran escala en el estado; el cultivo es principalmente de traspatio",
+        "mercados_destino": "Industria cosmética y de salud, mercado local, nacional e internacional",
+        "valor_exportacion": "No documentado específicamente para la región",
+        "empleos_generados": "No documentado a nivel estatal",
+        "productos_derivados": [
+          "Gel fresco",
+          "Jugo embotellado",
+          "Jabones y champús",
+          "Cremas cosméticas"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 18.5036,
+            "lng": -88.3055
+          },
+          {
+            "lat": 18.6768,
+            "lng": -88.3925
+          }
+        ],
+        "zona_distribucion": "Cultivada en solares y huertos familiares en toda la entidad",
+        "tipo_suelo": "Franco-calcáreo, bien drenado",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,000 - 1,300 mm",
+        "altitud": "0 - 300 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Considerada planta protectora del hogar en la tradición maya-mestiza, presente en la mayoría de los solares",
+        "relevancia_social": "Remedio de primera mano en la medicina doméstica, transmitido por generaciones",
+        "practicas_tradicionales": "Aplicación directa del gel fresco para quemaduras y heridas; uso ritual de protección en algunos hogares",
+        "saberes_indigenas": "Integrada al herbolario maya como ejemplo de sincretismo botánico entre especies nativas e introducidas"
+      },
+      "imagenes": {
+        "principal": "qro-002_principal.jpg",
+        "habitat": "qro-002_habitat.jpg",
+        "detalle": "qro-002_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": true,
+      "fecha_registro": "2026-06-19"
+    },
+    {
+      "id": "qro-003",
+      "nombre_comun": "Ciricote / Siricote / Kopté",
+      "nombre_cientifico": "Cordia dodecandra A. DC.",
+      "familia": "Boraginaceae",
+      "genero": "Cordia",
+      "especie": "dodecandra",
+      "descripcion": "Árbol caducifolio de tamaño mediano a grande, de 10 a 30 m de altura y 40-70 cm de diámetro, tronco cilíndrico recto con corteza rugosa grisácea. Hojas elípticas a ovaladas de 7-15 cm, textura fibrosa. Flores axilares y terminales de color anaranjado-amarillento; fruto tipo drupa comestible, amarillo verdoso.",
+      "habitat": "Selva mediana y alta, subperennifolia y caducifolia; también cultivado en solares y huertos por su fruto y madera.",
+      "distribucion": "Península de Yucatán (Campeche, Quintana Roo, Yucatán), partes bajas de Chiapas, Tabasco y Veracruz; también Belice y Guatemala.",
+      "estado_conservacion": "No catalogada en una categoría de riesgo a nivel nacional, pero presenta presión local por aprovechamiento maderero selectivo.",
+      "abundancia": "Dispersa en selva conservada; más frecuente cultivada en solares.",
+      "usos_medicinales": [
+        "Anticatarral y antitusígeno (jarabe de corteza)",
+        "Remedio popular contra la tos ferina",
+        "Hojas usadas con fines de limpieza de heridas"
+      ],
+      "preparados": [
+        "Jarabe elaborado con la corteza cocida en agua con azúcar o miel",
+        "Infusión de corteza"
+      ],
+      "componentes_activos": [
+        "No ampliamente estudiados; se reportan mucílagos y compuestos fenólicos típicos del género Cordia"
+      ],
+      "contraindicaciones": "No se documentan toxicidad ni contraindicaciones específicas; se recomienda precaución en dosis altas por la falta de estudios toxicológicos formales.",
+      "biologia": {
+        "ciclo_vida": "Árbol caducifolio perenne, de crecimiento medio",
+        "reproduccion": "Sexual por semilla; polinización entomófila por flores nectaríferas",
+        "polinizadores": "Abejas y mariposas",
+        "epoca_floracion": "Marzo a mayo",
+        "adaptaciones": "Pierde las hojas en la temporada seca para reducir la pérdida de agua; raíz pivotante y ramificada"
+      },
+      "historia": {
+        "origen": "Sur de México, Guatemala y Belice",
+        "usos_tradicionales": "Jarabe de corteza contra la tos ferina y resfriados; frutos cocidos en almíbar para elaborar dulces tradicionales de las novenas religiosas; madera apreciada para muebles y guitarras",
+        "menciones_historicas": "Maximino Martínez (siglo XX) documentó su uso como anticatarral y antitusígeno; Narciso Souza registró la preparación de un jarabe de corteza contra la tos ferina; en Petén los mayas la nombraban 'coktée'",
+        "evidencia_arqueologica": "No se documenta evidencia arqueológica directa específica de la especie en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "La madera es apreciada para muebles finos; no se identificó una cifra de mercado oficial consolidada",
+        "produccion_anual_ton": "No documentada; el aprovechamiento es disperso y no proviene de plantaciones comerciales",
+        "mercados_destino": "Mercado regional de muebles, artesanías e instrumentos musicales (guitarras)",
+        "valor_exportacion": "No documentado",
+        "empleos_generados": "Carpinteros y artesanos locales (sin cifra oficial disponible)",
+        "productos_derivados": [
+          "Madera para muebles y guitarras",
+          "Frutos en almíbar",
+          "Jarabe medicinal de corteza"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 18.6768,
+            "lng": -88.3925
+          },
+          {
+            "lat": 18.5036,
+            "lng": -88.3055
+          }
+        ],
+        "zona_distribucion": "Selva mediana subperennifolia del centro-sur de Quintana Roo",
+        "tipo_suelo": "Calcáreo, bien drenado",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,100 - 1,400 mm",
+        "altitud": "0 - 200 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Árbol apreciado en huertos familiares mayas; su fruto es ingrediente de dulces tradicionales de fiestas religiosas (novenas)",
+        "relevancia_social": "Fuente de madera fina y remedio casero transmitido de generación en generación",
+        "practicas_tradicionales": "Preparación de dulces en almíbar y jarabes caseros contra la tos",
+        "saberes_indigenas": "Nombres mayas 'kopté' y 'chakopté'; uso documentado desde la época colonial"
+      },
+      "imagenes": {
+        "principal": "qro-003_principal.jpg",
+        "habitat": "qro-003_habitat.jpg",
+        "detalle": "qro-003_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-19"
+    },
+    {
+      "id": "qro-004",
+      "nombre_comun": "Pomolché / Chulché / Piñón",
+      "nombre_cientifico": "Jatropha gaumeri Greenm.",
+      "familia": "Euphorbiaceae",
+      "genero": "Jatropha",
+      "especie": "gaumeri",
+      "descripcion": "Árbol pequeño de 3 a 5 m de altura, corteza color café, tronco con látex transparente lechoso. Hojas ampliamente acorazonadas, enteras y lampiñas, de borde liso. Flores pequeñas de color crema; frutos ovoides de color verde.",
+      "habitat": "Bosque tropical caducifolio, subcaducifolio y perennifolio, entre 10 y 80 msnm, en vegetación no alterada o perturbada.",
+      "distribucion": "México (Campeche, Quintana Roo, Tabasco y Yucatán), Belice y Guatemala.",
+      "estado_conservacion": "Nativa, no catalogada en riesgo; común en vegetación conservada.",
+      "abundancia": "Común en selvas conservadas y cercas vivas de la región.",
+      "usos_medicinales": [
+        "Diarrea y disentería (látex diluido en agua, vía oral)",
+        "Limpieza de encías, postemas y fogajes (uso externo)",
+        "Cicatrizante y coagulante de heridas",
+        "Estomatitis, candidiasis, úlceras bucales, aftas, odontalgias, gingivitis y herpes labial"
+      ],
+      "preparados": [
+        "Látex diluido en agua para uso oral (combinado tradicionalmente con Jatropha curcas)",
+        "Aplicación tópica directa del látex sobre la piel o encías",
+        "Colutorio (enjuague bucal)"
+      ],
+      "componentes_activos": [
+        "No determinados con precisión en las fuentes consultadas; el género Jatropha es reconocido por metabolitos secundarios con actividad antimicrobiana y citotóxica"
+      ],
+      "contraindicaciones": "Varios usos tradicionales no han sido corroborados experimentalmente; se recomienda precaución por la toxicidad potencial del látex en dosis altas, común en el género Jatropha.",
+      "biologia": {
+        "ciclo_vida": "Árbol caducifolio perenne",
+        "reproduccion": "Por semilla y fácilmente por estaca (propagación vegetativa a partir de una rama)",
+        "polinizadores": "Insectos, principalmente abejas nativas",
+        "epoca_floracion": "Enero a abril, junio y octubre",
+        "adaptaciones": "Caducifolio y con almacenamiento de agua en el tronco; tolerante a suelos someros calcáreos"
+      },
+      "historia": {
+        "origen": "Desconocido; especie nativa de la región peninsular",
+        "usos_tradicionales": "Uso documentado desde el siglo XVIII para tratar aftas y enfermedades de la boca; aplicación del látex para cicatrizar heridas y aliviar diarreas",
+        "menciones_historicas": "Ricardo Ossado (siglo XVIII) la describe útil contra aftas y males bucales; Maximino Martínez (siglo XX) documenta su uso contra abscesos y disentería; Narciso Souza registra su uso como colutorio para úlceras bucales",
+        "evidencia_arqueologica": "No se documenta evidencia arqueológica directa en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "No comercializado formalmente; uso de autoconsumo y medicina tradicional",
+        "produccion_anual_ton": "No aplica; no existe cultivo comercial documentado",
+        "mercados_destino": "Sin mercado formal; recolección silvestre o de cercas vivas",
+        "valor_exportacion": "No documentado",
+        "empleos_generados": "No documentado",
+        "productos_derivados": [
+          "Látex medicinal",
+          "Ramas utilizadas en cercas vivas"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 19.1167,
+            "lng": -88.0833
+          },
+          {
+            "lat": 18.5036,
+            "lng": -88.3055
+          }
+        ],
+        "zona_distribucion": "Selva baja caducifolia y vegetación costera del centro de Quintana Roo",
+        "tipo_suelo": "Calcáreo, somero (litosol)",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "900 - 1,200 mm",
+        "altitud": "10 - 80 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Planta de uso doméstico cotidiano en comunidades mayas, primer remedio ante heridas y males bucales",
+        "relevancia_social": "Transmisión oral del conocimiento de generación en generación desde la época colonial",
+        "practicas_tradicionales": "Aplicación directa de la savia sobre la herida o encía; uso en cercas vivas",
+        "saberes_indigenas": "Nombres mayas 'pomolché', 'chulché', 'xpomolché' y 'po'omo che''"
+      },
+      "imagenes": {
+        "principal": "qro-004_principal.jpg",
+        "habitat": "qro-004_habitat.jpg",
+        "detalle": "qro-004_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-19"
+    },
+    {
+      "id": "qro-005",
+      "nombre_comun": "Naranja agria",
+      "nombre_cientifico": "Citrus x aurantium L.",
+      "familia": "Rutaceae",
+      "genero": "Citrus",
+      "especie": "aurantium (híbrido)",
+      "descripcion": "Árbol pequeño a mediano, perennifolio, de hojas aromáticas y flores blancas muy fragantes (azahar). Fruto cítrico de cáscara rugosa color naranja y pulpa muy ácida.",
+      "habitat": "Cultivado en huertos y solares familiares; ocasionalmente asilvestrado en sitios perturbados.",
+      "distribucion": "Originaria de Asia; ampliamente cultivada y naturalizada en toda la Península de Yucatán.",
+      "estado_conservacion": "Cultivada/naturalizada; no se encuentra en riesgo.",
+      "abundancia": "Muy común en solares y huertos familiares de toda la región.",
+      "usos_medicinales": [
+        "Digestivo (jugo agrio en preparaciones culinarias y caseras)",
+        "Sedante leve / ansiolítico (té de flor de azahar para ansiedad e insomnio)",
+        "Antigripal (infusión de hoja)"
+      ],
+      "preparados": [
+        "Infusión de flor de azahar (té)",
+        "Jugo del fruto agrio",
+        "Cáscara para extracción de aceites esenciales"
+      ],
+      "componentes_activos": [
+        "Aceites esenciales (limoneno)",
+        "Flavonoides",
+        "Sinefrina (reportada en especies del género Citrus)"
+      ],
+      "contraindicaciones": "El aceite esencial puede ser fotosensibilizante en aplicación tópica seguida de exposición solar; la sinefrina debe usarse con precaución en personas con hipertensión.",
+      "biologia": {
+        "ciclo_vida": "Árbol perenne",
+        "reproduccion": "Por semilla e injerto (propagación vegetativa común en cultivo)",
+        "polinizadores": "Abejas",
+        "epoca_floracion": "Febrero a abril",
+        "adaptaciones": "Hojas perennes con aceites aromáticos como mecanismo de defensa"
+      },
+      "historia": {
+        "origen": "Sureste asiático; introducida por los españoles durante la época colonial",
+        "usos_tradicionales": "Integrada profundamente en la gastronomía y medicina yucateca (cochinita pibil, recados, té de azahar)",
+        "menciones_historicas": "El uso del té de azahar como tranquilizante está documentado desde la época colonial en la región",
+        "evidencia_arqueologica": "No aplica; especie introducida posterior a la conquista"
+      },
+      "economia": {
+        "precio_mercado_kg": "Variable según temporada en mercados locales y municipales",
+        "produccion_anual_ton": "Cultivada a pequeña escala en huertos familiares; sin cifra oficial consolidada para Quintana Roo",
+        "mercados_destino": "Mercado local y regional, principalmente para uso gastronómico",
+        "valor_exportacion": "No documentado",
+        "empleos_generados": "No documentado",
+        "productos_derivados": [
+          "Jugo agrio",
+          "Cáscara confitada",
+          "Aceite esencial",
+          "Té de azahar"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 18.6768,
+            "lng": -88.3925
+          },
+          {
+            "lat": 19.5755,
+            "lng": -88.0501
+          }
+        ],
+        "zona_distribucion": "Huertos familiares y solares en toda la entidad",
+        "tipo_suelo": "Franco-calcáreo, bien drenado",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,000 - 1,300 mm",
+        "altitud": "0 - 300 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Ingrediente esencial de la cocina yucateca tradicional, símbolo de identidad gastronómica regional",
+        "relevancia_social": "Presente en la mayoría de los hogares como ingrediente culinario y remedio doméstico",
+        "practicas_tradicionales": "Preparación de té de azahar para calmar nervios e insomnio",
+        "saberes_indigenas": "Adoptada y resignificada en la cultura maya-mestiza tras la conquista"
+      },
+      "imagenes": {
+        "principal": "qro-005_principal.jpg",
+        "habitat": "qro-005_habitat.jpg",
+        "detalle": "qro-005_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": true,
+      "fecha_registro": "2026-06-19"
+    },
+    {
+      "id": "qro-006",
+      "nombre_comun": "Chicozapote / Níspero / Ya'a",
+      "nombre_cientifico": "Manilkara zapota (L.) P. Royen",
+      "familia": "Sapotaceae",
+      "genero": "Manilkara",
+      "especie": "zapota",
+      "descripcion": "Árbol grande perennifolio de hasta 30 m de altura, madera dura y muy duradera, copa densa. Fruto comestible de pulpa dulce y arenosa; corteza productora de un látex blanco lechoso (chicle).",
+      "habitat": "Selva alta y mediana perennifolia y subperennifolia.",
+      "distribucion": "Península de Yucatán (Campeche, Quintana Roo, Yucatán), Chiapas, Tabasco, hasta Centroamérica; cultivado en zonas tropicales de todo el mundo.",
+      "estado_conservacion": "No catalogada en riesgo; su valor económico (chiclería) ha funcionado históricamente como incentivo para la conservación de la selva.",
+      "abundancia": "Común en selva conservada del centro y sur de Quintana Roo.",
+      "usos_medicinales": [
+        "Hojas con propiedades antidiabéticas, antioxidantes y reductoras de colesterol (estudios preliminares)",
+        "Fruto como alimento nutritivo",
+        "Uso tradicional del látex en problemas dentales"
+      ],
+      "preparados": [
+        "Infusión de hojas",
+        "Consumo directo del fruto fresco",
+        "Goma de mascar natural (chicle)"
+      ],
+      "componentes_activos": [
+        "Taninos",
+        "Saponinas",
+        "Compuestos fenólicos en hoja y corteza"
+      ],
+      "contraindicaciones": "No ampliamente documentadas; el látex crudo no se consume directamente sin procesar.",
+      "biologia": {
+        "ciclo_vida": "Árbol perenne de crecimiento lento, longevo (puede vivir varios siglos)",
+        "reproduccion": "Por semilla",
+        "polinizadores": "Insectos, incluidas abejas y polillas nocturnas",
+        "epoca_floracion": "Variable, principalmente en la época de lluvias",
+        "adaptaciones": "Madera densa y resistente a humedad y plagas; capacidad de regenerar corteza tras la extracción del látex"
+      },
+      "historia": {
+        "origen": "Mesoamérica, gran Petén, sur de Campeche y Quintana Roo",
+        "usos_tradicionales": "El látex (tzicli en náhuatl) ha sido masticado desde épocas prehispánicas; la madera, muy resistente, se usó en construcción de templos mayas (dinteles, p. ej. en Tikal)",
+        "menciones_historicas": "La industria del chicle alcanzó su máxima producción mexicana en 1943, con 8,165 toneladas exportadas; actualmente produce goma orgánica certificada bajo la marca Chicza y cuenta con Indicación Geográfica Protegida (Chicle Maya de Quintana Roo y Campeche)",
+        "evidencia_arqueologica": "Su madera, extremadamente durable, se ha identificado en dinteles y elementos constructivos de sitios mayas como Tikal"
+      },
+      "economia": {
+        "precio_mercado_kg": "Variable según calidad y certificación orgánica; sin cifra única consolidada",
+        "produccion_anual_ton": "México produce entre 300 y 450 toneladas anuales de chicle orgánico certificado en Campeche y Quintana Roo; en 2022-2023 las cooperativas de ambos estados produjeron en conjunto 50,000 kg",
+        "mercados_destino": "Exportación principalmente a Italia, Japón, Alemania, España, Ucrania, Canadá, Corea del Sur y Singapur",
+        "valor_exportacion": "No se documentó una cifra monetaria oficial actualizada; el chicle mexicano alcanzó su pico histórico de exportación en 1943 con 8,165 toneladas",
+        "empleos_generados": "Más de 1,200 a 1,500 productores agrupados en alrededor de 20 cooperativas chicleras activas en Quintana Roo y Campeche",
+        "productos_derivados": [
+          "Goma de mascar natural (chicle)",
+          "Fruta fresca",
+          "Mermelada",
+          "Madera para muebles, construcción e instrumentos musicales"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 18.6768,
+            "lng": -88.3925
+          },
+          {
+            "lat": 19.1167,
+            "lng": -88.0833
+          }
+        ],
+        "zona_distribucion": "Selva alta y mediana perennifolia del centro y sur de Quintana Roo (la 'selva maya')",
+        "tipo_suelo": "Calcáreo profundo, bien drenado",
+        "clima": "Cálido húmedo y subhúmedo (Am/Aw)",
+        "precipitacion_anual": "1,200 - 1,500 mm",
+        "altitud": "0 - 300 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Árbol emblemático de la selva maya, símbolo de la tradición chiclera de Quintana Roo",
+        "relevancia_social": "La chiclería representa hasta el 50% del ingreso monetario de muchas familias campesinas del centro y sur del estado, e históricamente incentivó la conservación forestal",
+        "practicas_tradicionales": "Extracción del látex mediante incisiones en la corteza durante la temporada de lluvias, cocción y moldeado tradicional en marcos de madera",
+        "saberes_indigenas": "Conocimiento ancestral maya sobre el manejo sostenible del chicozapote, transmitido por generaciones de chicleros"
+      },
+      "imagenes": {
+        "principal": "qro-006_principal.jpg",
+        "habitat": "qro-006_habitat.jpg",
+        "detalle": "qro-006_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": true,
+      "fecha_registro": "2026-06-19"
+    },
+    {
+      "id": "qro-007",
+      "nombre_comun": "Anona / Saramuyo",
+      "nombre_cientifico": "Annona squamosa L.",
+      "familia": "Annonaceae",
+      "genero": "Annona",
+      "especie": "squamosa",
+      "descripcion": "Arbusto o árbol pequeño de 3 a 8 m de altura, hojas elípticas. Fruto compuesto verde-azulado, segmentado en forma de 'escamas' características (de ahí su epíteto squamosa), de pulpa blanca y dulce.",
+      "habitat": "Cultivado en huertos y solares; también presente en selva baja caducifolia.",
+      "distribucion": "Originaria de América tropical (Caribe y Centroamérica); ampliamente cultivada en la Península de Yucatán.",
+      "estado_conservacion": "Cultivada; no se encuentra en riesgo.",
+      "abundancia": "Común en solares familiares de la región.",
+      "usos_medicinales": [
+        "Semillas y hojas usadas como insecticida natural contra parásitos externos (piojos)",
+        "Hojas en infusión para problemas digestivos",
+        "Uso tradicional como antidiarreico"
+      ],
+      "preparados": [
+        "Cocimiento de hojas",
+        "Polvo de semilla machacada (solo uso externo)",
+        "Cataplasma"
+      ],
+      "componentes_activos": [
+        "Acetogeninas (anonina)",
+        "Alcaloides"
+      ],
+      "contraindicaciones": "Las semillas son tóxicas si se ingieren o si el polvo entra en contacto con los ojos, pudiendo causar daño ocular severo; se recomienda evitar su uso en niños pequeños y mujeres embarazadas.",
+      "biologia": {
+        "ciclo_vida": "Árbol caducifolio de crecimiento relativamente rápido",
+        "reproduccion": "Por semilla",
+        "polinizadores": "Principalmente escarabajos (familia Nitidulidae/Curculionidae), con polinización predominantemente nocturna",
+        "epoca_floracion": "Mayo a agosto",
+        "adaptaciones": "Pierde las hojas en temporada seca; el fruto compuesto protege a las semillas en desarrollo"
+      },
+      "historia": {
+        "origen": "Caribe y Centroamérica",
+        "usos_tradicionales": "Fruto de consumo tradicional común; semillas molidas usadas como insecticida casero contra piojos",
+        "menciones_historicas": "Referida en la herbolaria mesoamericana colonial como planta de uso doméstico y medicinal",
+        "evidencia_arqueologica": "No se documenta evidencia arqueológica específica para Quintana Roo en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "Variable en mercados locales según temporada (fruta de temporada, octubre-diciembre)",
+        "produccion_anual_ton": "Cultivo de traspatio; sin cifra oficial consolidada para Quintana Roo",
+        "mercados_destino": "Mercados municipales y venta local directa",
+        "valor_exportacion": "No documentado para la región",
+        "empleos_generados": "No documentado",
+        "productos_derivados": [
+          "Fruta fresca",
+          "Pulpa congelada",
+          "Insecticida natural casero"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 19.5755,
+            "lng": -88.0501
+          },
+          {
+            "lat": 19.1167,
+            "lng": -88.0833
+          }
+        ],
+        "zona_distribucion": "Huertos familiares y selva baja del centro de Quintana Roo",
+        "tipo_suelo": "Calcáreo, bien drenado",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,000 - 1,300 mm",
+        "altitud": "0 - 300 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Fruta tradicional de temporada apreciada en la cocina familiar",
+        "relevancia_social": "Parte de la dieta y herbolaria doméstica maya",
+        "practicas_tradicionales": "Uso de semilla molida como insecticida casero contra piojos, manejado con precaución",
+        "saberes_indigenas": "Conocimiento transmitido sobre la toxicidad de la semilla y su manejo seguro"
+      },
+      "imagenes": {
+        "principal": "qro-007_principal.jpg",
+        "habitat": "qro-007_habitat.jpg",
+        "detalle": "qro-007_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-19"
+    },
+    {
+      "id": "qro-008",
+      "nombre_comun": "Altamisa / Escoba amarga",
+      "nombre_cientifico": "Parthenium hysterophorus L.",
+      "familia": "Asteraceae",
+      "genero": "Parthenium",
+      "especie": "hysterophorus",
+      "descripcion": "Hierba ramosa de 30 a 80 cm de altura, color verde cenizo, aspecto velludo. Hojas profundamente divididas y pinnadas; inflorescencias en corimbos terminales de color blanco, pequeñas y numerosas; frutos secos en forma de aquenio.",
+      "habitat": "Terrenos baldíos, orillas de caminos y sitios perturbados; maleza común de suelos alterados.",
+      "distribucion": "Nativa de América tropical; ampliamente distribuida en el continente y considerada especie invasora en otras regiones del mundo.",
+      "estado_conservacion": "Maleza común, no amenazada; considerada especie invasora en algunos contextos internacionales (p. ej. en España).",
+      "abundancia": "Muy común en sitios perturbados de toda la entidad.",
+      "usos_medicinales": [
+        "Padecimientos digestivos (bilis, dolor de estómago)",
+        "Fiebre intestinal y empacho",
+        "Uso antihelmíntico tradicional"
+      ],
+      "preparados": [
+        "Infusión de la planta completa",
+        "Cocimiento"
+      ],
+      "componentes_activos": [
+        "Lactonas sesquiterpénicas (partenina, compuesto con potencial alergénico)"
+      ],
+      "contraindicaciones": "El contacto con la planta puede causar dermatitis alérgica de contacto en personas sensibles; el polen se asocia con rinitis alérgica. No se ha confirmado experimentalmente la eficacia de varios de sus usos tradicionales.",
+      "biologia": {
+        "ciclo_vida": "Hierba anual de ciclo corto",
+        "reproduccion": "Por semilla (aquenio); alta producción de semillas con dispersión por viento y agua",
+        "polinizadores": "Insectos generalistas; también ocurre autopolinización",
+        "epoca_floracion": "Todo el año, con picos en la temporada de lluvias",
+        "adaptaciones": "Gran capacidad de colonización de suelos perturbados; efecto alelopático que inhibe el crecimiento de plantas competidoras"
+      },
+      "historia": {
+        "origen": "América tropical",
+        "usos_tradicionales": "Empleada en la medicina tradicional maya de Quintana Roo, donde se reporta entre las especies con mayor valor de uso documentado en jardines medicinales de la región",
+        "menciones_historicas": "Documentada en el Atlas de las Plantas de la Medicina Tradicional Mexicana, donde se señala que no existen estudios experimentales que confirmen sus acciones biológicas tradicionales",
+        "evidencia_arqueologica": "No documentada en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "No comercializada; recolección silvestre libre",
+        "produccion_anual_ton": "No aplica",
+        "mercados_destino": "Sin mercado formal",
+        "valor_exportacion": "No aplica",
+        "empleos_generados": "No aplica",
+        "productos_derivados": []
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 18.5036,
+            "lng": -88.3055
+          },
+          {
+            "lat": 20.2114,
+            "lng": -87.4654
+          }
+        ],
+        "zona_distribucion": "Terrenos baldíos y sitios perturbados en toda la entidad",
+        "tipo_suelo": "Variado, tolerante a suelos pobres y compactados",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,000 - 1,400 mm",
+        "altitud": "0 - 300 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Planta de recolección libre usada como remedio doméstico inmediato",
+        "relevancia_social": "Parte del herbolario popular accesible a cualquier familia, sin necesidad de cultivo",
+        "practicas_tradicionales": "Preparación rápida de té para malestares digestivos cotidianos",
+        "saberes_indigenas": "Conocida en maya como 'x-huaway' o 'jaway'; uso documentado en comunidades de Quintana Roo"
+      },
+      "imagenes": {
+        "principal": "qro-008_principal.jpg",
+        "habitat": "qro-008_habitat.jpg",
+        "detalle": "qro-008_detalle.jpg"
+      },
+      "populares": false,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-19"
+    },
+    {
+      "id": "qro-009",
+      "nombre_comun": "Bejuco de orégano / Chichimecate",
+      "nombre_cientifico": "Tynanthus guatemalensis Donn.Sm.",
+      "familia": "Bignoniaceae",
+      "genero": "Tynanthus",
+      "especie": "guatemalensis",
+      "descripcion": "Liana o bejuco leñoso trepador, de aroma característico a canela/clavo por su contenido de eugenol. Tallo fibroso, flexible y muy resistente.",
+      "habitat": "Selva mediana y alta, trepando sobre árboles del dosel.",
+      "distribucion": "Belice, Guatemala y México (Península de Yucatán, incluyendo Quintana Roo).",
+      "estado_conservacion": "No catalogada en una categoría de riesgo, pero sensible a la pérdida de selva madura, su hábitat preferente.",
+      "abundancia": "Dispersa; su abundancia depende de la conservación de selva alta y mediana bien conservada.",
+      "usos_medicinales": [
+        "Remedio tradicional maya contra la sed excesiva",
+        "Uso antidiabético tradicional (control de hiperglucemia)"
+      ],
+      "preparados": [
+        "Infusión o té preparado con la corteza o el tallo"
+      ],
+      "componentes_activos": [
+        "Eugenol (compuesto responsable del aroma a canela/clavo)"
+      ],
+      "contraindicaciones": "No ampliamente documentadas; se recomienda precaución en personas bajo tratamiento médico para diabetes por posible interacción.",
+      "biologia": {
+        "ciclo_vida": "Liana leñosa perenne",
+        "reproduccion": "Por semilla; también se propaga vegetativamente a partir de fragmentos de tallo",
+        "polinizadores": "Insectos, principalmente abejas y avispas",
+        "epoca_floracion": "Variable, asociada a la temporada de lluvias",
+        "adaptaciones": "Tallo fibroso, flexible y muy resistente, adaptado para trepar sobre árboles del dosel"
+      },
+      "historia": {
+        "origen": "Selvas de Mesoamérica (Belice, Guatemala y sureste de México)",
+        "usos_tradicionales": "Té cotidiano y antidiabético entre los mayas; el xilema fibroso del tallo se ha aprovechado tradicionalmente para fabricar cuerdas y andamios",
+        "menciones_historicas": "Documentada por su uso etnobotánico entre comunidades mayas yucatecas y q'eqchi'",
+        "evidencia_arqueologica": "No documentada específicamente en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "No comercializado formalmente",
+        "produccion_anual_ton": "No aplica; recolección silvestre",
+        "mercados_destino": "Uso local y de autoconsumo; ocasionalmente venta en mercados de hierbas tradicionales",
+        "valor_exportacion": "No documentado",
+        "empleos_generados": "No documentado",
+        "productos_derivados": [
+          "Fibra para cuerdas y amarres",
+          "Té medicinal"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 19.1167,
+            "lng": -88.0833
+          },
+          {
+            "lat": 18.6768,
+            "lng": -88.3925
+          }
+        ],
+        "zona_distribucion": "Selva alta y mediana subperennifolia del centro-sur de Quintana Roo",
+        "tipo_suelo": "Calcáreo, bien drenado",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,200 - 1,500 mm",
+        "altitud": "0 - 300 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Bejuco con doble función en la cultura maya: material de construcción y remedio medicinal",
+        "relevancia_social": "Uso cotidiano como bebida y como material de amarre en construcción tradicional",
+        "practicas_tradicionales": "Elaboración diaria de té; uso del tallo en la construcción de techos y andamios",
+        "saberes_indigenas": "Nombres en lenguas mayenses: chib'iyal (q'eqchi'), ch'ajá xuu' (maya yucateco)"
+      },
+      "imagenes": {
+        "principal": "qro-009_principal.jpg",
+        "habitat": "qro-009_habitat.jpg",
+        "detalle": "qro-009_detalle.jpg"
+      },
+      "populares": false,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-19"
+    },
+    {
+      "id": "qro-010",
+      "nombre_comun": "Maguey morado / Cordobán",
+      "nombre_cientifico": "Tradescantia spathacea Sw.",
+      "familia": "Commelinaceae",
+      "genero": "Tradescantia",
+      "especie": "spathacea",
+      "descripcion": "Hierba perenne con hojas dispuestas en roseta, lanceoladas, de hasta 30 cm de largo, verdes en el haz y de color púrpura intenso en el envés. Flores blancas pequeñas, protegidas por brácteas en forma de 'barquilla'.",
+      "habitat": "Cultivada en jardines, solares y huertos familiares; tolerante a sombra parcial.",
+      "distribucion": "Nativa de México, el Caribe y Centroamérica; ampliamente cultivada en toda la Península de Yucatán.",
+      "estado_conservacion": "Cultivada; no se encuentra en riesgo.",
+      "abundancia": "Muy común; presente en la gran mayoría de los solares de la región según estudios etnobotánicos.",
+      "usos_medicinales": [
+        "Antiinflamatorio",
+        "Antihemorrágico",
+        "Heridas y llagas",
+        "Afecciones gastrointestinales (dolor de estómago, disentería)",
+        "Dolor de cabeza (hojas asadas en aplicación tópica)",
+        "Padecimientos ginecológicos"
+      ],
+      "preparados": [
+        "Infusión de hojas",
+        "Hojas soasadas (ligeramente asadas) en aplicación tópica",
+        "Cataplasma"
+      ],
+      "componentes_activos": [
+        "Flavonoides",
+        "Alcaloides",
+        "Taninos",
+        "Epigalocatequina (compuesto fenólico con actividad antitumoral, antiinflamatoria y antioxidante reportada en estudios recientes)"
+      ],
+      "contraindicaciones": "La savia puede ser irritante para la piel y mucosas sensibles; se recomienda consulta médica antes de un uso prolongado, especialmente durante el embarazo o ante condiciones de salud preexistentes.",
+      "biologia": {
+        "ciclo_vida": "Hierba perenne de crecimiento rápido",
+        "reproduccion": "Vegetativa, por esquejes y división de rizoma; también por semilla",
+        "polinizadores": "Insectos pequeños",
+        "epoca_floracion": "Todo el año, con mayor intensidad en la época de lluvias",
+        "adaptaciones": "Hojas suculentas con pigmento antociánico (protección frente a radiación UV); tolerante a sombra y sequía moderada"
+      },
+      "historia": {
+        "origen": "México, el Caribe y Centroamérica",
+        "usos_tradicionales": "Ampliamente incorporada a la medicina tradicional maya, con uno de los valores de uso más altos documentados en los jardines medicinales de la Península de Yucatán",
+        "menciones_historicas": "Estudiada bajo el sinónimo Rhoeo discolor en trabajos etnobotánicos del sureste mexicano; conocida popularmente como 'hierba del cáncer'",
+        "evidencia_arqueologica": "No documentada específicamente en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "Se comercializa como planta ornamental por unidad en viveros locales, no por kilogramo; precio variable según el tamaño de la planta",
+        "produccion_anual_ton": "No aplica; cultivo de traspatio y de vivero, no agroindustrial",
+        "mercados_destino": "Mercado local de viveros y plantas de ornato",
+        "valor_exportacion": "No documentado",
+        "empleos_generados": "No documentado",
+        "productos_derivados": [
+          "Planta ornamental en maceta",
+          "Extractos en investigación fitoquímica"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 18.5036,
+            "lng": -88.3055
+          },
+          {
+            "lat": 18.6768,
+            "lng": -88.3925
+          }
+        ],
+        "zona_distribucion": "Huertos y solares familiares en toda la entidad",
+        "tipo_suelo": "Bien drenado, tolerante a diversos tipos de suelo",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,000 - 1,400 mm",
+        "altitud": "0 - 300 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Conocida popularmente como 'hierba del cáncer'; profundamente arraigada en la herbolaria popular del sureste mexicano",
+        "relevancia_social": "Presente en la gran mayoría de los hogares de la región como remedio de primer uso",
+        "practicas_tradicionales": "Aplicación de hojas soasadas para el dolor de cabeza; infusión para inflamaciones y afecciones gastrointestinales",
+        "saberes_indigenas": "Conocimiento transmitido por generaciones entre herbolarios y curanderos del sureste de México"
+      },
+      "imagenes": {
+        "principal": "qro-010_principal.jpg",
+        "habitat": "qro-010_habitat.jpg",
+        "detalle": "qro-010_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": true,
+      "fecha_registro": "2026-06-19"
+    }
+  ]
+}

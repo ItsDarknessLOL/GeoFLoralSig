@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo — Plantas Medicinales del Sureste</title>
+  <meta name="description" content="Catálogo de plantas medicinales endémicas del sureste mexicano con filtros avanzados.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-display { font-family: 'Playfair Display', serif; }
+
+    /* ── Filters panel ── */
+    .filtros-panel {
+      background: var(--blanco);
+      border: 1.5px solid var(--gris-200);
+      border-radius: var(--radius-lg);
+      padding: clamp(20px,3vw,32px);
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-md);
+    }
+
+    /* ── Filter section background ── */
+    main {
+      background: var(--gris-50);
+      padding-bottom: 60px;
+    }
+
+    main .contenedor {
+      background: var(--gris-50);
+    }
+
+    /* Tint behind catalog to lift cards */
+    .catalogo-grid .planta-card {
+      box-shadow: var(--shadow-md);
+      border-color: var(--gris-200);
+    }
+
+    .filtros-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 14px;
+    }
+
+    .filtro-group label {
+      display: block;
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--gris-500);
+      margin-bottom: 6px;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+    }
+
+    .filtro-group select,
+    .filtro-group input {
+      width: 100%;
+      padding: 9px 12px;
+      border: 1.5px solid var(--gris-200);
+      border-radius: var(--radius);
+      font-size: .875rem;
+      background: var(--blanco);
+      color: var(--gris-900);
+      transition: var(--t-base);
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2371717A' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      padding-right: 32px;
+    }
+
+    .filtro-group input {
+      background-image: none;
+      padding-right: 12px;
+    }
+
+    .filtro-group select:focus,
+    .filtro-group input:focus {
+      outline: none;
+      border-color: var(--color-estado);
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-estado) 15%, transparent);
+    }
+
+    /* ── Search bar ── */
+    .buscador-container {
+      max-width: 640px;
+      margin: 0 auto 28px;
+      position: relative;
+    }
+
+    .buscador-input {
+      width: 100%;
+      padding: 14px 24px 14px 52px;
+      font-size: 1rem;
+      border: 1.5px solid var(--gris-200);
+      border-radius: var(--radius-full);
+      background: var(--blanco);
+      transition: var(--t-base);
+      box-shadow: var(--shadow-xs);
+    }
+
+    .buscador-input:focus {
+      outline: none;
+      border-color: var(--color-estado);
+      box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-estado) 12%, transparent), var(--shadow-md);
+    }
+
+    .buscador-icono {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.1rem;
+      opacity: .45;
+      pointer-events: none;
+    }
+
+    .buscador-hint {
+      text-align: center;
+      font-size: .78rem;
+      color: var(--gris-400);
+      margin-top: 8px;
+    }
+
+    /* ── Toolbar ── */
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .resultados-info {
+      font-size: .875rem;
+      color: var(--gris-500);
+    }
+
+    .ordenar-select {
+      padding: 8px 32px 8px 14px;
+      border: 1.5px solid var(--gris-200);
+      border-radius: var(--radius);
+      font-size: .875rem;
+      background: var(--blanco);
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2371717A' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      cursor: pointer;
+      transition: var(--t-base);
+    }
+
+    .ordenar-select:focus {
+      outline: none;
+      border-color: var(--color-estado);
+    }
+
+    /* ── Pagination ── */
+    .paginacion {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      margin-top: 48px;
+      flex-wrap: wrap;
+    }
+
+    .paginacion-btn {
+      min-width: 40px;
+      height: 40px;
+      padding: 0 12px;
+      border: 1.5px solid var(--gris-200);
+      background: var(--blanco);
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: .875rem;
+      font-weight: 500;
+      transition: var(--t-base);
+      color: var(--gris-700);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .paginacion-btn:hover:not(:disabled) {
+      background: var(--color-estado-muy-claro);
+      border-color: var(--color-estado);
+      color: var(--color-estado);
+    }
+
+    .paginacion-btn.activo {
+      background: var(--color-estado);
+      color: var(--blanco);
+      border-color: var(--color-estado);
+      font-weight: 700;
+    }
+
+    .paginacion-btn:disabled { opacity: .35; cursor: not-allowed; }
+
+    /* ── No results ── */
+    .sin-resultados {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 72px 24px;
+      color: var(--gris-400);
+    }
+
+    .sin-resultados-icono {
+      font-size: 3.5rem;
+      margin-bottom: 16px;
+      display: block;
+      opacity: .55;
+    }
+
+    .sin-resultados h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--gris-700);
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 640px) {
+      .filtros-grid { grid-template-columns: 1fr; }
+      .toolbar { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="contenedor">
+      <a href="../index.html" class="logo" aria-label="Inicio">
+        <div class="logo-icono" aria-hidden="true">🌿</div>
+        <span>Biodiversidad Médica del Sureste</span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="../index.html">Inicio</a>
+        <a href="catalogo.html" class="activo" aria-current="page">Catálogo</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="herramientas.html">Herramientas</a>
+        <a href="acerca_de.html">Acerca de</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- State watermark -->
+  <div class="decoracion-lateral" id="decoracionLateral" aria-hidden="true"></div>
+
+  <!-- ── Hero Compacto ── -->
+  <section class="hero-compact" aria-label="Catálogo de plantas">
+    <div class="aurora-bg" data-parallax="0.15" aria-hidden="true"></div>
+    <div class="aurora-stars" data-parallax="0.06" aria-hidden="true"></div>
+    <div class="aurora-ondas" aria-hidden="true">
+      <div class="aurora-onda"></div>
+      <div class="aurora-onda"></div>
+      <div class="aurora-onda"></div>
+    </div>
+
+    <div class="hero-compact-content">
+      <p class="eyebrow anim-fadeInUp delay-1">
+        <span aria-hidden="true">🌿</span> Explorar
+      </p>
+      <h1 class="font-display anim-fadeInUp delay-2">Catálogo de Plantas</h1>
+      <p class="anim-fadeInUp delay-3">
+        Filtra, busca y descubre las especies medicinales endémicas del sureste mexicano.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Main content ── -->
+  <main style="padding-top:48px;min-height:100vh;background:var(--gris-50);" id="main-content">
+    <div class="contenedor">
+
+      <!-- Search -->
+      <div class="buscador-container reveal delay-1">
+        <span class="buscador-icono" aria-hidden="true">🔍</span>
+        <input type="search"
+               class="buscador-input"
+               id="buscadorCatalogo"
+               placeholder="Buscar por nombre, familia o uso medicinal..."
+               autocomplete="off"
+               aria-label="Buscar planta">
+        <p class="buscador-hint" role="note">
+          💡 Prueba "chaya", "aloe" o "diabetes". Tolera errores ortográficos.
+        </p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filtros-panel reveal delay-2" id="filtrosPanel" role="search" aria-label="Filtros">
+        <div class="filtros-grid">
+          <div class="filtro-group">
+            <label for="filtroEstado">🗺️ Estado</label>
+            <select id="filtroEstado" aria-label="Filtrar por estado">
+              <option value="">Todos los estados</option>
+              <option value="yucatan">Yucatán</option>
+              <option value="qroo">Quintana Roo</option>
+              <option value="campeche">Campeche</option>
+              <option value="chiapas">Chiapas</option>
+              <option value="tabasco">Tabasco</option>
+              <option value="veracruz">Veracruz</option>
+            </select>
+          </div>
+          <div class="filtro-group">
+            <label for="filtroFamilia">🌱 Familia</label>
+            <select id="filtroFamilia" aria-label="Filtrar por familia">
+              <option value="">Todas las familias</option>
+            </select>
+          </div>
+          <div class="filtro-group">
+            <label for="filtroUso">💊 Uso Medicinal</label>
+            <select id="filtroUso" aria-label="Filtrar por uso medicinal">
+              <option value="">Todos los usos</option>
+              <option value="digestivo">Digestivo</option>
+              <option value="antiinflamatorio">Antiinflamatorio</option>
+              <option value="cicatrizante">Cicatrizante</option>
+              <option value="sedante">Sedante/Ansiolítico</option>
+              <option value="diabetes">Diabetes</option>
+              <option value="dermatologico">Dermatológico</option>
+              <option value="reumatismo">Reumatismo</option>
+            </select>
+          </div>
+          <div class="filtro-group">
+            <label for="filtroAbundancia">📊 Abundancia</label>
+            <select id="filtroAbundancia" aria-label="Filtrar por abundancia">
+              <option value="">Todas</option>
+              <option value="Muy abundante">Muy abundante</option>
+              <option value="Abundante">Abundante</option>
+              <option value="Común">Común</option>
+              <option value="Moderada">Moderada</option>
+              <option value="Escasa">Escasa</option>
+            </select>
+          </div>
+          <div class="filtro-group">
+            <label for="filtroPopular">🏷️ Popularidad</label>
+            <select id="filtroPopular" aria-label="Filtrar por popularidad">
+              <option value="">Todos</option>
+              <option value="populares">Más populares</option>
+              <option value="mas_vendidas">Más vendidas</option>
+            </select>
+          </div>
+          <div class="filtro-group">
+            <label for="filtroConservacion">🛡️ Conservación</label>
+            <select id="filtroConservacion" aria-label="Filtrar por estado de conservación">
+              <option value="">Todos</option>
+              <option value="LC">Preocupación menor (LC)</option>
+              <option value="NT">Casi amenazada (NT)</option>
+              <option value="VU">Vulnerable (VU)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toolbar -->
+      <div class="toolbar">
+        <p class="resultados-info" id="resultadosInfo" aria-live="polite" aria-atomic="true"></p>
+        <label for="ordenarPor" class="sr-only">Ordenar resultados</label>
+        <select id="ordenarPor" class="ordenar-select" aria-label="Ordenar por">
+          <option value="nombre">Nombre A → Z</option>
+          <option value="nombre_desc">Nombre Z → A</option>
+          <option value="estado">Estado</option>
+          <option value="fecha">Fecha de registro</option>
+        </select>
+      </div>
+
+      <!-- Grid -->
+      <div class="catalogo-grid" id="catalogoGrid" role="list" aria-label="Resultados">
+        <div class="sin-resultados">
+          <span class="sin-resultados-icono" aria-hidden="true">🌿</span>
+          <p>Cargando plantas...</p>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <nav class="paginacion" id="paginacion" aria-label="Paginación"></nav>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" style="margin-top:80px;" role="contentinfo">
+    <div class="footer-grid" style="grid-template-columns:2fr 1fr;">
+      <div>
+        <div class="footer-logo"><span aria-hidden="true">🌿</span> Biodiversidad Médica del Sureste</div>
+        <p class="footer-desc">Documentando la riqueza medicinal del sureste mexicano.</p>
+      </div>
+      <nav aria-label="Pie de página">
+        <h4>Navegación</h4>
+        <div class="footer-links">
+          <a href="../index.html">Inicio</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="mapa.html">Mapa</a>
+          <a href="herramientas.html">Herramientas</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Biodiversidad Médica del Sureste Mexicano</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/catalogo.js"></script>
+</body>
+</html>

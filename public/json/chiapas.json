@@ -1,0 +1,99 @@
+{
+  "estado": "Chiapas",
+  "capital": "Tuxtla Gutiérrez",
+  "color_tema": "#6A1B9A",
+  "color_secundario": "#CE93D8",
+  "total_especies": 456,
+  "especies_medicinales": 168,
+  "plantas": [
+    {
+      "id": "chi_001",
+      "nombre_comun": "Zarzaparrilla Chiapaneca",
+      "nombre_cientifico": "Smilax cordifolia",
+      "familia": "Smilacaceae",
+      "genero": "Smilax",
+      "especie": "cordifolia",
+      "descripcion": "Liana trepadora perenne con tallos leñosos espinosos y hojas cordiformes (en forma de corazón). Rizoma grueso y aromático. Pequeñas flores verdosas en umbelas.",
+      "altura": "2-10 metros (trepadora)",
+      "habitat": "Selvas húmedas tropicales, bosques de pino-oak, zonas montañosas",
+      "distribucion": "Sierra Madre de Chiapas, Altos de Chiapas, Selva Lacandona",
+      "estado_conservacion": "Casi amenazada (NT)",
+      "abundancia": "Moderada",
+      "usos_medicinales": [
+        "Depurativo de sangre",
+        "Tratamiento de reumatismo",
+        "Antiinflamatorio sistémico",
+        "Diurético",
+        "Tratamiento de sífilis históricamente",
+        "Fortalecimiento inmunológico"
+      ],
+      "preparados": [
+        "Decocción de raíz (20g por litro de agua)",
+        "Extracto alcohólico",
+        "Jarabe con miel",
+        "Baños de asiento para inflamaciones"
+      ],
+      "componentes_activos": [
+        "Sarsaponina",
+        "Diosgenina",
+        "Resveratrol",
+        "Flavonoides",
+        "Taninos",
+        "Almidón"
+      ],
+      "contraindicaciones": "Evitar en personas con problemas renales severos. No usar durante el embarazo sin supervisión médica.",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "Sexual (semillas) y vegetativa (rizomas)",
+        "polinizadores": "Insectos diversos",
+        "epoca_floracion": "Mayo-Septiembre",
+        "adaptaciones": "Tallos espinosos como defensa, rizomas reservorios de nutrientes"
+      },
+      "historia": {
+        "origen": "Nativa de Chiapas, utilizada por culturas zoque, tzeltal y tzotzil desde tiempos prehispánicos",
+        "usos_tradicionales": "Los tzeltales la usan para 'purificar la sangre'. Los zoques para tratar reumatismo",
+        "menciones_historicas": "Registrada en la Farmacopea Mexicana de 1845",
+        "evidencia_arqueologica": "Restos de raíces en entierros prehispánicos de la Selva Lacandona"
+      },
+      "economia": {
+        "precio_mercado_kg": "$200-350 MXN (raíz seca)",
+        "produccion_anual_ton": "85",
+        "mercados_destino": "Tuxtla Gutiérrez, San Cristóbal, Tapachula, CDMX",
+        "valor_exportacion": "$380K USD anuales",
+        "empleos_generados": "~600 recolectores y comercializadores",
+        "productos_derivados": [
+          "Raíz seca",
+          "Extractos líquidos",
+          "Cápsulas",
+          "Tés funcionales",
+          "Suplementos deportivos"
+        ]
+      },
+      "sig": {
+        "coordenadas": {
+          "lat": 16.75,
+          "lng": -92.633
+        },
+        "zona_distribucion": "Sierra Madre y Altos de Chiapas",
+        "tipo_suelo": "Andosol y luvisol",
+        "clima": "Cálido húmedo a templado húmedo",
+        "precipitacion_anual": "1500-3000 mm",
+        "altitud": "500-2200 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Planta ritual para los tzotziles, usada en ceremonias de sanación",
+        "relevancia_social": "Fuente de ingreso para comunidades indígenas recolectoras",
+        "practicas_tradicionales": "Los curanderos tzeltales la usan en limpias y baños medicinales",
+        "saberes_indigenas": "Conocimiento milenario sobre ciclos de cosecha sostenible del rizoma"
+      },
+      "imagenes": {
+        "principal": "assets/imagenes/zarzaparrilla.jpg",
+        "habitat": "assets/imagenes/zarzaparrilla_habitat.jpg",
+        "detalle": "assets/imagenes/zarzaparrilla_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": true,
+      "fecha_registro": "2024-04-05"
+    }
+  ]
+}

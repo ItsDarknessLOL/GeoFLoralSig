@@ -1,0 +1,863 @@
+{
+  "estado": "Campeche",
+  "capital": "San Francisco de Campeche",
+  "color_tema": "#1565C0",
+  "color_secundario": "#BBDEFB",
+  "total_especies": 289,
+  "especies_medicinales": 97,
+  "plantas": [
+    {
+      "id": "CAM-001",
+      "nombre_comun": "Achiote / Bija / K'uxub",
+      "nombre_cientifico": "Bixa orellana L.",
+      "familia": "Bixaceae",
+      "genero": "Bixa",
+      "especie": "orellana",
+      "descripcion": "Arbusto o árbol pequeño de 2 a 6 m, hojas acorazonadas, flores rosadas vistosas. Fruto en cápsula ovoide cubierta de espinas suaves que contiene numerosas semillas recubiertas de un arilo rojo-anaranjado intenso (fuente de la bixina).",
+      "habitat": "Cultivado en huertos y solares familiares; también presente en selva secundaria y acahuales.",
+      "distribucion": "Nativa de América tropical (Mesoamérica, Caribe y Sudamérica); ampliamente cultivada en todo el sureste de México.",
+      "estado_conservacion": "Cultivada; no se encuentra en riesgo.",
+      "abundancia": "Muy común en solares y huertos de la entidad.",
+      "usos_medicinales": [
+        "Antiinflamatorio",
+        "Quemaduras (pulpa de la semilla)",
+        "Antipirético (baja la fiebre)",
+        "Problemas digestivos",
+        "Repelente natural de insectos",
+        "Antioxidante por su alto contenido de carotenoides"
+      ],
+      "preparados": [
+        "Pasta de semillas molidas (base del recado rojo)",
+        "Infusión de hojas",
+        "Aceite de semillas"
+      ],
+      "componentes_activos": [
+        "Bixina y norbixina (carotenoides responsables del color rojo)",
+        "Taninos"
+      ],
+      "contraindicaciones": "El uso tópico es generalmente seguro; en dosis internas muy altas puede tener un leve efecto laxante.",
+      "biologia": {
+        "ciclo_vida": "Arbusto o árbol perenne de crecimiento medio",
+        "reproduccion": "Por semilla; también se propaga por estaca",
+        "polinizadores": "Abejas",
+        "epoca_floracion": "Variable, principalmente en la época de lluvias",
+        "adaptaciones": "Cápsula espinosa que protege las semillas; el pigmento bixina actúa como protección frente a la radiación solar"
+      },
+      "historia": {
+        "origen": "Mesoamérica y el Caribe",
+        "usos_tradicionales": "Empleado desde la época prehispánica como colorante, condimento y pintura corporal ritual y de guerra entre los mayas; base del recado rojo de la cocina yucateca (como la cochinita pibil)",
+        "menciones_historicas": "Referido en crónicas coloniales como pigmento corporal y textil ampliamente usado por los pueblos mesoamericanos",
+        "evidencia_arqueologica": "Restos de pigmento de achiote identificados en murales y cerámica de sitios mayas como parte de su paleta de colores"
+      },
+      "economia": {
+        "precio_mercado_kg": "Variable según presentación (semilla, pasta o recado); se comercializa de forma regular en mercados de la Península de Yucatán",
+        "produccion_anual_ton": "Producción a pequeña y mediana escala en huertos familiares de Campeche; sin cifra oficial consolidada a nivel estatal",
+        "mercados_destino": "Mercado local y regional para condimentos (recado rojo); la bixina como colorante natural alimentario (E160b) tiene mercado internacional, aunque los principales países exportadores son Perú y Brasil",
+        "valor_exportacion": "No documentado específicamente para Campeche",
+        "empleos_generados": "No documentado a nivel estatal",
+        "productos_derivados": [
+          "Recado rojo (pasta de condimento)",
+          "Colorante natural",
+          "Aceite de semilla",
+          "Cosméticos artesanales"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 19.8301,
+            "lng": -90.5349
+          },
+          {
+            "lat": 19.7333,
+            "lng": -89.85
+          }
+        ],
+        "zona_distribucion": "Huertos familiares y acahuales en todo el estado de Campeche",
+        "tipo_suelo": "Franco-calcáreo, bien drenado",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,000 - 1,300 mm",
+        "altitud": "0 - 200 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Profundamente ligado a la identidad culinaria y ritual maya, usado históricamente como pintura corporal",
+        "relevancia_social": "Ingrediente indispensable del recado rojo, base de platillos emblemáticos de la región",
+        "practicas_tradicionales": "Elaboración artesanal de la pasta de recado rojo combinando semilla molida con especias",
+        "saberes_indigenas": "Nombre maya 'k'uxub'; conocimiento ancestral sobre la extracción del pigmento de la semilla"
+      },
+      "imagenes": {
+        "principal": "CAM-001_principal.jpg",
+        "habitat": "CAM-001_habitat.jpg",
+        "detalle": "CAM-001_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": true,
+      "fecha_registro": "2026-06-21"
+    },
+    {
+      "id": "CAM-002",
+      "nombre_comun": "Caña silvestre / Carrizo gigante",
+      "nombre_cientifico": "Arundo donax L.",
+      "familia": "Poaceae",
+      "genero": "Arundo",
+      "especie": "donax",
+      "descripcion": "Gramínea perenne de gran tamaño, con tallos huecos y nudosos de hasta 6 m de altura. Hojas largas, anchas y alternas, dispuestas a lo largo de todo el tallo.",
+      "habitat": "Orillas de ríos, cuerpos de agua, cenotes y zonas húmedas o perturbadas.",
+      "distribucion": "Originaria de Asia y la región del Mediterráneo; naturalizada e invasora en gran parte de América, incluido Campeche.",
+      "estado_conservacion": "Especie introducida considerada invasora en varios ecosistemas, particularmente en cuerpos de agua, donde desplaza vegetación nativa.",
+      "abundancia": "Común y en ocasiones dominante en sitios húmedos perturbados.",
+      "usos_medicinales": [
+        "Diurético (decocción de raíz)",
+        "Afecciones renales y urinarias (uso tradicional)",
+        "Antiinflamatorio"
+      ],
+      "preparados": [
+        "Decocción de la raíz o rizoma"
+      ],
+      "componentes_activos": [
+        "Alcaloides indólicos en pequeñas cantidades (reportados en el género)",
+        "Alto contenido de sílice en los tallos"
+      ],
+      "contraindicaciones": "Se recomienda precaución por el contenido de alcaloides; no se aconseja el uso interno prolongado sin supervisión.",
+      "biologia": {
+        "ciclo_vida": "Perenne de crecimiento muy rápido",
+        "reproduccion": "Principalmente vegetativa, por fragmentos de rizoma (la producción de semilla viable es rara fuera de su área nativa)",
+        "polinizadores": "Anemófila (polinización por viento)",
+        "epoca_floracion": "Otoño",
+        "adaptaciones": "Rizomas extensos y crecimiento muy rápido; alta tolerancia a inundación periódica"
+      },
+      "historia": {
+        "origen": "Asia y la cuenca del Mediterráneo",
+        "usos_tradicionales": "Introducida en América durante la colonia para uso como material de construcción (techos, cercos) y artesanía (cestería, instrumentos musicales como cañas de clarinete)",
+        "menciones_historicas": "Documentada históricamente como planta de uso utilitario en numerosas culturas mediterráneas y, tras su introducción, también en Mesoamérica",
+        "evidencia_arqueologica": "No se documenta evidencia arqueológica específica para la Península de Yucatán en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "No se comercializa por kilogramo; el tallo se vende ocasionalmente como material para artesanías",
+        "produccion_anual_ton": "No aplica; no existe cultivo comercial, es de crecimiento silvestre",
+        "mercados_destino": "Uso artesanal local (cestería, instrumentos)",
+        "valor_exportacion": "No documentado",
+        "empleos_generados": "No documentado",
+        "productos_derivados": [
+          "Material para cestería",
+          "Cercos y techos tradicionales",
+          "Cañas para instrumentos musicales"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 19.35,
+            "lng": -90.7167
+          },
+          {
+            "lat": 18.6167,
+            "lng": -90.7333
+          }
+        ],
+        "zona_distribucion": "Orillas de ríos, cenotes y cuerpos de agua del estado de Campeche",
+        "tipo_suelo": "Húmedo, aluvial, tolerante a inundación",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,100 - 1,500 mm",
+        "altitud": "0 - 100 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Material utilitario tradicional para construcción y artesanía en comunidades rurales",
+        "relevancia_social": "Recurso accesible para la construcción de cercos, techos y utensilios domésticos",
+        "practicas_tradicionales": "Corte y secado del tallo para tejido de cestos y elaboración de cercos vivos",
+        "saberes_indigenas": "Conocimiento sobre el manejo del tallo seco para distintos usos utilitarios"
+      },
+      "imagenes": {
+        "principal": "CAM-002_principal.jpg",
+        "habitat": "CAM-002_habitat.jpg",
+        "detalle": "CAM-002_detalle.jpg"
+      },
+      "populares": false,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-21"
+    },
+    {
+      "id": "CAM-003",
+      "nombre_comun": "Chaya / Chay / Espinaca maya",
+      "nombre_cientifico": "Cnidoscolus aconitifolius (Mill.) I.M. Johnst.",
+      "familia": "Euphorbiaceae",
+      "genero": "Cnidoscolus",
+      "especie": "aconitifolius",
+      "descripcion": "Arbusto de 2 a 6 m de altura, hojas grandes y lobuladas; las variedades silvestres presentan tricomas urticantes, ausentes en las variedades cultivadas seleccionadas para consumo. Alto valor nutricional.",
+      "habitat": "Cultivada en solares familiares; también crece de forma semi-silvestre en acahuales.",
+      "distribucion": "Nativa de la Península de Yucatán; ampliamente cultivada en todo el sureste de México.",
+      "estado_conservacion": "Cultivada; no se encuentra en riesgo.",
+      "abundancia": "Muy común, presente en la gran mayoría de los solares mayas de Campeche.",
+      "usos_medicinales": [
+        "Coadyuvante en el control de diabetes (reduce niveles de glucosa)",
+        "Hipertensión",
+        "Anemia (alto contenido de hierro)",
+        "Problemas circulatorios",
+        "Antioxidante",
+        "Salud visual (alto contenido de vitamina A)"
+      ],
+      "preparados": [
+        "Hojas cocidas, nunca crudas",
+        "Infusión",
+        "Agregada a sopas, guisos y huevos"
+      ],
+      "componentes_activos": [
+        "Glucósidos cianogénicos (linamarina, se inactivan con la cocción)",
+        "Hierro",
+        "Calcio",
+        "Vitaminas A y C",
+        "Proteína vegetal"
+      ],
+      "contraindicaciones": "NUNCA debe consumirse cruda: contiene compuestos cianogénicos que se eliminan únicamente mediante cocción (mínimo 5-10 minutos en agua hirviendo).",
+      "biologia": {
+        "ciclo_vida": "Arbusto perenne de crecimiento rápido",
+        "reproduccion": "Principalmente vegetativa, por estaca",
+        "polinizadores": "Insectos diversos",
+        "epoca_floracion": "Variable a lo largo del año",
+        "adaptaciones": "Tricomas urticantes en las formas silvestres como mecanismo de defensa contra herbívoros"
+      },
+      "historia": {
+        "origen": "Península de Yucatán",
+        "usos_tradicionales": "Cultivada desde la época prehispánica maya como alimento básico complementario, conocida popularmente como 'espinaca maya' por su alto valor nutricional",
+        "menciones_historicas": "Documentada extensamente en fuentes etnobotánicas de la región como pilar de la dieta tradicional maya",
+        "evidencia_arqueologica": "No se documenta evidencia arqueológica directa específica en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "Venta habitual en mercados locales como verdura de hoja, precio variable según temporada",
+        "produccion_anual_ton": "No existe cifra oficial consolidada; cultivo principalmente de traspatio para autoconsumo y venta local",
+        "mercados_destino": "Mercados municipales y venta directa; relevante para la seguridad alimentaria local",
+        "valor_exportacion": "No documentado",
+        "empleos_generados": "No documentado",
+        "productos_derivados": [
+          "Hoja fresca para consumo",
+          "Agua de chaya",
+          "Tamales y platillos tradicionales con chaya"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 19.8301,
+            "lng": -90.5349
+          },
+          {
+            "lat": 19.7333,
+            "lng": -89.85
+          }
+        ],
+        "zona_distribucion": "Solares familiares y acahuales en todo el estado de Campeche",
+        "tipo_suelo": "Calcáreo, bien drenado",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,000 - 1,300 mm",
+        "altitud": "0 - 300 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Alimento ancestral maya, símbolo de la dieta tradicional y la soberanía alimentaria regional",
+        "relevancia_social": "Presente en la alimentación cotidiana de las familias campechanas desde épocas prehispánicas",
+        "practicas_tradicionales": "Cocción cuidadosa de las hojas y preparación de platillos tradicionales (tamales de chaya, agua de chaya)",
+        "saberes_indigenas": "Conocimiento transmitido sobre el manejo seguro de la planta y su valor nutricional"
+      },
+      "imagenes": {
+        "principal": "CAM-003_principal.jpg",
+        "habitat": "CAM-003_habitat.jpg",
+        "detalle": "CAM-003_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": true,
+      "fecha_registro": "2026-06-21"
+    },
+    {
+      "id": "CAM-004",
+      "nombre_comun": "Salvia de playa / Tabaquillo / Chal'Che",
+      "nombre_cientifico": "Pluchea carolinensis (Jacq.) G. Don",
+      "familia": "Asteraceae",
+      "genero": "Pluchea",
+      "especie": "carolinensis",
+      "descripcion": "Arbusto silvestre perenne de hasta 2 m de altura, hojas de hasta 20 cm, aterciopeladas, ligeramente pegajosas, con aroma suave similar al eucalipto. Flores pequeñas de color lila dispuestas en apretados ramilletes.",
+      "habitat": "Zonas inundables, vegetación ribereña o ruderal; no tolera la sombra densa.",
+      "distribucion": "Ampliamente distribuida en México (incluyendo Campeche), el Caribe y Centroamérica.",
+      "estado_conservacion": "No catalogada en riesgo; coloniza y estabiliza áreas perturbadas.",
+      "abundancia": "Común en sitios húmedos y alterados.",
+      "usos_medicinales": [
+        "Dolor de garganta y catarro",
+        "Dolor de estómago y flatulencia",
+        "Dolor de cabeza",
+        "Presión arterial alta",
+        "Dolor de dientes",
+        "Lavado externo de heridas y llagas",
+        "Uso tradicional para esterilidad femenina (no confirmado clínicamente)"
+      ],
+      "preparados": [
+        "Infusión (té) de la planta",
+        "Cocimiento externo para lavar heridas y llagas"
+      ],
+      "componentes_activos": [
+        "Compuestos no completamente caracterizados; se reportan propiedades antibióticas y antimicóticas preliminares contra ciertas cepas de microorganismos"
+      ],
+      "contraindicaciones": "Por su efecto tradicional estimulante de la matriz, no se recomienda su uso durante el embarazo.",
+      "biologia": {
+        "ciclo_vida": "Arbusto perenne",
+        "reproduccion": "Por semilla",
+        "polinizadores": "Insectos diversos",
+        "epoca_floracion": "Variable a lo largo del año",
+        "adaptaciones": "Tolera suelos pobremente drenados y de diferentes texturas; coloniza rápidamente zonas alteradas o inundables"
+      },
+      "historia": {
+        "origen": "América tropical (Caribe y Centroamérica)",
+        "usos_tradicionales": "Uso medicinal extendido en Cuba, México y Centroamérica, con notable coincidencia de usos entre culturas hispana, francesa e inglesa del Caribe",
+        "menciones_historicas": "Documentada en estudios etnobotánicos cubanos y mexicanos como remedio para fiebres, digestión lenta, dolores de riñón, cabeza y ronquera",
+        "evidencia_arqueologica": "No documentada específicamente en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "No comercializada formalmente; recolección silvestre",
+        "produccion_anual_ton": "No aplica",
+        "mercados_destino": "Uso local y de autoconsumo",
+        "valor_exportacion": "No documentado",
+        "empleos_generados": "No documentado",
+        "productos_derivados": []
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 19.35,
+            "lng": -90.7167
+          },
+          {
+            "lat": 18.6167,
+            "lng": -90.7333
+          }
+        ],
+        "zona_distribucion": "Zonas inundables y ribereñas del estado de Campeche",
+        "tipo_suelo": "Húmedo, pobremente drenado, de diversas texturas",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,100 - 1,400 mm",
+        "altitud": "0 - 200 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Remedio doméstico de uso extendido en comunidades rurales de la región",
+        "relevancia_social": "Parte del herbolario popular accesible por su abundancia en sitios perturbados",
+        "practicas_tradicionales": "Preparación de té e infusiones caseras ante malestares cotidianos",
+        "saberes_indigenas": "Nombres mayas 'sak che'' y 'k'uuts k'aax'"
+      },
+      "imagenes": {
+        "principal": "CAM-004_principal.jpg",
+        "habitat": "CAM-004_habitat.jpg",
+        "detalle": "CAM-004_detalle.jpg"
+      },
+      "populares": false,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-21"
+    },
+    {
+      "id": "CAM-005",
+      "nombre_comun": "Epazote",
+      "nombre_cientifico": "Dysphania ambrosioides (L.) Mosyakin & Clemants",
+      "familia": "Amaranthaceae",
+      "genero": "Dysphania",
+      "especie": "ambrosioides",
+      "descripcion": "Hierba aromática anual o de vida corta, de hojas lanceoladas y dentadas, con un aroma fuerte y penetrante característico. Flores pequeñas de color verdoso dispuestas en espigas.",
+      "habitat": "Solares, milpas y sitios perturbados; con frecuencia asociada a cultivos tradicionales.",
+      "distribucion": "Nativa de Mesoamérica; ampliamente distribuida en México y naturalizada en muchas otras regiones del mundo.",
+      "estado_conservacion": "Cultivada/naturalizada; no se encuentra en riesgo.",
+      "abundancia": "Muy común en milpas y solares.",
+      "usos_medicinales": [
+        "Antiparasitario tradicional (vermífugo contra lombrices intestinales)",
+        "Digestivo (reduce la flatulencia al cocinarse con leguminosas)",
+        "Antiespasmódico"
+      ],
+      "preparados": [
+        "Infusión",
+        "Agregado fresco como condimento en frijoles y otros guisos"
+      ],
+      "componentes_activos": [
+        "Ascaridol (compuesto principal del aceite esencial, tóxico en dosis altas)",
+        "Terpenos diversos"
+      ],
+      "contraindicaciones": "El aceite esencial puede ser tóxico en dosis altas (efectos hepatotóxicos y neurotóxicos reportados); se recomienda evitar su uso concentrado durante el embarazo y en niños pequeños.",
+      "biologia": {
+        "ciclo_vida": "Hierba anual o bianual",
+        "reproduccion": "Por semilla",
+        "polinizadores": "Anemófila y por insectos pequeños",
+        "epoca_floracion": "Verano - otoño",
+        "adaptaciones": "Aceites aromáticos como mecanismo de defensa contra herbívoros"
+      },
+      "historia": {
+        "origen": "Mesoamérica",
+        "usos_tradicionales": "Uso documentado desde la época prehispánica como condimento y vermífugo tradicional",
+        "menciones_historicas": "Mencionada en fuentes etnobotánicas coloniales como una de las hierbas de olor esenciales de la cocina mesoamericana",
+        "evidencia_arqueologica": "No se documenta evidencia arqueológica directa específica en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "Venta habitual como hierba de olor en mercados locales, precio bajo y accesible",
+        "produccion_anual_ton": "No existe cifra oficial consolidada; cultivo de traspatio y milpa",
+        "mercados_destino": "Mercados municipales y venta local",
+        "valor_exportacion": "No documentado",
+        "empleos_generados": "No documentado",
+        "productos_derivados": [
+          "Hierba fresca o seca para condimento"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 19.8301,
+            "lng": -90.5349
+          },
+          {
+            "lat": 19.7333,
+            "lng": -89.85
+          }
+        ],
+        "zona_distribucion": "Milpas y solares en todo el estado de Campeche",
+        "tipo_suelo": "Variado, tolerante a suelos alterados",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,000 - 1,300 mm",
+        "altitud": "0 - 300 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Condimento esencial de la cocina mexicana tradicional, parte de la identidad culinaria mesoamericana",
+        "relevancia_social": "Presente en la cocina cotidiana de prácticamente todos los hogares de la región",
+        "practicas_tradicionales": "Uso como condimento en frijoles y como remedio antiparasitario casero",
+        "saberes_indigenas": "Conocimiento sobre dosificación segura transmitido por generaciones"
+      },
+      "imagenes": {
+        "principal": "CAM-005_principal.jpg",
+        "habitat": "CAM-005_habitat.jpg",
+        "detalle": "CAM-005_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-21"
+    },
+    {
+      "id": "CAM-006",
+      "nombre_comun": "Hierba santa / Momo / Acuyo",
+      "nombre_cientifico": "Piper auritum Kunth",
+      "familia": "Piperaceae",
+      "genero": "Piper",
+      "especie": "auritum",
+      "descripcion": "Arbusto de 2 a 3 m de altura, hojas grandes, acorazonadas, con nervaduras prominentes y aroma característico a anís/eucalipto.",
+      "habitat": "Selva secundaria, orillas de caminos; también cultivada en huertos familiares.",
+      "distribucion": "Nativa de Mesoamérica, distribuida desde México hasta Sudamérica.",
+      "estado_conservacion": "No catalogada en riesgo.",
+      "abundancia": "Común en vegetación secundaria y huertos.",
+      "usos_medicinales": [
+        "Digestivo",
+        "Antiespasmódico",
+        "Dolor de estómago",
+        "Afecciones respiratorias",
+        "Diurético"
+      ],
+      "preparados": [
+        "Infusión de hojas",
+        "Hojas frescas usadas como envoltura culinaria-medicinal (tamales, pescados)"
+      ],
+      "componentes_activos": [
+        "Safrol (compuesto del aceite esencial)",
+        "Eugenol"
+      ],
+      "contraindicaciones": "El safrol en dosis altas se ha asociado con efectos hepatotóxicos en estudios experimentales; se recomienda un uso moderado.",
+      "biologia": {
+        "ciclo_vida": "Arbusto perenne de crecimiento rápido",
+        "reproduccion": "Por semilla y propagación vegetativa por esquejes",
+        "polinizadores": "Insectos pequeños",
+        "epoca_floracion": "Variable a lo largo del año",
+        "adaptaciones": "Hojas grandes adaptadas para captar luz en condiciones de sotobosque"
+      },
+      "historia": {
+        "origen": "Mesoamérica",
+        "usos_tradicionales": "Uso prehispánico documentado tanto en la cocina como en la medicina tradicional maya; ingrediente esencial en platillos como tamales y pescados envueltos",
+        "menciones_historicas": "Referida en fuentes etnobotánicas del sureste de México como planta de uso dual culinario-medicinal",
+        "evidencia_arqueologica": "No se documenta evidencia arqueológica directa específica en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "Venta habitual por manojo en mercados locales como hierba de olor y envoltura culinaria",
+        "produccion_anual_ton": "No existe cifra oficial consolidada para Campeche",
+        "mercados_destino": "Mercados municipales y gastronomía regional",
+        "valor_exportacion": "No documentado",
+        "empleos_generados": "No documentado",
+        "productos_derivados": [
+          "Hoja fresca para envoltura de alimentos",
+          "Té digestivo"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 19.7333,
+            "lng": -89.85
+          },
+          {
+            "lat": 18.6167,
+            "lng": -90.7333
+          }
+        ],
+        "zona_distribucion": "Selva secundaria y huertos del estado de Campeche",
+        "tipo_suelo": "Calcáreo, húmedo, bien drenado",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,100 - 1,400 mm",
+        "altitud": "0 - 300 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Ingrediente culinario emblemático del sureste de México",
+        "relevancia_social": "Parte fundamental de la gastronomía tradicional regional",
+        "practicas_tradicionales": "Uso de la hoja para envolver alimentos durante la cocción (tamales, pescados)",
+        "saberes_indigenas": "Conocimiento maya sobre sus propiedades digestivas y su uso culinario-ritual"
+      },
+      "imagenes": {
+        "principal": "CAM-006_principal.jpg",
+        "habitat": "CAM-006_habitat.jpg",
+        "detalle": "CAM-006_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-21"
+    },
+    {
+      "id": "CAM-007",
+      "nombre_comun": "Hierba mora",
+      "nombre_cientifico": "Solanum nigrum L.",
+      "familia": "Solanaceae",
+      "genero": "Solanum",
+      "especie": "nigrum",
+      "descripcion": "Hierba anual o de vida corta, hojas ovadas de borde entero a ligeramente dentado, flores blancas pequeñas en racimos, fruto en baya que se torna negro al madurar.",
+      "habitat": "Sitios perturbados, huertos y orillas de caminos.",
+      "distribucion": "Distribución cosmopolita; ampliamente presente en todo México, incluyendo Campeche.",
+      "estado_conservacion": "No amenazada; con frecuencia considerada maleza de sitios alterados.",
+      "abundancia": "Común en huertos y terrenos perturbados.",
+      "usos_medicinales": [
+        "Antiinflamatorio",
+        "Afecciones de la piel (aplicación tópica de hojas)",
+        "Sedante leve",
+        "Uso tradicional para fiebre y dolor"
+      ],
+      "preparados": [
+        "Cataplasma de hojas",
+        "Infusión (con precaución y en dosis bajas)"
+      ],
+      "componentes_activos": [
+        "Glicoalcaloides (solanina), particularmente concentrados en frutos verdes e inmaduros y en el follaje"
+      ],
+      "contraindicaciones": "El follaje y los frutos verdes/inmaduros contienen solanina, tóxica si se consume en cantidad; existe variabilidad en la toxicidad entre poblaciones de la especie, por lo que se recomienda extrema precaución y evitar el autoconsumo sin la guía de un conocedor experimentado.",
+      "biologia": {
+        "ciclo_vida": "Hierba anual",
+        "reproduccion": "Por semilla; dispersión de frutos por aves",
+        "polinizadores": "Insectos pequeños",
+        "epoca_floracion": "Todo el año",
+        "adaptaciones": "Ciclo de vida corto y alta producción de semillas, lo que favorece su rápida colonización"
+      },
+      "historia": {
+        "origen": "Distribución cosmopolita de origen incierto",
+        "usos_tradicionales": "Uso documentado en numerosas culturas tradicionales del mundo, incluyendo comunidades mesoamericanas, como remedio doméstico para inflamaciones y afecciones de la piel",
+        "menciones_historicas": "Mencionada en diversas farmacopeas populares tradicionales a nivel mundial",
+        "evidencia_arqueologica": "No documentada en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "No comercializada formalmente",
+        "produccion_anual_ton": "No aplica",
+        "mercados_destino": "Recolección silvestre ocasional, sin mercado formal",
+        "valor_exportacion": "No documentado",
+        "empleos_generados": "No documentado",
+        "productos_derivados": []
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 19.8301,
+            "lng": -90.5349
+          },
+          {
+            "lat": 19.35,
+            "lng": -90.7167
+          }
+        ],
+        "zona_distribucion": "Sitios perturbados y huertos en todo el estado de Campeche",
+        "tipo_suelo": "Variado, tolerante a suelos alterados",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,000 - 1,300 mm",
+        "altitud": "0 - 300 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Remedio tradicional de uso doméstico ocasional",
+        "relevancia_social": "Conocimiento sobre su manejo transmitido de forma cautelosa por su toxicidad potencial",
+        "practicas_tradicionales": "Distinción tradicional entre formas tóxicas y comestibles según la experiencia local",
+        "saberes_indigenas": "Conocimiento empírico sobre identificación segura de la planta transmitido por generaciones"
+      },
+      "imagenes": {
+        "principal": "CAM-007_principal.jpg",
+        "habitat": "CAM-007_habitat.jpg",
+        "detalle": "CAM-007_detalle.jpg"
+      },
+      "populares": false,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-21"
+    },
+    {
+      "id": "CAM-008",
+      "nombre_comun": "Hierba del toro / Cadillo / Romerillo",
+      "nombre_cientifico": "Tridax procumbens L.",
+      "familia": "Asteraceae",
+      "genero": "Tridax",
+      "especie": "procumbens",
+      "descripcion": "Hierba rastrera de 15 a 40 cm de altura, de base leñosa, tallos frecuentemente ramificados desde la base y postrados. Hojas ovadas o lanceoladas, aserradas. Cabezuelas solitarias sobre pedúnculos largos, con lígulas de color blanco-amarillento; fruto en aquenio con vilano.",
+      "habitat": "Terrenos baldíos, praderas, orillas de caminos y suelos arenosos, en clima cálido.",
+      "distribucion": "Nativa de México y Centroamérica; naturalizada e invasora en Sudamérica, el Caribe, África y Asia.",
+      "estado_conservacion": "Considerada maleza común; especie invasora en otras regiones del mundo fuera de su área nativa.",
+      "abundancia": "Muy común en terrenos perturbados de toda la entidad.",
+      "usos_medicinales": [
+        "Regulación menstrual y cuidados del puerperio (raíz hervida, vía oral)",
+        "Eliminación de manchas en la piel ('paño')",
+        "Ácido úrico y gota",
+        "Dolor de articulaciones y rodillas",
+        "Limpieza renal",
+        "Antiparasitario intestinal",
+        "Cicatrizante (jugo de hojas)",
+        "Diurético"
+      ],
+      "preparados": [
+        "Cocimiento/infusión de la raíz o de la planta completa",
+        "Jugo de hojas frescas para aplicación tópica"
+      ],
+      "componentes_activos": [
+        "Flavonoides (luteolina, quercetina, isoquercetina)",
+        "Taninos",
+        "Saponinas",
+        "Triterpenos y esteroles (lupeol, fucosterol, beta-sitosterol)",
+        "Alcaloides en los retoños"
+      ],
+      "contraindicaciones": "No ampliamente documentadas en las dosis de uso tradicional; se recomienda precaución durante el embarazo dado su uso tradicional asociado a la regulación menstrual.",
+      "biologia": {
+        "ciclo_vida": "Hierba perenne de base leñosa",
+        "reproduccion": "Por semilla (hasta 1,500 aquenios por planta), dispersados a distancia por el viento mediante un vilano plumoso",
+        "polinizadores": "Insectos diversos",
+        "epoca_floracion": "Todo el año",
+        "adaptaciones": "Altísima producción de semillas con vilano para dispersión eólica; gran capacidad de colonización de suelos alterados"
+      },
+      "historia": {
+        "origen": "México y Centroamérica",
+        "usos_tradicionales": "Raíz hervida administrada tradicionalmente para la regulación menstrual y durante el puerperio; uso para 'quitar el paño' de la piel",
+        "menciones_historicas": "Maximino Martínez (siglo XX) la describió como planta refrescante; documentada en el Atlas de las Plantas de la Medicina Tradicional Mexicana (UNAM)",
+        "evidencia_arqueologica": "No documentada en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "No comercializada; recolección silvestre libre",
+        "produccion_anual_ton": "No aplica",
+        "mercados_destino": "Sin mercado formal",
+        "valor_exportacion": "No aplica",
+        "empleos_generados": "No aplica",
+        "productos_derivados": []
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 19.8301,
+            "lng": -90.5349
+          },
+          {
+            "lat": 18.6167,
+            "lng": -90.7333
+          }
+        ],
+        "zona_distribucion": "Terrenos baldíos y perturbados en todo el estado de Campeche",
+        "tipo_suelo": "Arenoso a variado, tolerante a suelos pobres",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,000 - 1,300 mm",
+        "altitud": "0 - 300 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Remedio popular de fácil acceso por su abundancia en cualquier solar o camino",
+        "relevancia_social": "Parte del herbolario tradicional mexicano documentado formalmente desde el siglo XX",
+        "practicas_tradicionales": "Preparación de cocimientos para regulación menstrual y cuidados del puerperio",
+        "saberes_indigenas": "Conocimiento popular sobre su uso ginecológico y dermatológico transmitido de generación en generación"
+      },
+      "imagenes": {
+        "principal": "CAM-008_principal.jpg",
+        "habitat": "CAM-008_habitat.jpg",
+        "detalle": "CAM-008_detalle.jpg"
+      },
+      "populares": false,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-21"
+    },
+    {
+      "id": "CAM-009",
+      "nombre_comun": "Orégano francés / Oreganón / Orégano cubano",
+      "nombre_cientifico": "Plectranthus amboinicus (Lour.) Spreng.",
+      "familia": "Lamiaceae",
+      "genero": "Plectranthus",
+      "especie": "amboinicus",
+      "descripcion": "Planta herbácea perenne, robusta, de hasta 1 m de altura, con hojas carnosas, suborbiculares, de 5 a 10 cm, muy aromáticas (aroma similar al orégano común). Inflorescencia terminal con corolas de color azul pálido, lila o rosado.",
+      "habitat": "Cultivada en solares y huertos familiares; requiere buena iluminación.",
+      "distribucion": "Originaria del sureste asiático/África oriental; ampliamente naturalizada y cultivada en el Caribe, Centroamérica y el sureste de México.",
+      "estado_conservacion": "Cultivada; no se encuentra en riesgo.",
+      "abundancia": "Muy común en traspatios mayas de Campeche; identificada entre las especies de mayor uso en estudios etnobotánicos locales (Nunkiní, Campeche).",
+      "usos_medicinales": [
+        "Tos y bronquitis (expectorante)",
+        "Problemas respiratorios y gripa",
+        "Dolor de garganta",
+        "Otitis",
+        "Dolor de cabeza",
+        "Antiespasmódico",
+        "Antiséptico",
+        "Sedante leve",
+        "Uso tradicional para disolver cálculos renales o vesiculares"
+      ],
+      "preparados": [
+        "Infusión de hojas",
+        "Jarabe casero",
+        "Hojas maceradas en aplicación tópica (cicatrizante, analgésico)"
+      ],
+      "componentes_activos": [
+        "Aceites esenciales (carvacrol, timol)",
+        "Taninos",
+        "Glucósidos"
+      ],
+      "contraindicaciones": "No ampliamente documentadas en el uso tradicional moderado; se recomienda precaución en dosis altas y durante el embarazo.",
+      "biologia": {
+        "ciclo_vida": "Arbusto herbáceo perenne",
+        "reproduccion": "Principalmente vegetativa, por esquejes (la producción de semilla viable es poco frecuente)",
+        "polinizadores": "Insectos diversos",
+        "epoca_floracion": "Variable a lo largo del año",
+        "adaptaciones": "Hojas carnosas que almacenan agua; aceites aromáticos como defensa contra herbívoros"
+      },
+      "historia": {
+        "origen": "Asia/África oriental; introducida en América durante la época colonial a través del comercio caribeño",
+        "usos_tradicionales": "Ampliamente incorporada a la medicina tradicional del sureste de México; identificada como una de las especies de mayor uso en los traspatios mayas de Campeche, empleada principalmente para problemas respiratorios",
+        "menciones_historicas": "Documentada en estudios etnobotánicos cubanos y mexicanos contemporáneos sobre plantas de traspatio",
+        "evidencia_arqueologica": "No aplica; especie introducida en época histórica reciente"
+      },
+      "economia": {
+        "precio_mercado_kg": "Cultivo de traspatio, sin mercado comercial de gran escala; venta ocasional de planta en maceta en viveros locales",
+        "produccion_anual_ton": "No aplica; cultivo doméstico",
+        "mercados_destino": "Uso de autoconsumo y venta local ocasional",
+        "valor_exportacion": "No documentado",
+        "empleos_generados": "No documentado",
+        "productos_derivados": [
+          "Hoja fresca para infusión",
+          "Planta de ornato y condimento"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 20.3667,
+            "lng": -90.05
+          },
+          {
+            "lat": 19.7333,
+            "lng": -89.85
+          }
+        ],
+        "zona_distribucion": "Traspatios mayas en todo el estado de Campeche, particularmente documentada en la región de Nunkiní",
+        "tipo_suelo": "Franco-calcáreo, bien drenado",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,000 - 1,300 mm",
+        "altitud": "0 - 300 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Una de las plantas medicinales más representativas de los traspatios mayas de Campeche",
+        "relevancia_social": "Transmitida principalmente por mujeres jefas de familia como remedio doméstico de primera línea",
+        "practicas_tradicionales": "Preparación de infusiones para problemas respiratorios cotidianos",
+        "saberes_indigenas": "Conocimiento documentado en comunidades de Nunkiní sobre su uso para tos y gripa"
+      },
+      "imagenes": {
+        "principal": "CAM-009_principal.jpg",
+        "habitat": "CAM-009_habitat.jpg",
+        "detalle": "CAM-009_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": true,
+      "fecha_registro": "2026-06-21"
+    },
+    {
+      "id": "CAM-010",
+      "nombre_comun": "Ortiga brava / Chichicaste / Pringamoza",
+      "nombre_cientifico": "Urera baccifera (L.) Gaudich. ex Wedd.",
+      "familia": "Urticaceae",
+      "genero": "Urera",
+      "especie": "baccifera",
+      "descripcion": "Arbusto de tallo espinoso y fibroso, ramas rojizas, cubierto de tricomas urticantes. Hojas grandes, alternas, ovado-oblongas, de margen dentado, más pálidas en el envés. Flores dioicas en cimas ramificadas; frutos en baya anaranjada o blanquecina.",
+      "habitat": "Vegetación secundaria, orillas de caminos; cultivada ocasionalmente como cerca viva por sus tricomas urticantes.",
+      "distribucion": "Nativa de América tropical; ampliamente distribuida desde México hasta Sudamérica.",
+      "estado_conservacion": "No amenazada.",
+      "abundancia": "Común en vegetación secundaria del estado.",
+      "usos_medicinales": [
+        "Artritis y reumatismo",
+        "Ácido úrico",
+        "Golpes e inflamaciones",
+        "Fiebre",
+        "Dolor de muela",
+        "Quemaduras",
+        "Furúnculos y abscesos",
+        "Alergias",
+        "Uso tradicional en diabetes",
+        "Cálculos renales (raíz, propiedad diurética y antilitiásica)"
+      ],
+      "preparados": [
+        "Infusión de hojas o raíz",
+        "Cataplasma de hojas",
+        "Aplicación externa del látex"
+      ],
+      "componentes_activos": [
+        "Compuestos urticantes en los tricomas (ácido fórmico, histamina)",
+        "Composición fitoquímica completa no determinada en las fuentes consultadas"
+      ],
+      "contraindicaciones": "El contacto directo con los tricomas causa irritación cutánea intensa (ardor, urticaria); se recomienda manejo con guantes. Las semillas se han reportado como tóxicas en algunas fuentes.",
+      "biologia": {
+        "ciclo_vida": "Arbusto perenne dioico",
+        "reproduccion": "Por semilla; dispersión de frutos por aves",
+        "polinizadores": "Insectos diversos; planta hospedera de larvas de mariposas",
+        "epoca_floracion": "Variable, principalmente en la época de lluvias",
+        "adaptaciones": "Tricomas urticantes como mecanismo de defensa contra herbívoros"
+      },
+      "historia": {
+        "origen": "América tropical",
+        "usos_tradicionales": "Uso documentado en la medicina tradicional cubana, centroamericana y mexicana como diurética y antilitiásica (raíz); en Centroamérica cultivada como cerca viva disuasiva",
+        "menciones_historicas": "En Sudamérica, el tallo se ha empleado históricamente para la obtención de fibra y papel",
+        "evidencia_arqueologica": "No documentada específicamente en las fuentes consultadas"
+      },
+      "economia": {
+        "precio_mercado_kg": "No comercializada formalmente",
+        "produccion_anual_ton": "No aplica",
+        "mercados_destino": "Uso ocasional de fibra para cordelería artesanal local",
+        "valor_exportacion": "No documentado",
+        "empleos_generados": "No documentado",
+        "productos_derivados": [
+          "Fibra artesanal para cordelería",
+          "Cerca viva"
+        ]
+      },
+      "sig": {
+        "coordenadas": [
+          {
+            "lat": 19.35,
+            "lng": -90.7167
+          },
+          {
+            "lat": 18.6167,
+            "lng": -90.7333
+          }
+        ],
+        "zona_distribucion": "Vegetación secundaria del estado de Campeche",
+        "tipo_suelo": "Variado, húmedo a bien drenado",
+        "clima": "Cálido subhúmedo (Aw)",
+        "precipitacion_anual": "1,100 - 1,400 mm",
+        "altitud": "0 - 300 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Planta de doble función, medicinal y de protección (cerca viva)",
+        "relevancia_social": "Uso tradicional reconocido pese al riesgo de irritación al contacto",
+        "practicas_tradicionales": "Manejo cuidadoso para extracción de hojas y raíz con fines medicinales",
+        "saberes_indigenas": "Conocimiento sobre manejo seguro transmitido por generaciones en comunidades rurales"
+      },
+      "imagenes": {
+        "principal": "CAM-010_principal.jpg",
+        "habitat": "CAM-010_habitat.jpg",
+        "detalle": "CAM-010_detalle.jpg"
+      },
+      "populares": false,
+      "mas_vendida": false,
+      "fecha_registro": "2026-06-21"
+    }
+  ]
+}

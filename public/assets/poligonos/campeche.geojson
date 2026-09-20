@@ -1,0 +1,56 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "estado": "Campeche",
+        "capital": "San Francisco de Campeche",
+        "color": "#1565C0"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -92.0,
+              20.8
+            ],
+            [
+              -90.4,
+              21.0
+            ],
+            [
+              -90.2,
+              20.2
+            ],
+            [
+              -90.5,
+              19.5
+            ],
+            [
+              -91.0,
+              18.8
+            ],
+            [
+              -91.8,
+              18.5
+            ],
+            [
+              -92.3,
+              19.0
+            ],
+            [
+              -92.2,
+              20.0
+            ],
+            [
+              -92.0,
+              20.8
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

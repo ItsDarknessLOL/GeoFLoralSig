@@ -1,0 +1,96 @@
+{
+  "estado": "Yucatán",
+  "capital": "Mérida",
+  "color_tema": "#2E7D32",
+  "color_secundario": "#A5D6A7",
+  "total_especies": 247,
+  "especies_medicinales": 89,
+  "plantas": [
+    {
+      "id": "yuc_001",
+      "nombre_comun": "Áloe Yucateco",
+      "nombre_cientifico": "Aloe vera var. yucatanensis",
+      "familia": "Asphodelaceae",
+      "genero": "Aloe",
+      "especie": "vera",
+      "descripcion": "Planta suculenta perenne con hojas gruesas y carnosas de color verde grisáceo. Alcanza entre 30-60 cm de altura. Las hojas contienen un gel transparente con propiedades medicinales comprobadas.",
+      "altura": "30-60 cm",
+      "habitat": "Zonas áridas y semiáridas, terrenos rocosos calizos",
+      "distribucion": "Península de Yucatán, zonas cercanas a Mérida, Izamal y Tizimín",
+      "estado_conservacion": "Preocupación menor (LC)",
+      "abundancia": "Común",
+      "usos_medicinales": [
+        "Tratamiento de quemaduras y heridas",
+        "Antiinflamatorio cutáneo",
+        "Hidratante natural para la piel",
+        "Tratamiento de acné y psoriasis",
+        "Cicatrizante"
+      ],
+      "preparados": [
+        "Gel fresco aplicado directamente",
+        "Infusión con miel para problemas digestivos",
+        "Jugo mezclado con limón como depurativo"
+      ],
+      "componentes_activos": [
+        "Aloin",
+        "Aloe-emodina",
+        "Vitaminas A, C, E",
+        "Minerales (calcio, magnesio, zinc)",
+        "Polisacáridos (acemannan)"
+      ],
+      "contraindicaciones": "No usar en cantidades excesivas durante el embarazo. Evitar en casos de obstrucción intestinal.",
+      "biologia": {
+        "ciclo_vida": "Perenne",
+        "reproduccion": "Vegetativa (hijuelos) y sexual (semillas)",
+        "polinizadores": "Abejas, colibríes",
+        "epoca_floracion": "Marzo-Junio",
+        "adaptaciones": "Suculencia para almacenamiento de agua, cutícula gruesa para reducir transpiración"
+      },
+      "historia": {
+        "origen": "Nativo de la Península de Yucatán, cultivado desde épocas prehispánicas por los mayas",
+        "usos_tradicionales": "Los mayas lo utilizaban para curar heridas de guerra, tratar problemas de piel y como ofrenda ritual",
+        "menciones_historicas": "Mencionado en los Códices de Madrid y Dresde como planta sagrada",
+        "evidencia_arqueologica": "Restos de cultivos encontrados en Chichén Itzá y Uxmal"
+      },
+      "economia": {
+        "precio_mercado_kg": "$120-180 MXN",
+        "produccion_anual_ton": "450",
+        "mercados_destino": "Mérida, Cancún, Playa del Carmen, exportación a EUA",
+        "valor_exportacion": "$2.3M USD anuales",
+        "empleos_generados": "~1,200 personas en cultivo y procesamiento",
+        "productos_derivados": [
+          "Gel cosmético",
+          "Cremas hidratantes",
+          "Jugos naturales",
+          "Suplementos alimenticios",
+          "Champús y acondicionadores"
+        ]
+      },
+      "sig": {
+        "coordenadas": {
+          "lat": 20.967,
+          "lng": -89.623
+        },
+        "zona_distribucion": "Norte y centro de Yucatán",
+        "tipo_suelo": "Suelo rojo y rendzina",
+        "clima": "Cálido subhúmedo",
+        "precipitacion_anual": "800-1100 mm",
+        "altitud": "8-20 msnm"
+      },
+      "humanidades": {
+        "significado_cultural": "Conocido como 'sábila' en la tradición maya, símbolo de sanación y protección",
+        "relevancia_social": "Base de economía familiar en comunidades rurales",
+        "practicas_tradicionales": "Usado por curanderos (h-men) en rituales de limpieza",
+        "saberes_indigenas": "Conocimiento transmitido generacionalmente en comunidades mayas"
+      },
+      "imagenes": {
+        "principal": "assets/imagenes/aloe_yucateco.jpg",
+        "habitat": "assets/imagenes/aloe_habitat.jpg",
+        "detalle": "assets/imagenes/aloe_detalle.jpg"
+      },
+      "populares": true,
+      "mas_vendida": true,
+      "fecha_registro": "2024-01-15"
+    }
+  ]
+}

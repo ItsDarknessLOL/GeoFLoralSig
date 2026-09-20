@@ -1,0 +1,52 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "estado": "Tabasco",
+        "capital": "Villahermosa",
+        "color": "#E65100"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -94.2,
+              18.6
+            ],
+            [
+              -92.0,
+              18.8
+            ],
+            [
+              -91.4,
+              18.0
+            ],
+            [
+              -91.6,
+              17.5
+            ],
+            [
+              -92.5,
+              17.4
+            ],
+            [
+              -93.5,
+              17.8
+            ],
+            [
+              -94.0,
+              18.2
+            ],
+            [
+              -94.2,
+              18.6
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

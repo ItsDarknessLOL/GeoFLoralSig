@@ -1,0 +1,60 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "estado": "Chiapas",
+        "capital": "Tuxtla Gutiérrez",
+        "color": "#6A1B9A"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -94.2,
+              18.0
+            ],
+            [
+              -92.2,
+              18.5
+            ],
+            [
+              -91.4,
+              17.8
+            ],
+            [
+              -90.8,
+              16.0
+            ],
+            [
+              -91.8,
+              14.8
+            ],
+            [
+              -92.3,
+              15.2
+            ],
+            [
+              -93.5,
+              15.8
+            ],
+            [
+              -94.2,
+              16.5
+            ],
+            [
+              -94.5,
+              17.2
+            ],
+            [
+              -94.2,
+              18.0
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

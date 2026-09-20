@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visor 3D - Plantas Medicinales del Sureste</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  
+  <style>
+    body { font-family: 'Inter', sans-serif; margin: 0; overflow: hidden; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    
+    /* Canvas 3D */
+    #canvas3d {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    
+    /* Overlay UI */
+    .visor3d-ui {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+      pointer-events: none;
+    }
+    
+    .visor3d-header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 20px 24px;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent);
+      pointer-events: auto;
+    }
+    
+    .visor3d-header .logo {
+      color: white;
+    }
+    
+    .visor3d-header .nav a {
+      color: rgba(255,255,255,0.8);
+    }
+    
+    .visor3d-header .nav a.activo {
+      color: var(--verde-lima);
+    }
+    
+    .visor3d-info {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(15px);
+      padding: 24px;
+      border-radius: 16px;
+      color: white;
+      max-width: 350px;
+      pointer-events: auto;
+    }
+    
+    .visor3d-info h2 {
+      font-size: 1.5rem;
+      margin-bottom: 4px;
+    }
+    
+    .visor3d-info p {
+      font-style: italic;
+      color: var(--verde-lima);
+      margin-bottom: 12px;
+    }
+    
+    .visor3d-info .controles {
+      display: flex;
+      gap: 8px;
+      margin-top: 16px;
+    }
+    
+    .visor3d-info .controles button {
+      padding: 8px 14px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: white;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .visor3d-info .controles button:hover {
+      background: rgba(255,255,255,0.3);
+    }
+    
+    .visor3d-loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #0a0a0a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      color: white;
+      font-size: 1.2rem;
+    }
+    
+    .visor3d-spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(255,255,255,0.1);
+      border-top-color: var(--verde-lima);
+      border-radius: 50%;
+      animation: spinner 1s linear infinite;
+      margin-right: 16px;
+    }
+    
+    @media (max-width: 768px) {
+      .visor3d-info {
+        left: 16px;
+        right: 16px;
+        bottom: 20px;
+        max-width: none;
+      }
+      .visor3d-header .nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Loading -->
+  <div class="visor3d-loading" id="loading3d" role="status" aria-live="polite">
+    <div class="visor3d-spinner"></div>
+    <span>Cargando modelo 3D...</span>
+  </div>
+
+  <!-- Canvas 3D -->
+  <canvas id="canvas3d" aria-label="Visor 3D de planta medicinal"></canvas>
+
+  <!-- UI Overlay -->
+  <div class="visor3d-ui" aria-hidden="true">
+    <!-- Header -->
+    <div class="visor3d-header">
+      <div class="contenedor" style="display:flex;align-items:center;justify-content:space-between;">
+        <a href="../index.html" class="logo" aria-label="Inicio" style="color:white;">
+          <div class="logo-icono">🌿</div>
+          <span>Biodiversidad Médica del Sureste</span>
+        </a>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="../index.html">Inicio</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="mapa.html">Mapa</a>
+          <a href="herramientas.html">Herramientas</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Info panel -->
+    <div class="visor3d-info" aria-hidden="false" role="region" aria-label="Información de la planta">
+      <h2 class="font-display" id="planta3dNombre">—</h2>
+      <p id="planta3dCientifico">—</p>
+      <div style="font-size:.82rem;opacity:.72;line-height:1.6;">
+        🖱️ Arrastra para rotar &nbsp;·&nbsp; 📜 Rueda para zoom<br>
+        🖱️ Doble clic para resetear vista
+      </div>
+      <div class="controles" role="group" aria-label="Controles del visor">
+        <button onclick="rotarAuto()" aria-label="Activar rotación automática">🔄 Auto</button>
+        <button onclick="resetVista()" aria-label="Resetear vista">⌖ Reset</button>
+        <button onclick="cambiarVista()" aria-label="Cambiar ángulo de vista">👁 Vista</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/visor3d.js"></script>
+</body>
+</html>
